@@ -1,0 +1,12 @@
+- [nguyenhoangthuan99/deepseek-v41-flash-sm120：在 8x RTX PRO 6000 SM120 上固定部署 DeepSeek-V4.1-Flash：Docker 构建、FlashInfer EP8、DSpark、解析器和可重现的操作。 --- nguyenhoangthuan99/deepseek-v41-flash-sm120: Pinned DeepSeek-V4.1-Flash deployment on 8x RTX PRO 6000 SM120: Docker builds, FlashInfer EP8, DSpark, parsers, and reproducible operations.](https://github.com/nguyenhoangthuan99/deepseek-v41-flash-sm120?utm_source=chatgpt.com)
+- [hanxiao/DeepSeek-V4.1-Flash-1017-FP8-abliterated-4x-RTX-PRO-6000: Abliterated DeepSeek-V4.1-Flash-1017 (FP8 dense, FP4 experts) on 4x RTX PRO 6000 with vLLM-Moet r21 and DSpark: 371-376 tok/s single-stream agent decode at 30k-120k context, 1M context, Flex-start GCE VM](https://github.com/hanxiao/DeepSeek-V4.1-Flash-1017-FP8-abliterated-4x-RTX-PRO-6000?utm_source=chatgpt.com)
+- [Benchmark DeepSeek-V4.1-Flash-lossless-CSF · Local Inference Lab](https://docker.local-inference-lab.ai/bench/runs/5OATR2K5GsBY?utm_source=chatgpt.com)
+- [Signal65-Lab-Insight_Enterprise-Inference-Considerations-on-Dell-PowerEdge-XE7745.pdf](https://signal65.com/wp-content/uploads/2026/11/Signal65-Lab-Insight_Enterprise-Inference-Considerations-on-Dell-PowerEdge-XE7745.pdf)
+- [deepseek-ai/DeepSeek-V4-Flash-0731 · How can it be served with 4 x RTX Pro6000?](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/discussions/22)
+- [Integrate flashinfer b12x MoE and FP4 GEMM kernels for SM120/121 by meena-at-work · Pull Request #40082 · vllm-project/vllm](https://github.com/vllm-project/vllm/pull/40082#issuecomment-4314643705)
+- https://github.com/killy-netsphere/dsv41-flash-rtx-pro-6000?utm_source=chatgpt.com
+- https://github.com/sgl-project/sglang/issues/33422?utm_source=chatgpt.com
+- https://github.com/samuelcardillo/deepseek-v41-flash-1017-4x-rtx-pro-6000?utm_source=chatgpt.com
+- [local-inference-lab/rtx6kpro: RTX 6000 Pro Wiki — Running Large LLMs (Qwen3.5-397B, Kimi-K2.5, GLM-5) on PCIe GPUs without NVLink](https://github.com/local-inference-lab/rtx6kpro)
+- [kacper-daftcode/vLLM-Moet: Frontier MoE models on RTX PRO 6000 / RTX 5090 (sm_120): DeepSeek-V4.1-Flash on 4x RTX PRO 6000, as a GPU+CPU hybrid on 4x RTX 5090, and 2-bit experts on vLLM v0.24.0](https://github.com/kacper-daftcode/vLLM-Moet)
+- [jpezzulli/sglang-rtxpro6000: Optimized SGLang runtime for Qwen3.8-27B FP8 with DFlash2 and Qwen3.8 Flash-Next NVFP4 with FR-Spec on one NVIDIA RTX PRO 6000 Blackwell 96 GB GPU (SM120): 524K context, HiCache and NIXL.](https://github.com/jpezzulli/sglang-rtxpro6000)
