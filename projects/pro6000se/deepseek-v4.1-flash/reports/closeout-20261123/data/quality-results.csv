@@ -1,0 +1,8 @@
+stack,dataset,scoring,attempted,correct,accuracy,errors,temperature,top_p,reasoning_effort,max_tokens,concurrency,truncated_no_answer,note
+fusion_selected,ceval,evalscope_native,1346,1273,0.9457652303120356,0,1,0.95,high,32768,,,同一批生成；审计分数不替换原生分数。
+fusion_selected,ceval,terminal_answer_audit,1346,1273,0.9457652303120356,0,1,0.95,high,32768,,,同一批生成；审计分数不替换原生分数。
+fusion_selected,math_500,evalscope_native,500,487,0.974,0,1,0.95,high,32768,,,同一批生成；审计分数不替换原生分数。
+fusion_selected,math_500,terminal_answer_audit,500,491,0.982,0,1,0.95,high,32768,,,同一批生成；审计分数不替换原生分数。
+baseline,GPQA Diamond,benchmark_final_answer,198,180,0.9090909090909091,0,1.0,0.95,high,32768,8,5,保留达到长度上限但未产生答案的题；一题差异不证明统计显著提升。
+legacy_published,GPQA Diamond,benchmark_final_answer,198,180,0.9090909090909091,0,1.0,0.95,high,32768,8,2,保留达到长度上限但未产生答案的题；一题差异不证明统计显著提升。
+fusion_selected,GPQA Diamond,benchmark_final_answer,198,181,0.9141414141414141,0,1.0,0.95,high,32768,8,4,保留达到长度上限但未产生答案的题；一题差异不证明统计显著提升。

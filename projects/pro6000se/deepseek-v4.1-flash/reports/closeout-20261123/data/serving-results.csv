@@ -1,0 +1,10 @@
+stack,scope,date,input_tokens,output_tokens,concurrency,requests,throughput_tok_s,mean_TTFT_ms,mean_TPOT_ms,eligible,evidence
+baseline,frontier_refresh,2026-11-07,8192,1,4,40,18692.26,1685.4,,True,baseline-frontier-20261107-01
+baseline,frontier_refresh,2026-11-07,8192,1024,22,220,689.48962,,28.20549,True,baseline-frontier-20261107-01
+legacy_published,clean_rebuild,2026-11-08,8192,1,6,60,24892.3401,1890.6208,,True,release-phase2-20261107-01
+legacy_published,clean_rebuild,2026-11-08,8192,1024,29,290,901.9409,,29.2135,True,release-phase2-20261107-01
+fusion_selected,frontier_screen,2026-11-11,8192,1,6,60,24913.105650075824,,,True,web54e-combined-mean-frontier-20261111-v1
+fusion_selected,frontier_screen,2026-11-11,8192,1024,30,300,920.1459236650151,,29.969301019760646,True,web54e-combined-mean-frontier-20261111-v1
+fusion_selected,independent_deployment_seed1002,2026-11-11,8192,1,6,60,24879.127143284506,1891.9549802143592,,True,web54e-final-confirmation-20261111-v1
+fusion_selected,independent_deployment_seed1002,2026-11-11,8192,1024,29,290,901.3637020948697,,29.5511815211626,True,web54e-final-confirmation-20261111-v1
+fusion_selected,unprofiled_before_nsys,2026-11-20,8192,1,6,60,24796.896006534476,1897.8368191746995,,True,local-profile-20261120/sla-selected.json

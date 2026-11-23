@@ -1,6 +1,8 @@
 # BestPracticesRSI
 用于模型部署推理优化的最佳实践RSI。
 
+[DeepSeek-V4.1-Flash 四卡优化结项](projects/pro6000se/deepseek-v4.1-flash/reports/closeout-20261123/README.md) · [相关优化与测量知识](knowledge/confirmed/dsv41-sm120-tp4-optimization-and-measurement.md)
+
 [启动新项目并使用 OptimizationRSI](OptimizationRSI/README.md) · [查看整体框架](framework.md)
 
 # 说明
