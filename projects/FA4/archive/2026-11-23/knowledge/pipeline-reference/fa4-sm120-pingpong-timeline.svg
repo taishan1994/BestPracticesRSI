@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="980" viewBox="0 0 1800 980"><style>text{font-family:Arial,"Noto Sans CJK SC",sans-serif;fill:#1f2937}.title{font-size:28px;font-weight:700}.sub{font-size:15px;fill:#596579}.row{font-size:18px;font-weight:700}.tiny{font-size:12px}.metric{font-size:15px;font-weight:700;fill:#374151}.grid{stroke:#d7dce5}.dash{stroke:#94a3b8;stroke-dasharray:5 5}.bar{stroke:#475569;stroke-width:1}.lane{fill:#eef1f4}</style>
+<text x="60" y="44" class="title">FA4 BF16 d128 — measured warp-lane ping-pong</text>
+<text x="60" y="72" class="sub">mha-s2k-d128-causal · first CTA · 4 warp leaders · clock64 ABI timing buffer</text>
+<text x="60" y="98" class="sub">每条 lane 都是实际 warp leader 时间戳；不同 warp 的起止点保留并行关系。</text>
+<line x1="390" y1="145" x2="390" y2="670" class="grid"/>
+<text x="380" y="132" class="tiny">0</text>
+<line x1="507.597" y1="145" x2="507.597" y2="670" class="grid"/>
+<text x="497.597" y="132" class="tiny">1000</text>
+<line x1="625.194" y1="145" x2="625.194" y2="670" class="grid"/>
+<text x="615.194" y="132" class="tiny">2000</text>
+<line x1="742.79" y1="145" x2="742.79" y2="670" class="grid"/>
+<text x="732.79" y="132" class="tiny">3000</text>
+<line x1="860.387" y1="145" x2="860.387" y2="670" class="grid"/>
+<text x="850.387" y="132" class="tiny">4000</text>
+<line x1="977.984" y1="145" x2="977.984" y2="670" class="grid"/>
+<text x="967.984" y="132" class="tiny">5000</text>
+<line x1="1095.58" y1="145" x2="1095.58" y2="670" class="grid"/>
+<text x="1085.58" y="132" class="tiny">6000</text>
+<line x1="1213.18" y1="145" x2="1213.18" y2="670" class="grid"/>
+<text x="1203.18" y="132" class="tiny">7000</text>
+<line x1="1330.77" y1="145" x2="1330.77" y2="670" class="grid"/>
+<text x="1320.77" y="132" class="tiny">8000</text>
+<line x1="1448.37" y1="145" x2="1448.37" y2="670" class="grid"/>
+<text x="1438.37" y="132" class="tiny">9000</text>
+<line x1="1565.97" y1="145" x2="1565.97" y2="670" class="grid"/>
+<text x="1555.97" y="132" class="tiny">10000</text>
+<text x="1500" y="136" class="tiny">relative SM cycles</text>
+<line x1="391" y1="145" x2="391" y2="670" class="dash"/>
+<line x1="649.918" y1="145" x2="649.918" y2="670" class="dash"/>
+<line x1="982.923" y1="145" x2="982.923" y2="670" class="dash"/>
+<line x1="1111.37" y1="145" x2="1111.37" y2="670" class="dash"/>
+<line x1="1373.29" y1="145" x2="1373.29" y2="670" class="dash"/>
+<line x1="1414" y1="145" x2="1414" y2="670" class="dash"/>
+<line x1="1488.65" y1="145" x2="1488.65" y2="670" class="dash"/>
+<text x="60" y="208" class="row">warp 0 · leader lane</text>
+<rect x="390" y="180" width="1100" height="52" class="lane"/>
+<rect x="390" y="189" width="259.536" height="34" fill="#cbd5e1" class="bar"/>
+<text x="519.768" y="211" text-anchor="middle" class="tiny">entry</text>
+<rect x="649.536" y="189" width="328.095" height="34" fill="#8fbce8" class="bar"/>
+<text x="813.583" y="211" text-anchor="middle" class="tiny">QK start</text>
+<rect x="977.631" y="189" width="132.532" height="34" fill="#a5b4fc" class="bar"/>
+<text x="1043.9" y="211" text-anchor="middle" class="tiny">QK done</text>
+<rect x="1110.16" y="189" width="260.712" height="34" fill="#4c86c8" class="bar"/>
+<text x="1240.52" y="211" text-anchor="middle" class="tiny">softmax done</text>
+<rect x="1370.87" y="189" width="40.4533" height="34" fill="#4da66b" class="bar"/>
+<text x="1391.1" y="211" text-anchor="middle" class="tiny">PV done</text>
+<rect x="1411.33" y="189" width="75.8499" height="34" fill="#9b83d4" class="bar"/>
+<text x="1449.25" y="211" text-anchor="middle" class="tiny">correction</text>
+<text x="60" y="293" class="row">warp 1 · leader lane</text>
+<rect x="390" y="265" width="1100" height="52" class="lane"/>
+<rect x="390.706" y="274" width="244.013" height="34" fill="#cbd5e1" class="bar"/>
+<text x="512.712" y="296" text-anchor="middle" class="tiny">entry</text>
+<rect x="634.719" y="274" width="346.205" height="34" fill="#8fbce8" class="bar"/>
+<text x="807.821" y="296" text-anchor="middle" class="tiny">QK start</text>
+<rect x="980.924" y="274" width="129.592" height="34" fill="#a5b4fc" class="bar"/>
+<text x="1045.72" y="296" text-anchor="middle" class="tiny">QK done</text>
+<rect x="1110.52" y="274" width="261.065" height="34" fill="#4c86c8" class="bar"/>
+<text x="1241.05" y="296" text-anchor="middle" class="tiny">softmax done</text>
+<rect x="1371.58" y="274" width="40.4533" height="34" fill="#4da66b" class="bar"/>
+<text x="1391.81" y="296" text-anchor="middle" class="tiny">PV done</text>
+<rect x="1412.03" y="274" width="76.5555" height="34" fill="#9b83d4" class="bar"/>
+<text x="1450.31" y="296" text-anchor="middle" class="tiny">correction</text>
+<text x="60" y="378" class="row">warp 2 · leader lane</text>
+<rect x="390" y="350" width="1100" height="52" class="lane"/>
+<rect x="391.411" y="359" width="263.064" height="34" fill="#cbd5e1" class="bar"/>
+<text x="522.943" y="381" text-anchor="middle" class="tiny">entry</text>
+<rect x="654.475" y="359" width="330.212" height="34" fill="#8fbce8" class="bar"/>
+<text x="819.581" y="381" text-anchor="middle" class="tiny">QK start</text>
+<rect x="984.687" y="359" width="125.946" height="34" fill="#a5b4fc" class="bar"/>
+<text x="1047.66" y="381" text-anchor="middle" class="tiny">QK done</text>
+<rect x="1110.63" y="359" width="261.3" height="34" fill="#4c86c8" class="bar"/>
+<text x="1241.28" y="381" text-anchor="middle" class="tiny">softmax done</text>
+<rect x="1371.93" y="359" width="40.8061" height="34" fill="#4da66b" class="bar"/>
+<text x="1392.34" y="381" text-anchor="middle" class="tiny">PV done</text>
+<rect x="1412.74" y="359" width="76.0851" height="34" fill="#9b83d4" class="bar"/>
+<text x="1450.78" y="381" text-anchor="middle" class="tiny">correction</text>
+<text x="60" y="463" class="row">warp 3 · leader lane</text>
+<rect x="390" y="435" width="1100" height="52" class="lane"/>
+<rect x="391.882" y="444" width="269.061" height="34" fill="#cbd5e1" class="bar"/>
+<text x="526.412" y="466" text-anchor="middle" class="tiny">entry</text>
+<rect x="660.943" y="444" width="327.507" height="34" fill="#8fbce8" class="bar"/>
+<text x="824.696" y="466" text-anchor="middle" class="tiny">QK start</text>
+<rect x="988.45" y="444" width="125.711" height="34" fill="#a5b4fc" class="bar"/>
+<text x="1051.31" y="466" text-anchor="middle" class="tiny">QK done</text>
+<rect x="1114.16" y="444" width="264.593" height="34" fill="#4c86c8" class="bar"/>
+<text x="1246.46" y="466" text-anchor="middle" class="tiny">softmax done</text>
+<rect x="1378.75" y="444" width="41.1589" height="34" fill="#4da66b" class="bar"/>
+<text x="1399.33" y="466" text-anchor="middle" class="tiny">PV done</text>
+<rect x="1419.91" y="444" width="70.0877" height="34" fill="#9b83d4" class="bar"/>
+<text x="1454.96" y="466" text-anchor="middle" class="tiny">correction</text>
+<text x="60" y="550" class="row">stage / stall annotation</text>
+<text x="60" y="585" class="sub">QK: long scoreboard 47.67% · softmax: barrier 13.53%, short scoreboard 18.36%</text>
+<text x="60" y="610" class="sub">PV: wait 58.71%, math throttle 28.41% · correction: wait 51.02%, math throttle 19.91%</text>
+<text x="60" y="650" class="sub">边界来自每个 warp leader 的 clock64；PC stall 仍按对应源码区间汇总。</text>
+<text x="60" y="710" class="row">为什么这版有并行</text>
+<text x="60" y="742" class="sub">warp 0–3 的时间戳不再被压成 thread 0 单线；同一横轴上可以看到不同 warp 的 QK/PV/softmax 边界交叠。</text>
+<text x="60" y="770" class="sub">这仍是首个 CTA 的阶段边界图，不等同于 Nsight 的逐采样 warp scheduler 时间线。</text>
+</svg>

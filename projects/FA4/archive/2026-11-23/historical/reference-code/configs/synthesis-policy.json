@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "software": {
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "uuid": "GPU-a1f23cd9-9604-f48a-76dd-a6721a7d568c",
+    "capability": [
+      12,
+      0
+    ],
+    "fa4": "4.0.0b38",
+    "cutlass": "4.8.1",
+    "interface": "(q: torch.Tensor, k: torch.Tensor, v: torch.Tensor, qv: Optional[torch.Tensor] = None, gather_kv_indices: Optional[torch.Tensor] = None, softmax_scale: Optional[float] = None, causal: bool = False, window_size: Tuple[Optional[int], Optional[int]] = (None, None), learnable_sink: Optional[torch.Tensor] = None, softcap: float = 0.0, num_splits: int = 1, pack_gqa: Optional[bool] = None, deterministic: bool = False, score_mod: Optional[Callable] = None, score_mod_bwd: Optional[Callable] = None, mask_mod: Optional[Callable] = None, aux_tensors: Optional[list] = None, aux_scalars: Optional[tuple] = None, block_sparse_tensors: Optional[flash_attn.cute.block_sparsity.BlockSparseTensorsTorch] = None, block_sparse_tensors_bwd: Optional[flash_attn.cute.block_sparsity.BlockSparseTensorsTorch] = None, return_lse: bool = False, gather_bwd_recompute_p: bool = False, gather_bwd_token_chunk: Optional[int] = None, config: flash_attn.cute.config.FwdConfig | flash_attn.cute.config.MlaFwdConfig | None = None)",
+    "source_sha256": {
+      "__init__.py": "50713012c3a5e8045f368672342aea6eeeb3b3ce0968cb5639b1f158b9499487",
+      "ampere_helpers.py": "cadac170a7da379e27c36d044360480d710cfa88d082dad2b9decd58e4847111",
+      "autotune.py": "f98ecb079f740abf7072db52c47454e88ae13771eb1199dfc74e008507895229",
+      "barrier.py": "b75bde2eb22441f704f21f20310570a030b7fc22dcda01c889bd2d55dbf27588",
+      "bench_utils.py": "5bd0302c4cd4cd2c3b7e8b1d01eb49d546475d06897678f5543ea2e0172aae84",
+      "benchmark.py": "43bb07eb55d46a402abab8c50984eb39d4cf8f19a11ad79cd0291919614a9101",
+      "benchmark_flash_attention_fp8.py": "7677c981bc5c9f997f8e1a82eacb2e4498ba55a6c6acccdb96196ec2c24ae193",
+      "blackwell_helpers.py": "c3b80acdd7d35b1a03b7f64cd11b202cf4305c1f8894573ee492c5a178a5befa",
+      "block_info.py": "9b851a1658b826c8b5d6acf1a28c2761e740dca7d161bd7248cff4330a217dff",
+      "block_sparse_utils.py": "f0ed9697e5d5ad3326d8d32b7b4dab2aa2af7c56e6f642d4de11f3175f93c896",
+      "block_sparsity.py": "0c283b372c896517e0ec91de56ab07fed209623cf26fc5cb7868a8be6c58a315",
+      "bwd_accum_tile.py": "600b81fe8e49d14b4775b0f2fadea2a59607e167f4e5ecdec53b3d45d4e841ee",
+      "cache_utils.py": "6564b1d737cba98557f1faa8827804c48d8d98711e34e727c7a119b2baec5135",
+      "compat.py": "1db8c0b9d9853c4ec3e695396f16bb1beeea13efb50514244fcf196c69145a9c",
+      "compute_block_sparsity.py": "88a668f6a418f4bae08c810426d0fd6a43834f7c7cf8653599a62f5c46a4e92c",
+      "config.py": "0c29e67fbe7474efb3e0dab11ced530ff6d5d0dc6364043d8bd9872c20d56298",
+      "copy_utils.py": "7babe05581e89d7ee90561004a56076c5f6b92c855c812a1fdbb428cc8f76825",
+      "cu_blocks_kernel.py": "aebbf862f2b90d13f3b1c50ee79ef49ce7babec7f61d37cfcd426bf2ab113a09",
+      "cute_dsl_ptxas.py": "21f0674c9f5a99d7c339092e49d5822d387b0a4673888becff1ac073cb5ac619",
+      "cute_dsl_utils.py": "36f81f1ceaae2c6dd49b7d5d00a3b51bfd3333359fd2e6afcdbd186fbbb1a765",
+      "fa_logging.py": "bc71edfa4b1cb7af64b78def09e790ff4c6fe64ab4fcf8e3d9699f44e8d3c0a0",
+      "fast_math.py": "7e5f822bf4d0ba36967558f3ae9a1408b410cb726c31222cd61703569d1be738",
+      "flash_bwd.py": "80cb6bfb436160d73b7214529f94d28b7333c98dff75a53d20552eb33645fea2",
+      "flash_bwd_mla_dk_sm100.py": "bd18ebf74f631c0593d0e1b24d50d5e911d48a25ac24b21765c85e8ebb137ab0",
+      "flash_bwd_mla_dq_dqv_sm100.py": "5d4206d83f5cdc8c6a3e09b2d3173a85cd319ebb01a86123bc67d3f1a9c050ba",
+      "flash_bwd_mla_dq_dqv_sm100_h64.py": "1ad17d9e74e5e2761029c891b61824906830a11b9106f72bd2b9bc9f97717e89",
+      "flash_bwd_mla_sm100.py": "7f4e2a278bf0dd8970dcc4f5dbb80e07072577977f5bc934118c4deaab5ffc6a",
+      "flash_bwd_postprocess.py": "1a8bf9f93c9bc755ae443cedde2225942822a428eccc9b8c9b8e0c1a5be637a7",
+      "flash_bwd_preprocess.py": "f31922a9ecb817923038db3addcd83a9486a8bfba2b0d74be6ee23f42256e704",
+      "flash_bwd_sm100.py": "597aaa97db06920ac1b1818264cc959b75afcb29c308ca5093e19166980e7350",
+      "flash_bwd_sm120.py": "ad2d802c97dbf654fd03724bcfa91702b18acec8518e5dd4a33f137ba238bf7d",
+      "flash_bwd_sm90.py": "014172e18e0655a1b543c6541cd2302614dafbc123b859014577ae13e63e32d7",
+      "flash_fwd.py": "be6e88c7d9f122aa5ab29ff5946f6270af0b580e4403351b869f1330b71ca53c",
+      "flash_fwd_combine.py": "0632b05c41c725d627597b352d0d6eba704dcb3ea14c30c83ddd5e55bc422442",
+      "flash_fwd_decode_sm100.py": "edaa1bffed4b00b9b64be30c1227ce7c9aaa7949536b070c386545731d37d290",
+      "flash_fwd_mla_1cta_kb64_sm100.py": "cad17d87b4ace691f070f48a3f20f559d9d93b46fc019ae4a764aac203478604",
+      "flash_fwd_mla_1cta_sm100.py": "706cb27c9102660f13b0cf2c0ca4e168f4b13dda34c51489dc1b314c9add7b11",
+      "flash_fwd_mla_sm100.py": "aa547f5f5105e7e133447e740eed8a77c7efd0de7d2fed41926eda68c16abf00",
+      "flash_fwd_sm100.py": "ec5b2d898852bc15d52e7886ae7ebd39ae98777a2d63c37e045cf66b4ee76723",
+      "flash_fwd_sm120.py": "abd017add69914e46f0fcfc017ad51c3d07d79fd87d15f969036ddd82bcc7da2",
+      "flash_fwd_sm90.py": "c6da4474257654e9889c4ed33e1e0f9afa841c7ce2c1fe537ba437b1ed93829a",
+      "interface.py": "aa6598d8146949a7a33623ad1ac31e561d6523d441d5aa79e520e9681f940bee",
+      "mask.py": "7ec7481d186ba9408a44d89e8827e4717add6baf259d843e9b1f26949b600fc4",
+      "mma_sm100_desc.py": "ac6ec28b2f1a4b797c391a7807b88f83b430452d418262c3dfa7b0f3516e39f9",
+      "named_barrier.py": "15fc3a948333814e6c2c1742de942a94b6003d60bd5ea8e75cd201c9aa495fff",
+      "pack_gqa.py": "f93d3de8a1be6ac3be0a3708638302bb7ae8fac10e51d3d50a295c0ef8ce451b",
+      "paged_kv.py": "bb7e1d904b6561d44d2174fc1a47413f533087628c386f178d8924530c8cfe3b",
+      "pipeline.py": "16a276487d7d0cb2c90a2f451ad482939b9faaaaa1453e43a1fcc7b73a187337",
+      "prepare_scheduler.py": "82b4a4658da693639c5a33dac9ab0339fb74f6297afd19188653c1c11fff116c",
+      "seqlen_info.py": "1a37ccada860cc51bfcdccc125066b2e9d8795212b4afcc3e6596dea8264136e",
+      "sm100_hd256_2cta_fmha_backward.py": "7755fe63ef1addc1fbdb4f4037e19ccd4bae982947fc43c1768253b7ae038133",
+      "sm100_hd256_2cta_fmha_backward_dkdvkernel.py": "d69e8c9481b18fb132ec7c58cd254c716af9d7926500e5071c51b5eba3edf346",
+      "sm100_hd256_2cta_fmha_backward_dqkernel.py": "45bb821ec6112b1ae062556317f58f95185784c79286004870227eb81029c5a5",
+      "sm90_config_search.py": "bd0ed6094e9fc48de587098f9b05bccbdd5f450b70d3500759a48b5d436cff9c",
+      "softmax.py": "aaddf3030dba7b9809c4fefae3caab22d0f22b9ecf5050601d6646aefb611a49",
+      "tensormap_utils.py": "6fedc5d1f9d4e74e58ca6cd3d1d359331f6701a01e537626ff30827fe791a824",
+      "testing.py": "98ef40f06ddea3b508a216debdadb731af37df1e3dc04a0e352286c6e29826e9",
+      "tile_scheduler.py": "0fe312883349402914d25b4d2c7f972e0f16e80bbfb0934270d0746c1bd85719",
+      "topk_gather_kv.py": "c32e091958c122f5d205b19853ddcb26603be174c2b9c057ce567d831380d5df",
+      "utils.py": "ccfc64fe84a4b6bc412dc1fd36fe6f4879c7843878640bf019f9647dc5ad3e5d"
+    }
+  },
+  "shapes": {
+    "[[1,1024,16,64],[1,1024,16,64],[1,1024,16,64],\"bfloat16\",false]": {
+      "id": "mha-s1k-d64",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 256,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "t256-128x128"
+    },
+    "[[1,2048,16,128],[1,2048,16,128],[1,2048,16,128],\"bfloat16\",true]": {
+      "id": "mha-s2k-d128-causal",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "tile-64x128"
+    },
+    "[[1,2048,16,128],[1,2048,4,128],[1,2048,4,128],\"bfloat16\",true]": {
+      "id": "gqa-s2k-d128-causal",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": true,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": true,
+        "Q_in_regs": false
+      },
+      "selection_basis": "tile-64x128"
+    },
+    "[[4,1024,16,64],[4,1024,4,64],[4,1024,4,64],\"bfloat16\",false]": {
+      "id": "gqa-b4-s1k-d64",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": true,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": true,
+        "Q_in_regs": false
+      },
+      "selection_basis": "tile-128x64"
+    },
+    "[[1,4096,16,128],[1,4096,16,128],[1,4096,16,128],\"bfloat16\",true]": {
+      "id": "mha-s4k-d128-causal",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "tile-64x64"
+    },
+    "[[2,513,8,64],[2,513,8,64],[2,513,8,64],\"float16\",true]": {
+      "id": "mha-s513-d64-fp16",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "tile-64x128"
+    },
+    "[[1,512,8,256],[1,512,8,256],[1,512,8,256],\"bfloat16\",false]": {
+      "id": "mha-s512-d256",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "tile-64x64"
+    },
+    "[[1,1,16,128],[1,8192,4,128],[1,8192,4,128],\"bfloat16\",false]": {
+      "id": "gqa-decode-k8k-d128",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": true,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": true,
+        "Q_in_regs": false
+      },
+      "selection_basis": "tile-64x128"
+    },
+    "[[1,8192,16,128],[1,8192,16,128],[1,8192,16,128],\"bfloat16\",false]": {
+      "id": "qu0b-b1-s8192-d128",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 256,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "t256-128x128"
+    },
+    "[[2,4096,16,128],[2,4096,16,128],[2,4096,16,128],\"bfloat16\",false]": {
+      "id": "qu0b-b2-s4096-d128",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 256,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "t256-128x128"
+    },
+    "[[2,4096,16,96],[2,4096,16,96],[2,4096,16,96],\"bfloat16\",false]": {
+      "id": "qu0b-b2-s4096-d96",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "stock"
+    },
+    "[[4,2048,32,64],[4,2048,32,64],[4,2048,32,64],\"bfloat16\",false]": {
+      "id": "qu0b-b4-s2048-d64",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "stock"
+    },
+    "[[2,1024,20,64],[2,77,20,64],[2,77,20,64],\"float16\",false]": {
+      "id": "sdxl-q1024-k77",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,1024,20,64],[2,1024,20,64],[2,1024,20,64],\"float16\",false]": {
+      "id": "sdxl-q1024-k1024",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": true
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,1536,20,64],[2,77,20,64],[2,77,20,64],\"float16\",false]": {
+      "id": "sdxl-q1536-k77",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,1536,20,64],[2,1536,20,64],[2,1536,20,64],\"float16\",false]": {
+      "id": "sdxl-q1536-k1536",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": true
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,4096,10,64],[2,77,10,64],[2,77,10,64],\"float16\",false]": {
+      "id": "sdxl-q4096-k77",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,4096,10,64],[2,4096,10,64],[2,4096,10,64],\"float16\",false]": {
+      "id": "sdxl-q4096-k4096",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,6144,10,64],[2,77,10,64],[2,77,10,64],\"float16\",false]": {
+      "id": "sdxl-q6144-k77",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,6144,10,64],[2,6144,10,64],[2,6144,10,64],\"float16\",false]": {
+      "id": "sdxl-q6144-k6144",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": true
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,1024,16,128],[2,1024,4,128],[2,1024,4,128],\"bfloat16\",true]": {
+      "id": "transformer-s1024-kv4",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": true,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,1024,16,128],[2,1024,16,128],[2,1024,16,128],\"bfloat16\",true]": {
+      "id": "transformer-s1024-kv16",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 128,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,4096,16,128],[2,4096,4,128],[2,4096,4,128],\"bfloat16\",true]": {
+      "id": "transformer-s4096-kv4",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": true,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "nebius-rule"
+    },
+    "[[2,4096,16,128],[2,4096,16,128],[2,4096,16,128],\"bfloat16\",true]": {
+      "id": "transformer-s4096-kv16",
+      "default": {
+        "tile_m": 128,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "tuned": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "pack_gqa": false,
+        "Q_in_regs": false
+      },
+      "selection_basis": "nebius-rule"
+    }
+  },
+  "provenance": [
+    "c-sm120",
+    "c-qu0b",
+    "c-nebius-opt"
+  ]
+}

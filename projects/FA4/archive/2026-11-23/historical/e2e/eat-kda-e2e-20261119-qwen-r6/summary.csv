@@ -1,0 +1,4 @@
+model,arm,scene,input_throughput,output_throughput,ttft_ms,tpot_ms,valid,artifact
+Qwen3.8-27B,pr3109,prefill-short,6647.926784031433,3.2460580000153483,1878.1339531415142,,8,/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-qwen-r6/Qwen3.8-27B-pr3109/prefill-short.json
+Qwen3.8-27B,pr3109,prefill-long,6585.342800984896,0.8038748536358515,5632.758528779959,,8,/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-qwen-r6/Qwen3.8-27B-pr3109/prefill-long.json
+Qwen3.8-27B,pr3109,short-short,2196.551189162483,137.28444932265518,1863.8742461043876,43.95399685499009,8,/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-qwen-r6/Qwen3.8-27B-pr3109/short-short.json

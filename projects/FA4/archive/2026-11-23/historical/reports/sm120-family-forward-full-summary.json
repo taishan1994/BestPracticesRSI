@@ -1,0 +1,8 @@
+{
+  "status": "rejected-before-completion",
+  "candidate": "single family experiment tile_m=64,tile_n=64,num_threads=128,num_splits=0",
+  "scope_attempted": "PR3109 forward 165-case order",
+  "reason": "The candidate produced repeated regressions and resource/compile failures; it is not the SM120 best-practice policy.",
+  "interpretation": "Keep the SM120 host planner and resource gates; do not promote a universal static tile.",
+  "raw_partial": "sm120-family-forward-full.json"
+}

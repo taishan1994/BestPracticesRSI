@@ -1,0 +1,1290 @@
+[
+  {
+    "original": "projects/FA4/reports/pr3109-bf16-forward-165.json",
+    "archived": "reports/pr-comparison/pr3109-bf16-forward-165.json",
+    "original_sha256": "1ea281d3815b4a017fd3aa7c773119105a8c4c974f37cb4f967e0ed96a532501",
+    "original_bytes": 90540,
+    "archived_sha256": "1ea281d3815b4a017fd3aa7c773119105a8c4c974f37cb4f967e0ed96a532501",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3109-bf16-decode-120.json",
+    "archived": "reports/pr-comparison/pr3109-bf16-decode-120.json",
+    "original_sha256": "b83d0374a8f5f5db06db9939231a0c031984be734220acc28f33258c3c20a14a",
+    "original_bytes": 165558,
+    "archived_sha256": "b83d0374a8f5f5db06db9939231a0c031984be734220acc28f33258c3c20a14a",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-bf16-forward-165.json",
+    "archived": "reports/pr-comparison/pr3132-bf16-forward-165.json",
+    "original_sha256": "7f344425c79ca5f6113ae43933ee2f38015ee95fa7115c9c6a4df8cb964ea099",
+    "original_bytes": 90541,
+    "archived_sha256": "7f344425c79ca5f6113ae43933ee2f38015ee95fa7115c9c6a4df8cb964ea099",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-bf16-decode-120.json",
+    "archived": "reports/pr-comparison/pr3132-bf16-decode-120.json",
+    "original_sha256": "08c48655625380d25c04e4715b0a0e80b2a3286b6ce7614dcd74416abd85c14c",
+    "original_bytes": 165561,
+    "archived_sha256": "08c48655625380d25c04e4715b0a0e80b2a3286b6ce7614dcd74416abd85c14c",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-fp8-forward-165-error.json",
+    "archived": "reports/pr-comparison/pr3132-fp8-forward-165-error.json",
+    "original_sha256": "8e42016ba342466a2c61d6f7191ef46d8e1d5bf0b7be03fe6a8558fd1ad34c5d",
+    "original_bytes": 99668,
+    "archived_sha256": "8e42016ba342466a2c61d6f7191ef46d8e1d5bf0b7be03fe6a8558fd1ad34c5d",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-fp8-decode-120-error.json",
+    "archived": "reports/pr-comparison/pr3132-fp8-decode-120-error.json",
+    "original_sha256": "07de10b5d76a9ea985aa6efe211ceb1b47598e4b8cc47be29b86650a618c358b",
+    "original_bytes": 176193,
+    "archived_sha256": "07de10b5d76a9ea985aa6efe211ceb1b47598e4b8cc47be29b86650a618c358b",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-vs-pr3109-bf16-full-285.csv",
+    "archived": "reports/pr-comparison/pr3132-vs-pr3109-bf16-full-285.csv",
+    "original_sha256": "f69047d1334d34cf4460da2724e2d83dfe2bd1845d7973e2d05896d3366b7e51",
+    "original_bytes": 34353,
+    "archived_sha256": "f69047d1334d34cf4460da2724e2d83dfe2bd1845d7973e2d05896d3366b7e51",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-fp8-vs-pr3109-bf16-full-285-with-error.csv",
+    "archived": "reports/pr-comparison/pr3132-fp8-vs-pr3109-bf16-full-285-with-error.csv",
+    "original_sha256": "70c8a059c90bd9e3e4db31e32e96601e3263686014afc75fbfd1fefd7dead300",
+    "original_bytes": 42517,
+    "archived_sha256": "70c8a059c90bd9e3e4db31e32e96601e3263686014afc75fbfd1fefd7dead300",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-fp8-selected-10-ncu.json",
+    "archived": "reports/pr-comparison/pr3132-fp8-selected-10-ncu.json",
+    "original_sha256": "f3cff4d3c7632a00f5e43d9efef8e57a3b66bd27fc579908fcb4e33b6d026e9d",
+    "original_bytes": 4946,
+    "archived_sha256": "f3cff4d3c7632a00f5e43d9efef8e57a3b66bd27fc579908fcb4e33b6d026e9d",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-fp8-selected-10-ncu.csv",
+    "archived": "reports/pr-comparison/pr3132-fp8-selected-10-ncu.csv",
+    "original_sha256": "ceff244d1e9cfe87747fdee451fee869d5ee9cdcb52df96669afcc596bbea73a",
+    "original_bytes": 1704,
+    "archived_sha256": "ceff244d1e9cfe87747fdee451fee869d5ee9cdcb52df96669afcc596bbea73a",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-fp8-selected-10-ncu.md",
+    "archived": "reports/pr-comparison/pr3132-fp8-selected-10-ncu.md",
+    "original_sha256": "c1bc7e9e974ffe676da92102f8816841af5bbecf0f0dc0c11f9ba786ee60c1de",
+    "original_bytes": 1331,
+    "archived_sha256": "c1bc7e9e974ffe676da92102f8816841af5bbecf0f0dc0c11f9ba786ee60c1de",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3109-vs-pr3132-bfloat16-d96-mha-s8192-local1024-fullmetrics.json",
+    "archived": "reports/pr-comparison/pr3109-vs-pr3132-bfloat16-d96-mha-s8192-local1024-fullmetrics.json",
+    "original_sha256": "dcca4ab47096a406037229c2ae2accf0e868ef1ac96c2486af4b714666691883",
+    "original_bytes": 1905,
+    "archived_sha256": "dcca4ab47096a406037229c2ae2accf0e868ef1ac96c2486af4b714666691883",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3109-vs-pr3132-bfloat16-d64-mqa-s8192-causal-fullmetrics.json",
+    "archived": "reports/pr-comparison/pr3109-vs-pr3132-bfloat16-d64-mqa-s8192-causal-fullmetrics.json",
+    "original_sha256": "517e9d94665090cd982e80da6a0f66796ac291064cf488d76316b5983e55a21e",
+    "original_bytes": 1926,
+    "archived_sha256": "517e9d94665090cd982e80da6a0f66796ac291064cf488d76316b5983e55a21e",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3109-vs-pr3132-bfloat16-d96-mha-s8192-local1024-fullmetrics.md",
+    "archived": "reports/pr-comparison/pr3109-vs-pr3132-bfloat16-d96-mha-s8192-local1024-fullmetrics.md",
+    "original_sha256": "85f25abf0d84bdec8f0a017b5f7d4c8d5359b598745dc0ef7a3989dd8924be32",
+    "original_bytes": 1053,
+    "archived_sha256": "85f25abf0d84bdec8f0a017b5f7d4c8d5359b598745dc0ef7a3989dd8924be32",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3109-vs-pr3132-bfloat16-d64-mqa-s8192-causal-fullmetrics.md",
+    "archived": "reports/pr-comparison/pr3109-vs-pr3132-bfloat16-d64-mqa-s8192-causal-fullmetrics.md",
+    "original_sha256": "d71dadface5d44200b96919e785cd4562536beafc67a46681c5be8b2f04c1d95",
+    "original_bytes": 1043,
+    "archived_sha256": "d71dadface5d44200b96919e785cd4562536beafc67a46681c5be8b2f04c1d95",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-vs-pr3109-status.md",
+    "archived": "historical/reports/pr3132-vs-pr3109-status.md",
+    "original_sha256": "03b29fbd0376fe4626fb571cda733a6aff55214f6db9eec46eca1d1c0406217c",
+    "original_bytes": 2064,
+    "archived_sha256": "03b29fbd0376fe4626fb571cda733a6aff55214f6db9eec46eca1d1c0406217c",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-vs-pr3109-bf16-full-285.md",
+    "archived": "historical/reports/pr3132-vs-pr3109-bf16-full-285.md",
+    "original_sha256": "fd254f44a333ed12bfe1b2e9c38bc7b04039c4bb0e098be38feb665840bfbd1c",
+    "original_bytes": 966,
+    "archived_sha256": "fd254f44a333ed12bfe1b2e9c38bc7b04039c4bb0e098be38feb665840bfbd1c",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-fp8-vs-pr3109-bf16-full-285.md",
+    "archived": "historical/reports/pr3132-fp8-vs-pr3109-bf16-full-285.md",
+    "original_sha256": "ffa5a293c65bb249279728e0891fc4fe222adacc486f238705b4eff0bd571c3f",
+    "original_bytes": 968,
+    "archived_sha256": "ffa5a293c65bb249279728e0891fc4fe222adacc486f238705b4eff0bd571c3f",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3132-fp8-vs-pr3109-bf16-full-285-with-error.md",
+    "archived": "historical/reports/pr3132-fp8-vs-pr3109-bf16-full-285-with-error.md",
+    "original_sha256": "71365bb533d0fdc805fa10f614d74f49f026b64d62620b8671c06cc2c1e0f7cc",
+    "original_bytes": 877,
+    "archived_sha256": "71365bb533d0fdc805fa10f614d74f49f026b64d62620b8671c06cc2c1e0f7cc",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/sm120-fa4-best-practice.md",
+    "archived": "historical/reports/sm120-fa4-best-practice.md",
+    "original_sha256": "c1675c4820005bcb69c2f9ad36e70ff089e40494a4ecf8de739749ebee9798fc",
+    "original_bytes": 7091,
+    "archived_sha256": "c1675c4820005bcb69c2f9ad36e70ff089e40494a4ecf8de739749ebee9798fc",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/sm120-family-forward-full-summary.json",
+    "archived": "historical/reports/sm120-family-forward-full-summary.json",
+    "original_sha256": "dc580d7e5a51651951062d3599a880dde6917501893cb5f37490432a4454cf96",
+    "original_bytes": 485,
+    "archived_sha256": "dc580d7e5a51651951062d3599a880dde6917501893cb5f37490432a4454cf96",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/sm120-family-decode-full-summary.json",
+    "archived": "historical/reports/sm120-family-decode-full-summary.json",
+    "original_sha256": "1846360cfb9cfe12dc260a72d5b805df082be963f082e5b35645f2b4e1a20a4c",
+    "original_bytes": 555,
+    "archived_sha256": "1846360cfb9cfe12dc260a72d5b805df082be963f082e5b35645f2b4e1a20a4c",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/e2e-eat-kda-policy-validation.md",
+    "archived": "historical/reports/e2e-eat-kda-policy-validation.md",
+    "original_sha256": "0d2524e1c9b4f40ffbce987f40d0d157dde6f81c63d16a45ff3fda866b3f04f3",
+    "original_bytes": 595,
+    "archived_sha256": "0d2524e1c9b4f40ffbce987f40d0d157dde6f81c63d16a45ff3fda866b3f04f3",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/e2e-eat-kda-policy-validation.json",
+    "archived": "historical/reports/e2e-eat-kda-policy-validation.json",
+    "original_sha256": "b0b5b3ad2ccb3caee9ded14f37396a8f4ce15a69b68badacce168fc3650000ba",
+    "original_bytes": 27054,
+    "archived_sha256": "b0b5b3ad2ccb3caee9ded14f37396a8f4ce15a69b68badacce168fc3650000ba",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/kad-pr-acceptance-full-285-detail.csv",
+    "archived": "historical/reports/kad-pr-acceptance-full-285-detail.csv",
+    "original_sha256": "8d154c0261bc90c2ed74ebbd89b7d6efbe28d634c00da2518d968e8c594f9714",
+    "original_bytes": 66124,
+    "archived_sha256": "8d154c0261bc90c2ed74ebbd89b7d6efbe28d634c00da2518d968e8c594f9714",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/kad-pr-acceptance-full-285-detail.md",
+    "archived": "historical/reports/kad-pr-acceptance-full-285-detail.md",
+    "original_sha256": "d57e88732ceff8744b94290d9337dd95802b0c0c7f66ac4b0b391b6ca7a41562",
+    "original_bytes": 42522,
+    "archived_sha256": "d57e88732ceff8744b94290d9337dd95802b0c0c7f66ac4b0b391b6ca7a41562",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/pr3109-full-285-scenario-detail.csv",
+    "archived": "historical/reports/pr3109-full-285-scenario-detail.csv",
+    "original_sha256": "b7b51148b5c8a2cfe37244d13b43928faab4d20323bec7af13adc25985be8075",
+    "original_bytes": 116037,
+    "archived_sha256": "b7b51148b5c8a2cfe37244d13b43928faab4d20323bec7af13adc25985be8075",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/eat-pr3901-full-scenario-detail.csv",
+    "archived": "historical/reports/eat-pr3901-full-scenario-detail.csv",
+    "original_sha256": "bfb130d4f6efd652d6646eea89ed81fad43c0fd5b2a438665b040920f9ce0a93",
+    "original_bytes": 5363,
+    "archived_sha256": "bfb130d4f6efd652d6646eea89ed81fad43c0fd5b2a438665b040920f9ce0a93",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/reference-precision-erratum.json",
+    "archived": "historical/reports/reference-precision-erratum.json",
+    "original_sha256": "69ef28de900e249ecc8b425a09680d51b3aaa39a9ae850bea569d5ea524f7d5f",
+    "original_bytes": 1260,
+    "archived_sha256": "69ef28de900e249ecc8b425a09680d51b3aaa39a9ae850bea569d5ea524f7d5f",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/final-results.json",
+    "archived": "historical/reports/final-results.json",
+    "original_sha256": "979aff47ea91dd1f5c68a0f33e1acd0e15aa3fa1e942fd5d104d1af505fb2e32",
+    "original_bytes": 160847,
+    "archived_sha256": "979aff47ea91dd1f5c68a0f33e1acd0e15aa3fa1e942fd5d104d1af505fb2e32",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/reports/final-survey-coverage.json",
+    "archived": "historical/reports/final-survey-coverage.json",
+    "original_sha256": "4438f6fa2f10cba2efe03f2f8ebadd62cbfc8b3f62d1cd047f18e71ae214ae8a",
+    "original_bytes": 150,
+    "archived_sha256": "4438f6fa2f10cba2efe03f2f8ebadd62cbfc8b3f62d1cd047f18e71ae214ae8a",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/README.md",
+    "archived": "historical/README-before-archive.md",
+    "original_sha256": "30beaac5ac36557ce068cd1335ca6f396277e5eef88de7903aaaf8e686ea91f4",
+    "original_bytes": 5719,
+    "archived_sha256": "30beaac5ac36557ce068cd1335ca6f396277e5eef88de7903aaaf8e686ea91f4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/kernels/test_kad_dispatch.py",
+    "archived": "historical/reference-code/kernels/test_kad_dispatch.py",
+    "original_sha256": "f6f5ff05a448d60c9a5f587591f1bc1d931458cb3f6e65258f46710769bb8a78",
+    "original_bytes": 1855,
+    "archived_sha256": "f6f5ff05a448d60c9a5f587591f1bc1d931458cb3f6e65258f46710769bb8a78",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/kernels/kad_dispatch.py",
+    "archived": "historical/reference-code/kernels/kad_dispatch.py",
+    "original_sha256": "c7de527460d16d3f7c2e3912c349d7ebdd90bceb68313fa28b3158cf904e6d23",
+    "original_bytes": 2869,
+    "archived_sha256": "c7de527460d16d3f7c2e3912c349d7ebdd90bceb68313fa28b3158cf904e6d23",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/kernels/compiled_attention_v2.py",
+    "archived": "historical/reference-code/kernels/compiled_attention_v2.py",
+    "original_sha256": "3a7c74f1b40756aaeea7c374d16f3dcb7d85d51ae7ced977e71df204e3a7e7ff",
+    "original_bytes": 6503,
+    "archived_sha256": "3a7c74f1b40756aaeea7c374d16f3dcb7d85d51ae7ced977e71df204e3a7e7ff",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/kernels/compiled_decode.py",
+    "archived": "historical/reference-code/kernels/compiled_decode.py",
+    "original_sha256": "6b824464ba7cf043e77dc3b73efe2e4de6833da3ea3358a03201a174f6d60c36",
+    "original_bytes": 4399,
+    "archived_sha256": "6b824464ba7cf043e77dc3b73efe2e4de6833da3ea3358a03201a174f6d60c36",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/kernels/compiled_attention.py",
+    "archived": "historical/reference-code/kernels/compiled_attention.py",
+    "original_sha256": "d3ce571f9bf213d801f6d3ccd7131f1d5a3ba9c74c7d9c4d8b52590387a19b92",
+    "original_bytes": 4308,
+    "archived_sha256": "d3ce571f9bf213d801f6d3ccd7131f1d5a3ba9c74c7d9c4d8b52590387a19b92",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/kernels/compiled_attention_debug.py",
+    "archived": "historical/reference-code/kernels/compiled_attention_debug.py",
+    "original_sha256": "a08c183f9f4db2762c88a59905b44d29350482e75ce0414f87620fc61d22eb7e",
+    "original_bytes": 7583,
+    "archived_sha256": "a08c183f9f4db2762c88a59905b44d29350482e75ce0414f87620fc61d22eb7e",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/thad-decode-patch.json",
+    "archived": "historical/reference-code/configs/thad-decode-patch.json",
+    "original_sha256": "7225c01f73c1637cc452066f676e14e2a9e5193126678921206271e11cfa1477",
+    "original_bytes": 572,
+    "archived_sha256": "7225c01f73c1637cc452066f676e14e2a9e5193126678921206271e11cfa1477",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/kad-pr3109-decode-policy.json",
+    "archived": "historical/reference-code/configs/kad-pr3109-decode-policy.json",
+    "original_sha256": "b704e19baba1a1210c534909ce234f44263f9a4eede0084032c0411e6b54a527",
+    "original_bytes": 16410,
+    "archived_sha256": "b704e19baba1a1210c534909ce234f44263f9a4eede0084032c0411e6b54a527",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/kad-pr3109-case-policy.json",
+    "archived": "historical/reference-code/configs/kad-pr3109-case-policy.json",
+    "original_sha256": "d8721de4239d4f0f5d9c32065db4ce473a0d5da7dee7a9b0916f5c50caf969f5",
+    "original_bytes": 9171,
+    "archived_sha256": "d8721de4239d4f0f5d9c32065db4ce473a0d5da7dee7a9b0916f5c50caf969f5",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/fa4-decode-protocol.json",
+    "archived": "historical/reference-code/configs/fa4-decode-protocol.json",
+    "original_sha256": "1b49f2aeda9567610e7cfd8f235d0b8cafba79fb8f9e2fff98d81ed25c525456",
+    "original_bytes": 1714,
+    "archived_sha256": "1b49f2aeda9567610e7cfd8f235d0b8cafba79fb8f9e2fff98d81ed25c525456",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/kad-pr-acceptance-protocol.json",
+    "archived": "historical/reference-code/configs/kad-pr-acceptance-protocol.json",
+    "original_sha256": "2ecb4b4380ea0644f7b831d783afeb1a31b7c87d98a7c0b0bda401e6c10cd077",
+    "original_bytes": 844,
+    "archived_sha256": "2ecb4b4380ea0644f7b831d783afeb1a31b7c87d98a7c0b0bda401e6c10cd077",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/kad-pr3109-case-policy-before-11.json",
+    "archived": "historical/reference-code/configs/kad-pr3109-case-policy-before-11.json",
+    "original_sha256": "4880573e4e5bd0f57a82f07cfcf93e31846c8bab314a1f35fd1ea920cfea6bcd",
+    "original_bytes": 4955,
+    "archived_sha256": "4880573e4e5bd0f57a82f07cfcf93e31846c8bab314a1f35fd1ea920cfea6bcd",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/container.json",
+    "archived": "historical/reference-code/configs/container.json",
+    "original_sha256": "a126a539fb6bb3351e9e4cadbda0f7d71fc9f765bfd67b0d0cf600a873986167",
+    "original_bytes": 22621,
+    "archived_sha256": "a126a539fb6bb3351e9e4cadbda0f7d71fc9f765bfd67b0d0cf600a873986167",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/release-selection.json",
+    "archived": "historical/reference-code/configs/release-selection.json",
+    "original_sha256": "fae61e32672a1247127835dc11751f912f6751dc5be920342273d473437eb0b2",
+    "original_bytes": 7470,
+    "archived_sha256": "fae61e32672a1247127835dc11751f912f6751dc5be920342273d473437eb0b2",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/deployment-recommendations.json",
+    "archived": "historical/reference-code/configs/deployment-recommendations.json",
+    "original_sha256": "80241420d15178b609b929fd148e4b44fdf232934ba00ded805b36aabadf2762",
+    "original_bytes": 10829,
+    "archived_sha256": "80241420d15178b609b929fd148e4b44fdf232934ba00ded805b36aabadf2762",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/base-image.json",
+    "archived": "historical/reference-code/configs/base-image.json",
+    "original_sha256": "388c04455064a5636f81aebcc9c07364d758fa9c1501ddac12d02f19a75a2391",
+    "original_bytes": 15014,
+    "archived_sha256": "388c04455064a5636f81aebcc9c07364d758fa9c1501ddac12d02f19a75a2391",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/synthesis-protocol.json",
+    "archived": "historical/reference-code/configs/synthesis-protocol.json",
+    "original_sha256": "c6df401ddd2d68040d8fa654245b29c73c62365182e29ba8f264e02b39d42561",
+    "original_bytes": 1436,
+    "archived_sha256": "c6df401ddd2d68040d8fa654245b29c73c62365182e29ba8f264e02b39d42561",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/release-policy.json",
+    "archived": "historical/reference-code/configs/release-policy.json",
+    "original_sha256": "fa8fc0387b3167b62ad180335df3aa75fac4a62c4f0c9adf903cb1726895663a",
+    "original_bytes": 27622,
+    "archived_sha256": "fa8fc0387b3167b62ad180335df3aa75fac4a62c4f0c9adf903cb1726895663a",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/decode-policy.json",
+    "archived": "historical/reference-code/configs/decode-policy.json",
+    "original_sha256": "57565932e90cf51bb5800f92af8a183a1e50e5f98ce85defe0686960584e5ca9",
+    "original_bytes": 5413,
+    "archived_sha256": "57565932e90cf51bb5800f92af8a183a1e50e5f98ce85defe0686960584e5ca9",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/synthesis-policy.json",
+    "archived": "historical/reference-code/configs/synthesis-policy.json",
+    "original_sha256": "dd3a26ad3ea8724341f2d19be773f6a365a6a426b747782f3b73ba5c339537b2",
+    "original_bytes": 18289,
+    "archived_sha256": "dd3a26ad3ea8724341f2d19be773f6a365a6a426b747782f3b73ba5c339537b2",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/kad-pr3109-policy.json",
+    "archived": "historical/reference-code/configs/kad-pr3109-policy.json",
+    "original_sha256": "d2e24f12ca6b50b888f567165d04220871acf5fb10d3919e839e515451b96364",
+    "original_bytes": 463,
+    "archived_sha256": "d2e24f12ca6b50b888f567165d04220871acf5fb10d3919e839e515451b96364",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/hotpath-protocol.json",
+    "archived": "historical/reference-code/configs/hotpath-protocol.json",
+    "original_sha256": "c7b5138ff6af9c74939b9adbc1f8cd2a21b9cec7ab7ea6063c358837ced5e5d6",
+    "original_bytes": 564,
+    "archived_sha256": "c7b5138ff6af9c74939b9adbc1f8cd2a21b9cec7ab7ea6063c358837ced5e5d6",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/rsi-shadow-replay.json",
+    "archived": "historical/reference-code/configs/rsi-shadow-replay.json",
+    "original_sha256": "e2f4511dea151b603db18950f3a7f9168288489b76cbcda3a5f536f379f03279",
+    "original_bytes": 3312,
+    "archived_sha256": "e2f4511dea151b603db18950f3a7f9168288489b76cbcda3a5f536f379f03279",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/kad-policy.json",
+    "archived": "historical/reference-code/configs/kad-policy.json",
+    "original_sha256": "d65c2400dd3c910bdcbf49924b03412488f53ba97adeb28911cbc389dba63ff3",
+    "original_bytes": 3653,
+    "archived_sha256": "d65c2400dd3c910bdcbf49924b03412488f53ba97adeb28911cbc389dba63ff3",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/research-extension.json",
+    "archived": "historical/reference-code/configs/research-extension.json",
+    "original_sha256": "63077243fae61880180e87724b3cde70f410682d54e3830c19902b5ba96de2d4",
+    "original_bytes": 979,
+    "archived_sha256": "63077243fae61880180e87724b3cde70f410682d54e3830c19902b5ba96de2d4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/sm120-fa4-best-practice.json",
+    "archived": "historical/reference-code/configs/sm120-fa4-best-practice.json",
+    "original_sha256": "52d1bcdb7e5c23a77b138318da06a0be7898baf379ac0637da65488d71212ced",
+    "original_bytes": 4058,
+    "archived_sha256": "52d1bcdb7e5c23a77b138318da06a0be7898baf379ac0637da65488d71212ced",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/rsi-versions.json",
+    "archived": "historical/reference-code/configs/rsi-versions.json",
+    "original_sha256": "3cb1c49ca139057186c015ac27003c053fa49a614ffa28a0275001a869452605",
+    "original_bytes": 421,
+    "archived_sha256": "3cb1c49ca139057186c015ac27003c053fa49a614ffa28a0275001a869452605",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/upstreams.json",
+    "archived": "historical/reference-code/configs/upstreams.json",
+    "original_sha256": "022874d4d86544c6912c7b7d907637a3e515fc7d5d7f0b1f7a695532d8e21bdc",
+    "original_bytes": 195,
+    "archived_sha256": "022874d4d86544c6912c7b7d907637a3e515fc7d5d7f0b1f7a695532d8e21bdc",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/configs/final-confirmation-protocol.json",
+    "archived": "historical/reference-code/configs/final-confirmation-protocol.json",
+    "original_sha256": "d200023982347f639decb581e4ea8103a601c8516937c7690f0730e9a0470ad5",
+    "original_bytes": 1166,
+    "archived_sha256": "d200023982347f639decb581e4ea8103a601c8516937c7690f0730e9a0470ad5",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/implementations-comparison.md",
+    "archived": "historical/e2e/implementations-comparison.md",
+    "original_sha256": "d898802b1e16d153541902b85ec4e206bec2c8eeca8c8997ddadc783cc7f4cf2",
+    "original_bytes": 11381,
+    "archived_sha256": "d898802b1e16d153541902b85ec4e206bec2c8eeca8c8997ddadc783cc7f4cf2",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/ncu-analysis.md",
+    "archived": "historical/e2e/ncu-analysis.md",
+    "original_sha256": "d70aa60024291a52e5d2e47eaf81b1dbe7bd2a0a480cdad3f86e85cb602472d4",
+    "original_bytes": 2486,
+    "archived_sha256": "d70aa60024291a52e5d2e47eaf81b1dbe7bd2a0a480cdad3f86e85cb602472d4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/project-status-v3.md",
+    "archived": "historical/e2e/project-status-v3.md",
+    "original_sha256": "3a4098cae51ed73163908ad79fe3dd8234f0629f12b35d43bceb1442e100847c",
+    "original_bytes": 5292,
+    "archived_sha256": "3a4098cae51ed73163908ad79fe3dd8234f0629f12b35d43bceb1442e100847c",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/e2e-results.md",
+    "archived": "historical/e2e/e2e-results.md",
+    "original_sha256": "072b99e07dbad9fa748c1e5d527b58b8de2c0e059a896f7b3f91a17d403feb38",
+    "original_bytes": 1945,
+    "archived_sha256": "072b99e07dbad9fa748c1e5d527b58b8de2c0e059a896f7b3f91a17d403feb38",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/CONTINUE.md",
+    "archived": "historical/e2e/CONTINUE.md",
+    "original_sha256": "cdbfcf3927380abaecd4aa04557fa945e51aec8ac9d60bc9be615bed15af3166",
+    "original_bytes": 36957,
+    "archived_sha256": "cdbfcf3927380abaecd4aa04557fa945e51aec8ac9d60bc9be615bed15af3166",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/e2e-results-partial.md",
+    "archived": "historical/e2e/e2e-results-partial.md",
+    "original_sha256": "99c1c850f2da53e18268724672ea3dd483411daaf4941e9567baf9a05bfa54a4",
+    "original_bytes": 1872,
+    "archived_sha256": "99c1c850f2da53e18268724672ea3dd483411daaf4941e9567baf9a05bfa54a4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/backends-comparison.md",
+    "archived": "historical/e2e/backends-comparison.md",
+    "original_sha256": "eb6a2a6217e3548bb4d070f74344c3610d0c7b140b732f8523c66f92073546a8",
+    "original_bytes": 12651,
+    "archived_sha256": "eb6a2a6217e3548bb4d070f74344c3610d0c7b140b732f8523c66f92073546a8",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-r5/summary.csv",
+    "archived": "historical/e2e/eat-kda-e2e-20261119-r5/summary.csv",
+    "original_sha256": "e79b3e7126f00ac3190ef437972f8257834136432a6481baa57f90092a3ab47a",
+    "original_bytes": 4757,
+    "archived_sha256": "e79b3e7126f00ac3190ef437972f8257834136432a6481baa57f90092a3ab47a",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-r5/REPORT.md",
+    "archived": "historical/e2e/eat-kda-e2e-20261119-r5/REPORT.md",
+    "original_sha256": "b57e673820009d369b08cd4b44c73082076a78b166f90e35348aae03dcd76861",
+    "original_bytes": 3783,
+    "archived_sha256": "b57e673820009d369b08cd4b44c73082076a78b166f90e35348aae03dcd76861",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-r4/REPORT.md",
+    "archived": "historical/e2e/eat-kda-e2e-20261119-r4/REPORT.md",
+    "original_sha256": "0033a2a23120b0a27c15848391263cb1e8b5b81c03598d362b1e716beac128d4",
+    "original_bytes": 475,
+    "archived_sha256": "0033a2a23120b0a27c15848391263cb1e8b5b81c03598d362b1e716beac128d4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-qwen-r6/summary.csv",
+    "archived": "historical/e2e/eat-kda-e2e-20261119-qwen-r6/summary.csv",
+    "original_sha256": "8fd95378dcd96afa32d1ddc27ba7ccdd40f9969b078e982d96fd5e44082429a3",
+    "original_bytes": 825,
+    "archived_sha256": "8fd95378dcd96afa32d1ddc27ba7ccdd40f9969b078e982d96fd5e44082429a3",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-qwen-r6/REPORT.md",
+    "archived": "historical/e2e/eat-kda-e2e-20261119-qwen-r6/REPORT.md",
+    "original_sha256": "41abeddbfd9a2a2b8f2b2e5631de6ec608b2a8a294999c11f5a3e34d790380ad",
+    "original_bytes": 708,
+    "archived_sha256": "41abeddbfd9a2a2b8f2b2e5631de6ec608b2a8a294999c11f5a3e34d790380ad",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-final/qwen-profile-prefill-rechecks.csv",
+    "archived": "historical/e2e/eat-kda-e2e-20261119-final/qwen-profile-prefill-rechecks.csv",
+    "original_sha256": "e3f5000f08b7dc4f76dd7f239fa97f4a4acbec2079d53959b76c845fda84391d",
+    "original_bytes": 844,
+    "archived_sha256": "e3f5000f08b7dc4f76dd7f239fa97f4a4acbec2079d53959b76c845fda84391d",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-final/historical-kda.csv",
+    "archived": "historical/e2e/eat-kda-e2e-20261119-final/historical-kda.csv",
+    "original_sha256": "1e8e86ebd7d61c6ad4c54d6d33f9656ece6c97dceabd8b0254919d1792286cae",
+    "original_bytes": 1772,
+    "archived_sha256": "1e8e86ebd7d61c6ad4c54d6d33f9656ece6c97dceabd8b0254919d1792286cae",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-final/REPORT.md",
+    "archived": "historical/e2e/eat-kda-e2e-20261119-final/REPORT.md",
+    "original_sha256": "0acc6d86ea7f6f06dbeccf06fcd25e478ff95c7a6fb10c3464174844456ae8dd",
+    "original_bytes": 12660,
+    "archived_sha256": "0acc6d86ea7f6f06dbeccf06fcd25e478ff95c7a6fb10c3464174844456ae8dd",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-final/comparison.csv",
+    "archived": "historical/e2e/eat-kda-e2e-20261119-final/comparison.csv",
+    "original_sha256": "28c0ec2d33af00190e0d410ba90db71cadb47e9475ebd7016eea0cde42068a6d",
+    "original_bytes": 13896,
+    "archived_sha256": "28c0ec2d33af00190e0d410ba90db71cadb47e9475ebd7016eea0cde42068a6d",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261111/all-results-with-fa2.csv",
+    "archived": "historical/e2e/six-scene-throughput-20261111/all-results-with-fa2.csv",
+    "original_sha256": "a1288e6c99e837518cffe06475dc8d3ade83d29a801a464c541346d31061c618",
+    "original_bytes": 8848,
+    "archived_sha256": "a1288e6c99e837518cffe06475dc8d3ade83d29a801a464c541346d31061c618",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261111/summary-final-attention.md",
+    "archived": "historical/e2e/six-scene-throughput-20261111/summary-final-attention.md",
+    "original_sha256": "8b8a8c6e82aa96209c393002f31d7c2dae592d9f52bf080c6cd56e68e271dd00",
+    "original_bytes": 2158,
+    "archived_sha256": "8b8a8c6e82aa96209c393002f31d7c2dae592d9f52bf080c6cd56e68e271dd00",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261111/all-results.csv",
+    "archived": "historical/e2e/six-scene-throughput-20261111/all-results.csv",
+    "original_sha256": "d770d8cc601dba194a03f364bb996a1d336e60bcecc37bba4399574aa62cf3a8",
+    "original_bytes": 7435,
+    "archived_sha256": "d770d8cc601dba194a03f364bb996a1d336e60bcecc37bba4399574aa62cf3a8",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261111/summary.md",
+    "archived": "historical/e2e/six-scene-throughput-20261111/summary.md",
+    "original_sha256": "29615410f54f92dd9ef23df7f43aaced6bab3bfc1daac0e027426fef8ab053d8",
+    "original_bytes": 2043,
+    "archived_sha256": "29615410f54f92dd9ef23df7f43aaced6bab3bfc1daac0e027426fef8ab053d8",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261111/summary-with-fa2.md",
+    "archived": "historical/e2e/six-scene-throughput-20261111/summary-with-fa2.md",
+    "original_sha256": "d277e4a05008acbf5028214fe7445501c8a65457a7dc7452f610085b9467101b",
+    "original_bytes": 2318,
+    "archived_sha256": "d277e4a05008acbf5028214fe7445501c8a65457a7dc7452f610085b9467101b",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261111/all-results-final-attention.csv",
+    "archived": "historical/e2e/six-scene-throughput-20261111/all-results-final-attention.csv",
+    "original_sha256": "8a2f28bf9561d9b1ec014ccdccc2adf17292b5092b1f01012ed5b7f208d1f6c1",
+    "original_bytes": 8850,
+    "archived_sha256": "8a2f28bf9561d9b1ec014ccdccc2adf17292b5092b1f01012ed5b7f208d1f6c1",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261112/v412-vs-pr-qwen.md",
+    "archived": "historical/e2e/six-scene-throughput-20261112/v412-vs-pr-qwen.md",
+    "original_sha256": "6b61ff8755416e7b0efe998a2764863bc66549ec0fe4784ba90baf08fdcaa687",
+    "original_bytes": 1021,
+    "archived_sha256": "6b61ff8755416e7b0efe998a2764863bc66549ec0fe4784ba90baf08fdcaa687",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261112/v412-vs-pr-muse.md",
+    "archived": "historical/e2e/six-scene-throughput-20261112/v412-vs-pr-muse.md",
+    "original_sha256": "d43f92587cc7ab274e98bfa722b8f73d4ad703b1a2a04dee1ee360e3ede025c3",
+    "original_bytes": 831,
+    "archived_sha256": "d43f92587cc7ab274e98bfa722b8f73d4ad703b1a2a04dee1ee360e3ede025c3",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261114/eat-vs-pr3901-final2-qwen-muse-six-scene.md",
+    "archived": "historical/e2e/six-scene-throughput-20261114/eat-vs-pr3901-final2-qwen-muse-six-scene.md",
+    "original_sha256": "e06db81c64f215cde9f79c7c0858eafab671e771f87953e92266243ab3930636",
+    "original_bytes": 1125,
+    "archived_sha256": "e06db81c64f215cde9f79c7c0858eafab671e771f87953e92266243ab3930636",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261114/eat-vs-pr3901-fresh-qwen-muse-six-scene.md",
+    "archived": "historical/e2e/six-scene-throughput-20261114/eat-vs-pr3901-fresh-qwen-muse-six-scene.md",
+    "original_sha256": "7e4e695f7309da762f27b356aac572de01112f291041760f3b9002644d39b07b",
+    "original_bytes": 1370,
+    "archived_sha256": "7e4e695f7309da762f27b356aac572de01112f291041760f3b9002644d39b07b",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261114/eat-vs-pr3901-final-qwen-muse-six-scene.md",
+    "archived": "historical/e2e/six-scene-throughput-20261114/eat-vs-pr3901-final-qwen-muse-six-scene.md",
+    "original_sha256": "ed6fa5b7d58c03abb68d49de8e0151c1fc21003ebe786f5cc18c26cf02f8c5f3",
+    "original_bytes": 3218,
+    "archived_sha256": "ed6fa5b7d58c03abb68d49de8e0151c1fc21003ebe786f5cc18c26cf02f8c5f3",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261114/pr3901-vs-v412-fresh-qwen-muse-six-scene.md",
+    "archived": "historical/e2e/six-scene-throughput-20261114/pr3901-vs-v412-fresh-qwen-muse-six-scene.md",
+    "original_sha256": "8586af0c698be25493ffb29a49a0831d9b15f18d5fdca99771ad1bc0bac236df",
+    "original_bytes": 1420,
+    "archived_sha256": "8586af0c698be25493ffb29a49a0831d9b15f18d5fdca99771ad1bc0bac236df",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261114/pr3901-vs-current-six-scene.md",
+    "archived": "historical/e2e/six-scene-throughput-20261114/pr3901-vs-current-six-scene.md",
+    "original_sha256": "64d5bbafe85c7f37dae926ab71879973ee1dbed201b090e45267e190c9b25e40",
+    "original_bytes": 1432,
+    "archived_sha256": "64d5bbafe85c7f37dae926ab71879973ee1dbed201b090e45267e190c9b25e40",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261115/service-profile-findings.md",
+    "archived": "historical/e2e/six-scene-throughput-20261115/service-profile-findings.md",
+    "original_sha256": "f36233d8208d6caf9899b1b71e8c336c34c77fc02dbd319405cc2a03a96a1d3f",
+    "original_bytes": 24185,
+    "archived_sha256": "f36233d8208d6caf9899b1b71e8c336c34c77fc02dbd319405cc2a03a96a1d3f",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/six-scene-throughput-20261115/kda-profile-optimization.md",
+    "archived": "historical/e2e/six-scene-throughput-20261115/kda-profile-optimization.md",
+    "original_sha256": "9b5051ac7725839bdf50fa6a0f27b4a7a57bb00bd1e4c21b84f688f899ca6931",
+    "original_bytes": 2683,
+    "archived_sha256": "9b5051ac7725839bdf50fa6a0f27b4a7a57bb00bd1e4c21b84f688f899ca6931",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/hardware/gpu0.txt",
+    "archived": "provenance/hardware/gpu0.txt",
+    "original_sha256": "98c0fec1191bdbbe23aab47cb7e67973f8cdb65601ef769a2ed40170699b6c23",
+    "original_bytes": 15591,
+    "archived_sha256": "98c0fec1191bdbbe23aab47cb7e67973f8cdb65601ef769a2ed40170699b6c23",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/research/projects.json",
+    "archived": "provenance/research/projects.json",
+    "original_sha256": "d3e7a67b648b128dec502314d35a4c4ef683fa0206d951132cdc4596c4adacaa",
+    "original_bytes": 18347,
+    "archived_sha256": "d3e7a67b648b128dec502314d35a4c4ef683fa0206d951132cdc4596c4adacaa",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/research/fa4-pro6000-sm12x-20261108/documents/doc-fa4-pr3109.json",
+    "archived": "provenance/research/doc-fa4-pr3109.json",
+    "original_sha256": "a55cc170cf9588705be9e7ea182d7c78b41870add7a6f664671dbf337c2718b3",
+    "original_bytes": 25645,
+    "archived_sha256": "a55cc170cf9588705be9e7ea182d7c78b41870add7a6f664671dbf337c2718b3",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/research/fa4-pro6000-sm12x-20261108/documents/doc-fa4-pr3132.json",
+    "archived": "provenance/research/doc-fa4-pr3132.json",
+    "original_sha256": "ed6be15030bcc4b690ae686c8b0c5c2e012cbc2f27f837ffbcc6269376c9c412",
+    "original_bytes": 22121,
+    "archived_sha256": "ed6be15030bcc4b690ae686c8b0c5c2e012cbc2f27f837ffbcc6269376c9c412",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/explain-profile-progress.json",
+    "archived": "reports/sm80/explain-profile-progress.json",
+    "original_sha256": "87a8b88b83cffa242a4e5d060e8c0f6d1f26b581a141b6d3734120b6a5fbca2c",
+    "original_bytes": 7106,
+    "archived_sha256": "87a8b88b83cffa242a4e5d060e8c0f6d1f26b581a141b6d3734120b6a5fbca2c",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/graph-SM-proof.json",
+    "archived": "reports/sm80/graph-SM-proof.json",
+    "original_sha256": "d4674e1dc0a1c460e3d0fe99f2aa5809ea8c1219eb66fb39286e59343664e7ab",
+    "original_bytes": 2964,
+    "archived_sha256": "d4674e1dc0a1c460e3d0fe99f2aa5809ea8c1219eb66fb39286e59343664e7ab",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/cases.json",
+    "archived": "reports/sm80/cases.json",
+    "original_sha256": "df2c715b3f256441b936f72f7cb495bf4d3ebf8918dc5f0eb6fabf8e527c80cf",
+    "original_bytes": 163783,
+    "archived_sha256": "df2c715b3f256441b936f72f7cb495bf4d3ebf8918dc5f0eb6fabf8e527c80cf",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/source-manifest.json",
+    "archived": "reports/sm80/source-manifest.json",
+    "original_sha256": "ee950954aee3665aa57a738bf086c4dec5cc34c7493b0eabcef19b2a51457c69",
+    "original_bytes": 8223,
+    "archived_sha256": "ee950954aee3665aa57a738bf086c4dec5cc34c7493b0eabcef19b2a51457c69",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/environment.json",
+    "archived": "reports/sm80/environment.json",
+    "original_sha256": "8f8dcae85037af7677ccbdc902ce2a57442edf4c6530ff3c308d03518d691759",
+    "original_bytes": 2906,
+    "archived_sha256": "8f8dcae85037af7677ccbdc902ce2a57442edf4c6530ff3c308d03518d691759",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/decode-profile-progress.json",
+    "archived": "reports/sm80/decode-profile-progress.json",
+    "original_sha256": "48e46e274fe2ba6ba7a455ce7f889520b809f3167274a2c92f66db1db9ac4a2a",
+    "original_bytes": 199080,
+    "archived_sha256": "48e46e274fe2ba6ba7a455ce7f889520b809f3167274a2c92f66db1db9ac4a2a",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/decode-timings.json",
+    "archived": "reports/sm80/decode-timings.json",
+    "original_sha256": "9727b092ef1120244c8bd57b368fac40115d1a162eb32cc7398570fe241f6806",
+    "original_bytes": 307564,
+    "archived_sha256": "9727b092ef1120244c8bd57b368fac40115d1a162eb32cc7398570fe241f6806",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/decode-profile-SM-proof.json",
+    "archived": "reports/sm80/decode-profile-SM-proof.json",
+    "original_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "original_bytes": 2954,
+    "archived_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/forward-SM-proof.json",
+    "archived": "reports/sm80/forward-SM-proof.json",
+    "original_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "original_bytes": 2954,
+    "archived_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/REPORT.html",
+    "archived": "reports/sm80/REPORT.html",
+    "original_sha256": "78d8396e36ab01752e134d30c664ed8d386a2f72a0ee570b7e8d0208d563e1de",
+    "original_bytes": 91564,
+    "archived_sha256": "d15db6a1182058569edd7aa0c7cad9a244bf6573130b630a15a8d6d5a5c8f742",
+    "modified_for_archive": true
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/EXPLANATION.html",
+    "archived": "reports/sm80/EXPLANATION.html",
+    "original_sha256": "f4d2ec743400355d32c7f05b59241783a7e8a2ee0d2d4dde2f82375701fb5fd5",
+    "original_bytes": 10403,
+    "archived_sha256": "baf594edf319e449b56b631f0be6d338798a76f1c937ea51686647a7f610cece",
+    "modified_for_archive": true
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/forward-profile-SM-proof.json",
+    "archived": "reports/sm80/forward-profile-SM-proof.json",
+    "original_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "original_bytes": 2954,
+    "archived_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/decode-SM-proof.json",
+    "archived": "reports/sm80/decode-SM-proof.json",
+    "original_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "original_bytes": 2954,
+    "archived_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/forward-profile-progress.json",
+    "archived": "reports/sm80/forward-profile-progress.json",
+    "original_sha256": "4b1a0973b9c44db6125e0a0bf14f79a18cbd3216711012809fd3687646e8f332",
+    "original_bytes": 147850,
+    "archived_sha256": "4b1a0973b9c44db6125e0a0bf14f79a18cbd3216711012809fd3687646e8f332",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/explain-profile-SM-proof.json",
+    "archived": "reports/sm80/explain-profile-SM-proof.json",
+    "original_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "original_bytes": 2954,
+    "archived_sha256": "0e7289712be3286b980cd3f10f5b63257eba94f82ba95cb1cbf35b3802369c44",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/forward-timings.json",
+    "archived": "reports/sm80/forward-timings.json",
+    "original_sha256": "42daa406c6c334697a83b27e8cdb1b4c0d66ddfe850336fbccd1fdecb4887187",
+    "original_bytes": 291784,
+    "archived_sha256": "42daa406c6c334697a83b27e8cdb1b4c0d66ddfe850336fbccd1fdecb4887187",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/explanation-cases.json",
+    "archived": "reports/sm80/explanation-cases.json",
+    "original_sha256": "f2a2b783aa957285a42b43aa54089f42855e5945a9e6e18b34f8b1125f3d1e26",
+    "original_bytes": 3294,
+    "archived_sha256": "f2a2b783aa957285a42b43aa54089f42855e5945a9e6e18b34f8b1125f3d1e26",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/groups.csv",
+    "archived": "reports/sm80/analysis/groups.csv",
+    "original_sha256": "969916e737f4877c385ec0723277ee30a5b93122b510f02943fa083c94e27741",
+    "original_bytes": 3460,
+    "archived_sha256": "969916e737f4877c385ec0723277ee30a5b93122b510f02943fa083c94e27741",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/representative10-helpers-comparison.csv",
+    "archived": "reports/sm80/analysis/representative10-helpers-comparison.csv",
+    "original_sha256": "d8503c80acd51b680cc3f4e707c107130205eb0c6e88021bf2b1d512f2f2fc07",
+    "original_bytes": 1310,
+    "archived_sha256": "d8503c80acd51b680cc3f4e707c107130205eb0c6e88021bf2b1d512f2f2fc07",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/cta-comparison.json",
+    "archived": "reports/sm80/analysis/cta-comparison.json",
+    "original_sha256": "6b9615e631c1376e889a76f382b4705ff98070a826269c878aca7f0806d0de1e",
+    "original_bytes": 281397,
+    "archived_sha256": "6b9615e631c1376e889a76f382b4705ff98070a826269c878aca7f0806d0de1e",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/explanation-main.csv",
+    "archived": "reports/sm80/analysis/explanation-main.csv",
+    "original_sha256": "dda897a2acd08523f88bc5a9dd22af4aebb8e42950168eedf6911e54c2ebdde1",
+    "original_bytes": 7872,
+    "archived_sha256": "dda897a2acd08523f88bc5a9dd22af4aebb8e42950168eedf6911e54c2ebdde1",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/comparison.json",
+    "archived": "reports/sm80/analysis/comparison.json",
+    "original_sha256": "c15bcca49deeded4bbd7296763dd8adf0de50d118c9e5db601267c79fbd37946",
+    "original_bytes": 685145,
+    "archived_sha256": "c15bcca49deeded4bbd7296763dd8adf0de50d118c9e5db601267c79fbd37946",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/kernels.csv",
+    "archived": "reports/sm80/analysis/kernels.csv",
+    "original_sha256": "388dc5e54d1c3c01dce60c6bad931d5ae56200ec126527fd23416c0702330fb4",
+    "original_bytes": 602614,
+    "archived_sha256": "388dc5e54d1c3c01dce60c6bad931d5ae56200ec126527fd23416c0702330fb4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/groups.json",
+    "archived": "reports/sm80/analysis/groups.json",
+    "original_sha256": "a288ecc7c2e9d9091ffcd0ee08ac581bbb8bbb8d80856d8cde28022912f7d7d9",
+    "original_bytes": 11678,
+    "archived_sha256": "a288ecc7c2e9d9091ffcd0ee08ac581bbb8bbb8d80856d8cde28022912f7d7d9",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/explanation-kernels.json",
+    "archived": "reports/sm80/analysis/explanation-kernels.json",
+    "original_sha256": "3e395040c8af46b0ae5e7000fa32389ed14b6d065809f46e301d91fa428eced4",
+    "original_bytes": 28720,
+    "archived_sha256": "3e395040c8af46b0ae5e7000fa32389ed14b6d065809f46e301d91fa428eced4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/explanation-summary.json",
+    "archived": "reports/sm80/analysis/explanation-summary.json",
+    "original_sha256": "83ebadea1e3bcb7274058fda170db8b0692e542a20d8685c2776e77d4dff040d",
+    "original_bytes": 3053,
+    "archived_sha256": "83ebadea1e3bcb7274058fda170db8b0692e542a20d8685c2776e77d4dff040d",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/representative10-timing.csv",
+    "archived": "reports/sm80/analysis/representative10-timing.csv",
+    "original_sha256": "4b07e170a1a5b284325302ea9e5d16602b64992886f3ca14eaa64cad5efc727a",
+    "original_bytes": 1403,
+    "archived_sha256": "4b07e170a1a5b284325302ea9e5d16602b64992886f3ca14eaa64cad5efc727a",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/validation.json",
+    "archived": "reports/sm80/analysis/validation.json",
+    "original_sha256": "732c8ecf7adecc14c14d39a6c2f1e771dfe6a4e664a295267bf27f575f4e511b",
+    "original_bytes": 1102,
+    "archived_sha256": "732c8ecf7adecc14c14d39a6c2f1e771dfe6a4e664a295267bf27f575f4e511b",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/kernels.json",
+    "archived": "reports/sm80/analysis/kernels.json",
+    "original_sha256": "618011acd93a1e98f1dab7039e200f5a8adb528ee6f45b38f141d308bf399e70",
+    "original_bytes": 2393060,
+    "archived_sha256": "618011acd93a1e98f1dab7039e200f5a8adb528ee6f45b38f141d308bf399e70",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/cta-comparison.csv",
+    "archived": "reports/sm80/analysis/cta-comparison.csv",
+    "original_sha256": "10b089119b936e0a7888af2eafac213e13f733a8122ce1ae5c49d1621ece532a",
+    "original_bytes": 44585,
+    "archived_sha256": "10b089119b936e0a7888af2eafac213e13f733a8122ce1ae5c49d1621ece532a",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/representative10-helpers.csv",
+    "archived": "reports/sm80/analysis/representative10-helpers.csv",
+    "original_sha256": "14197f3d836d10801abe55a4cf4a86ba3b394abbe41678c7437bcc1e326ef446",
+    "original_bytes": 1712,
+    "archived_sha256": "14197f3d836d10801abe55a4cf4a86ba3b394abbe41678c7437bcc1e326ef446",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/analysis/comparison.csv",
+    "archived": "reports/sm80/analysis/comparison.csv",
+    "original_sha256": "75918411e2408bba938b9aea1885577ab7978d689963faa9d4e0bc0bddb3a8d4",
+    "original_bytes": 142555,
+    "archived_sha256": "75918411e2408bba938b9aea1885577ab7978d689963faa9d4e0bc0bddb3a8d4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-registers-20261123/source-manifest.json",
+    "archived": "provenance/pr3109-source-manifest.json",
+    "original_sha256": "ee950954aee3665aa57a738bf086c4dec5cc34c7493b0eabcef19b2a51457c69",
+    "original_bytes": 8223,
+    "archived_sha256": "ee950954aee3665aa57a738bf086c4dec5cc34c7493b0eabcef19b2a51457c69",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-20261123/cases.json",
+    "archived": "cases/representative10.json",
+    "original_sha256": "2a7f26e6540ed08bddce5146720adb4cf642b1aa767a504fcb6f707e47875f25",
+    "original_bytes": 5072,
+    "archived_sha256": "2a7f26e6540ed08bddce5146720adb4cf642b1aa767a504fcb6f707e47875f25",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/optimization/pr3109-forward-grid-v48/cases.json",
+    "archived": "cases/forward.json",
+    "original_sha256": "449987d940d8a7ca04d310feabe9cfd1c39be9eddcf765026b84a69cfdff8076",
+    "original_bytes": 50913,
+    "archived_sha256": "449987d940d8a7ca04d310feabe9cfd1c39be9eddcf765026b84a69cfdff8076",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/optimization/pr3109-full-decode-v96/decode-cases.json",
+    "archived": "cases/decode.json",
+    "original_sha256": "0579e018d591516bceaeb20aae4a4118c9c1132f0e33e0ed72c97bd02c4005ee",
+    "original_bytes": 128635,
+    "archived_sha256": "0579e018d591516bceaeb20aae4a4118c9c1132f0e33e0ed72c97bd02c4005ee",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/cases.json",
+    "archived": "cases/full285.json",
+    "original_sha256": "df2c715b3f256441b936f72f7cb495bf4d3ebf8918dc5f0eb6fabf8e527c80cf",
+    "original_bytes": 163783,
+    "archived_sha256": "df2c715b3f256441b936f72f7cb495bf4d3ebf8918dc5f0eb6fabf8e527c80cf",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/paper/FA4-SM120-Research-v1.pdf",
+    "archived": "papers/historical-research-v1.pdf",
+    "original_sha256": "adccd0a16652eda38ba1f2cae6a2ccc3444714cbe2fb413031059c94b129b44b",
+    "original_bytes": 367053,
+    "archived_sha256": "adccd0a16652eda38ba1f2cae6a2ccc3444714cbe2fb413031059c94b129b44b",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/paper/FA4-SM120-Final-v2.pdf",
+    "archived": "papers/historical-final-v2.pdf",
+    "original_sha256": "ad93d0805cfe1d1abac9abaa93cd9ac8e701ebf92a37402dc35082876ed8cad2",
+    "original_bytes": 406006,
+    "archived_sha256": "ad93d0805cfe1d1abac9abaa93cd9ac8e701ebf92a37402dc35082876ed8cad2",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/paper/FA4-SM120-Final-v2-LaTeX.zip",
+    "archived": "papers/historical-final-v2-LaTeX.zip",
+    "original_sha256": "93d01ef6fb7c229a0004273b661bed81f42f1aa586d14df09659499a4766c83e",
+    "original_bytes": 1261324,
+    "archived_sha256": "93d01ef6fb7c229a0004273b661bed81f42f1aa586d14df09659499a4766c83e",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/paper/FA4-SM120-Comparisons-Final-v4.pdf",
+    "archived": "papers/historical-comparisons-v4.pdf",
+    "original_sha256": "c58a460ca608c1e9228e103b895c1aa161ba010f2d2354414d46244a3da819ec",
+    "original_bytes": 443744,
+    "archived_sha256": "c58a460ca608c1e9228e103b895c1aa161ba010f2d2354414d46244a3da819ec",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/v3/paper/FA4-SM120-Comparisons-Final-v4-LaTeX.zip",
+    "archived": "papers/historical-comparisons-v4-LaTeX.zip",
+    "original_sha256": "aa560082702abeefccf1d0413e7849eff1b564a3dc079a9555dca357600ceb88",
+    "original_bytes": 271887,
+    "archived_sha256": "aa560082702abeefccf1d0413e7849eff1b564a3dc079a9555dca357600ceb88",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/optimization/pr3109-integrated-paper-v140/paper-001/main.pdf",
+    "archived": "papers/pr3109-development-v140.pdf",
+    "original_sha256": "fa72203d774db4ec9fb3d095e366de60ec62ba469ef58f71ecb415299a7d55bb",
+    "original_bytes": 204218,
+    "archived_sha256": "fa72203d774db4ec9fb3d095e366de60ec62ba469ef58f71ecb415299a7d55bb",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/optimization/pr3109-integrated-paper-v140/paper-001-sources.zip",
+    "archived": "papers/pr3109-development-v140-LaTeX.zip",
+    "original_sha256": "7ef637905f1aa0364fcb7193411a956df908a55889b3aaa8fab31c9ecd190d4d",
+    "original_bytes": 77281,
+    "archived_sha256": "7ef637905f1aa0364fcb7193411a956df908a55889b3aaa8fab31c9ecd190d4d",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/optimization/pr3109-integrated-paper-v140/deliverable-audit-001.json",
+    "archived": "papers/pr3109-development-v140-scope.json",
+    "original_sha256": "27d753179031f9d076cbe5e7ce059e6480d5052d23235615c38a346e15762931",
+    "original_bytes": 1088,
+    "archived_sha256": "27d753179031f9d076cbe5e7ce059e6480d5052d23235615c38a346e15762931",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-pingpong-timeline.md",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-pingpong-timeline.md",
+    "original_sha256": "255d6c6771e394625dd52e24723b8fab978841b612b83f1e750a7f27690e73f3",
+    "original_bytes": 6140,
+    "archived_sha256": "255d6c6771e394625dd52e24723b8fab978841b612b83f1e750a7f27690e73f3",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/FA4-FP8-to-V412-crosswalk.md",
+    "archived": "knowledge/pipeline-reference/FA4-FP8-to-V412-crosswalk.md",
+    "original_sha256": "fa92f898ccc3026dc399e91f6b89de23c87c4f46cb329d9871e8cbd684bd8fa1",
+    "original_bytes": 2383,
+    "archived_sha256": "fa92f898ccc3026dc399e91f6b89de23c87c4f46cb329d9871e8cbd684bd8fa1",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-pcsamp-stage-attribution.json",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-pcsamp-stage-attribution.json",
+    "original_sha256": "3c149b07b6969f5a83f8d9c6dfe6a35a2475319ee4440a5514409e94a83ce812",
+    "original_bytes": 4781,
+    "archived_sha256": "3c149b07b6969f5a83f8d9c6dfe6a35a2475319ee4440a5514409e94a83ce812",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-stall-and-stage-instrumentation.md",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-stall-and-stage-instrumentation.md",
+    "original_sha256": "fc58241901468f7674d0618994b4b72db069abc0fd935306f270666905ca6258",
+    "original_bytes": 2764,
+    "archived_sha256": "fc58241901468f7674d0618994b4b72db069abc0fd935306f270666905ca6258",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-pingpong-timeline-evidence.json",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-pingpong-timeline-evidence.json",
+    "original_sha256": "932508b3f6761aa223cb186f809f26045e208359c8873413e1cf88896c780d20",
+    "original_bytes": 3636,
+    "archived_sha256": "932508b3f6761aa223cb186f809f26045e208359c8873413e1cf88896c780d20",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-stall-decode-gqa.json",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-stall-decode-gqa.json",
+    "original_sha256": "64dc7c0b712b5b362c2deed843ae2db0501d188491e1b2ec1dd68eef2ccd87a4",
+    "original_bytes": 553,
+    "archived_sha256": "64dc7c0b712b5b362c2deed843ae2db0501d188491e1b2ec1dd68eef2ccd87a4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-stall-prefill-mha-s2k.json",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-stall-prefill-mha-s2k.json",
+    "original_sha256": "a70e56836a49a2be1fa413f3ec289457f1f5a5eedfe2e4e3d078d1bc1d86adad",
+    "original_bytes": 557,
+    "archived_sha256": "a70e56836a49a2be1fa413f3ec289457f1f5a5eedfe2e4e3d078d1bc1d86adad",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-ping-pong.svg",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-ping-pong.svg",
+    "original_sha256": "022825214753ac00143c2f779fd98ac13a5353b8effe4d6f834abf3743a13a41",
+    "original_bytes": 5266,
+    "archived_sha256": "022825214753ac00143c2f779fd98ac13a5353b8effe4d6f834abf3743a13a41",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-pingpong-timeline.svg",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-pingpong-timeline.svg",
+    "original_sha256": "75c0012c134bbb23324bfc21325725b11e4649fb21eb2483357148b8e12ea382",
+    "original_bytes": 7701,
+    "archived_sha256": "75c0012c134bbb23324bfc21325725b11e4649fb21eb2483357148b8e12ea382",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-ping-pong.md",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-ping-pong.md",
+    "original_sha256": "107cfb0f4051457b5087da61941c1ee67ecbe7a12d607b8337eb5a27756b4033",
+    "original_bytes": 349,
+    "archived_sha256": "107cfb0f4051457b5087da61941c1ee67ecbe7a12d607b8337eb5a27756b4033",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-stage-timing-prefill.json",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-stage-timing-prefill.json",
+    "original_sha256": "4ad3c0fdb9a17eb85f2811bbf1a43960e092e89e4adb7d6fe27849438da801d4",
+    "original_bytes": 1589,
+    "archived_sha256": "4ad3c0fdb9a17eb85f2811bbf1a43960e092e89e4adb7d6fe27849438da801d4",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/comparisons/knowledge/fa4-sm120-warp-timing.json",
+    "archived": "knowledge/pipeline-reference/fa4-sm120-warp-timing.json",
+    "original_sha256": "33639a4dd6b36419ac40e4640236c8a373d09fab0836b3379f32baabf0e4c2ef",
+    "original_bytes": 1177,
+    "archived_sha256": "33639a4dd6b36419ac40e4640236c8a373d09fab0836b3379f32baabf0e4c2ef",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/benchmarks/compare_bf16_source_forward.py",
+    "archived": "provenance/historical-runners/compare_bf16_source_forward.py",
+    "original_sha256": "411b15d41d07ccf1f67b575321e589010f9249c06c194b484157022effda8f27",
+    "original_bytes": 6685,
+    "archived_sha256": "411b15d41d07ccf1f67b575321e589010f9249c06c194b484157022effda8f27",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/benchmarks/compare_bf16_source_decode.py",
+    "archived": "provenance/historical-runners/compare_bf16_source_decode.py",
+    "original_sha256": "b66037cb5a2979f6bd559859cb1e2ce42293f936574451a1a7d0c13e2d045cff",
+    "original_bytes": 4024,
+    "archived_sha256": "b66037cb5a2979f6bd559859cb1e2ce42293f936574451a1a7d0c13e2d045cff",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/benchmarks/pr3132_fp8_full_forward.py",
+    "archived": "provenance/historical-runners/pr3132_fp8_full_forward.py",
+    "original_sha256": "8d054511b8d4062d3b33fd712da4f6c32d485033c075d178fdd082ffaf7275f9",
+    "original_bytes": 4650,
+    "archived_sha256": "8d054511b8d4062d3b33fd712da4f6c32d485033c075d178fdd082ffaf7275f9",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/benchmarks/pr3132_fp8_full_decode.py",
+    "archived": "provenance/historical-runners/pr3132_fp8_full_decode.py",
+    "original_sha256": "9621fa002a5cb945de94ca7033f17266b6e734d7026b979277ad2cc8eed4b7f9",
+    "original_bytes": 4369,
+    "archived_sha256": "9621fa002a5cb945de94ca7033f17266b6e734d7026b979277ad2cc8eed4b7f9",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/harness/experiment.py",
+    "archived": "provenance/sm80-runners/experiment.py",
+    "original_sha256": "c464bdf165dd671db3aa02c8b0964753305bf91d1006986f1ef7e539ea13e695",
+    "original_bytes": 4283,
+    "archived_sha256": "c464bdf165dd671db3aa02c8b0964753305bf91d1006986f1ef7e539ea13e695",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/harness/common.py",
+    "archived": "provenance/sm80-runners/common.py",
+    "original_sha256": "45073298084bc4d669965b08fb8a96d8f36575c34f07512e12826d78a85f434f",
+    "original_bytes": 2137,
+    "archived_sha256": "45073298084bc4d669965b08fb8a96d8f36575c34f07512e12826d78a85f434f",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/harness/green.cu",
+    "archived": "provenance/sm80-runners/green.cu",
+    "original_sha256": "56eef47275bdc8e902946333f34266b9325f37c6f51520a8d0ac6098e6b487a7",
+    "original_bytes": 1612,
+    "archived_sha256": "56eef47275bdc8e902946333f34266b9325f37c6f51520a8d0ac6098e6b487a7",
+    "modified_for_archive": false
+  },
+  {
+    "original": "projects/FA4/profile/pr3109-sm80-full285-20261123/harness/graph_proof.py",
+    "archived": "provenance/sm80-runners/graph_proof.py",
+    "original_sha256": "bd4ff4a106854ff80fd292b8a23d235b1945c8782aa6bec2959d98c3c747d94d",
+    "original_bytes": 986,
+    "archived_sha256": "bd4ff4a106854ff80fd292b8a23d235b1945c8782aa6bec2959d98c3c747d94d",
+    "modified_for_archive": false
+  }
+]

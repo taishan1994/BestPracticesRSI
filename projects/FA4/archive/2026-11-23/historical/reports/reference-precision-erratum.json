@@ -1,0 +1,9 @@
+{
+ "schema_version":1,"issue":"Container default float32 GEMM precision is high and allow_tf32=True; .float() alone did not guarantee strict FP32 math",
+ "observed_via":"docker exec bprsi-fa4-gpu0 python: torch.backends.cuda.matmul.allow_tf32 and torch.get_float32_matmul_precision",
+ "affected_scope":"Previous runs based on benchmarks/run.py reference and compatibility.py before explicit precision setting; their numerical checks are development evidence with unverified/TF32 reference precision, not strict FP32 qualification",
+ "preserved_evidence":["runs/screen.json","runs/screen-extended.json","runs/compatibility.json","runs/thad0ctor-screen.json","runs/nebius-paired.json","runs/synthesis-dev-reference-unverified.json"],
+ "correction":"Explicit highest/allow_tf32=False before reference creation; record readback in run environment; rerun numerical gates and source reproduction under fixed oracle. Thresholds unchanged",
+ "research_v1_note":"Published research edition local FP32-validation descriptions need this precision qualification; external author results remain their attributed claims. Final edition must include this erratum",
+ "release_implication":"No previous numerical success promotes a release without corrected current evidence"
+}

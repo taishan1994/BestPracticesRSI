@@ -1,0 +1,42 @@
+{
+  "source_commit": "064643897f27c3d7b2058743d9e4dbdbf0d66325",
+  "source": "../pr3109-registers-20261123/source/flash_attn",
+  "GPU": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "physical_SM": 188,
+  "restricted_SM": 80,
+  "restriction": "CUDA Green Context; resource count queried and hardware SM-ID probe verified",
+  "arms": [
+    "full188_auto",
+    "green80_fixed188",
+    "green80_auto"
+  ],
+  "fixed188_meaning": "Actual hardware restriction remains 80 SM; official FLASH_ATTENTION_NUM_SMS=188 environment override preserves baseline host planner input. This is an experimental control, not the default deployment configuration.",
+  "timing": "CUDA Graph, 10 attention calls per captured graph, 10 graph replays per timing sample (100 calls), 9 rounds with shuffled arm order, CUDA events, median per call",
+  "cache_policy": "warm replay; no explicit L2 flush; not directly comparable to original PR cold-cache decode numbers",
+  "clock_policy": "No host clock or power-limit changes; GPU clocks unlocked",
+  "correctness": "All arms use identical tensors within each case; finite and abs_diff <= 0.02 + 0.02*abs(reference)",
+  "profiling": "All cases, all three arms: LaunchStats + Occupancy + InstructionStats + local L1 sectors, separate profiler GPU; actual SM count verified per launch",
+  "interpretation": "Green Context restricts SM resources but retains the same GPU memory system. This experiment does not emulate every property of a physically smaller GPU or independently vary RF capacity at fixed compute resources.",
+  "timing_GPU_index": 1,
+  "timing_GPU_UUID": "GPU-a0eb5209-d614-f897-9ae0-2989eafa334d",
+  "profiling_GPU_index": 2,
+  "profiling_GPU_UUID": "GPU-29d9cab2-0bcb-f320-3844-5613ebea94be",
+  "case_count": 285,
+  "forward_cases": 165,
+  "decode_cases": 120,
+  "case_manifest_sha256": "df2c715b3f256441b936f72f7cb495bf4d3ebf8918dc5f0eb6fabf8e527c80cf",
+  "scope": "Existing reconstructed PR public-range inventory, not author original254 row identity or exhaustive combinations of optional features.",
+  "torch_version_from_container_banner": "2.11.0a0+a6c236b (NVIDIA Release 26.03)",
+  "NCU_version": "2025.4.1",
+  "harness_sha256": {
+    "profile.sh": "7492c980a3389685dc6af0b6b3ef8a5ea4fe8bbf6c50b0235af79fb0e3e14cc6",
+    "container.sh": "8d91b5049a8f9208908d6075d2e83115c1419edbcb3524502960b32ec502b527",
+    "common.py": "45073298084bc4d669965b08fb8a96d8f36575c34f07512e12826d78a85f434f",
+    "experiment.py": "c464bdf165dd671db3aa02c8b0964753305bf91d1006986f1ef7e539ea13e695",
+    "timing.sh": "fd62a448ebbdbc45ac772641b2b2f236a17b2ed08615b1388d14929789bf7365",
+    "green.cu": "56eef47275bdc8e902946333f34266b9325f37c6f51520a8d0ac6098e6b487a7",
+    "green.so": "97ebf6dec1f74bbdc5185a1bd8043138e74855b217afe114d2eb473fb2a02801"
+  },
+  "image_ID": "sha256:99adb5ffbb5bead2dd590e108bac7f3ffd727aa0f45b9a1375d587a56f37adbf",
+  "driver_version": "615.71.09"
+}

@@ -1,0 +1,5 @@
+references-local/
+archive/*/_sources/
+archive/*/_work/
+__pycache__/
+*.py[cod]

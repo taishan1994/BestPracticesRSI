@@ -1,0 +1,14 @@
+{
+  "status": "delivered-development-stage-PDF-not-final-optimization-release",
+  "PDF": "/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/optimization/pr3109-integrated-paper-v140/paper-001/main.pdf",
+  "PDF_sha256": "fa72203d774db4ec9fb3d095e366de60ec62ba469ef58f71ecb415299a7d55bb",
+  "LaTeX_archive": "/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/optimization/pr3109-integrated-paper-v140/paper-001-sources.zip",
+  "archive_sha256": "7ef637905f1aa0364fcb7193411a956df908a55889b3aaa8fab31c9ecd190d4d",
+  "pages": 3,
+  "template_sha256": "c28ea12947154998da11941023f2f06023240c03d7ebc326f8626609f7e779ea",
+  "full_grid_complete": false,
+  "source_sha256": {
+    "/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/optimization/pr3109-integrated-paper-v140/render-001.json": "1b769911d995f4f199a62f3179f0f2f5734ed65563539938d49cf58ec4d088fa",
+    "/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/optimization/pr3109-integrated-paper-v140/visual-review-001.json": "3fabe6daa6a9720558d7d639085ef1d85bc222210992f525acc9eeff756e6e7c"
+  }
+}

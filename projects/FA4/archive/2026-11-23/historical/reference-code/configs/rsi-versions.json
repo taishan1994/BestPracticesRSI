@@ -1,0 +1,13 @@
+{
+  "release": "operator-rsi-0.1.0",
+  "manifest_sha256": "837a8e60080b3c6793c45add94f419defa31b2321ce9830cd1ca3f41a4cd9c9c",
+  "components": {
+    "DeepResearchRSI": "implementation-survey-0.1.0",
+    "ReproduceRSI": [
+      "operator-evidence-0.1.0",
+      "operator-isolation-0.1.0"
+    ],
+    "OptimizationRSI": "operator-paired-0.1.0"
+  },
+  "selection": "opt-in for FA4 only; existing frozen model SLA unchanged"
+}

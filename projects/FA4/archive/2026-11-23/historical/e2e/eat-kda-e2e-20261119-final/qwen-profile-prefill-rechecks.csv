@@ -1,0 +1,4 @@
+scene,input_throughput,ttft_ms,throughput_speedup,greedy_exact_requests,artifact
+prefill-short-recheck1,3408.3470345628807,4222.192474146141,0.5126932268192027,7,/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-profile-warm-r9/Qwen3.8-27B-kda_profile/prefill-short-recheck1.json
+prefill-short-recheck2,6727.149489315039,1849.6234552003443,1.011916903999891,7,/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-profile-warm-r9/Qwen3.8-27B-kda_profile/prefill-short-recheck2.json
+prefill-short-recheck3,6696.531346364072,1859.01744174771,1.0073112361058771,7,/home/gob001915/compare/github/BestPracticesRSI/projects/FA4/comparisons/v3/reports/eat-kda-e2e-20261119-profile-warm-r9/Qwen3.8-27B-kda_profile/prefill-short-recheck3.json

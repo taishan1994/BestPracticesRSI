@@ -1,0 +1,3 @@
+使用DeepresearchRSI调研PRO 6000上部署和测试FA4，然后使用ReproduceRSI复现结果，最后用OptimizationRSI进行优化，得到该算子级别的最佳实践。
+
+注意：RSI可以同步进化。

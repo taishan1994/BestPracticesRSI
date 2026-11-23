@@ -1,0 +1,314 @@
+{
+  "mha-s1k-d64": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 128,
+      "tile_n": 128,
+      "num_threads": 256,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "flashinfer",
+    "wall_competitor": "flashinfer"
+  },
+  "mha-s2k-d128-causal": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "sdpa-cudnn",
+    "wall_competitor": "sdpa-cudnn"
+  },
+  "gqa-s2k-d128-causal": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-tuned",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_threads": 128,
+      "pack_gqa": true,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "sdpa-cudnn",
+    "wall_competitor": "sdpa-cudnn"
+  },
+  "gqa-b4-s1k-d64": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": true,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "fa2",
+    "wall_competitor": "fa2"
+  },
+  "mha-s4k-d128-causal": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "sdpa-cudnn",
+    "wall_competitor": "sdpa-cudnn"
+  },
+  "mha-s513-d64-fp16": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-tuned",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "fa2",
+    "wall_competitor": "flashinfer"
+  },
+  "mha-s512-d256": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "flashinfer",
+    "wall_competitor": "flashinfer"
+  },
+  "gqa-decode-k8k-d128": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_threads": 128,
+      "pack_gqa": true,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "flashinfer",
+    "wall_competitor": "flashinfer"
+  },
+  "qu0b-b1-s8192-d128": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-tuned",
+    "config": {
+      "tile_m": 128,
+      "tile_n": 128,
+      "num_threads": 256,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "sdpa-cudnn",
+    "wall_competitor": "sdpa-cudnn"
+  },
+  "qu0b-b2-s4096-d128": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 128,
+      "tile_n": 128,
+      "num_threads": 256,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "sdpa-cudnn",
+    "wall_competitor": "sdpa-cudnn"
+  },
+  "qu0b-b2-s4096-d96": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-default",
+    "config": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "fa2",
+    "wall_competitor": "fa2"
+  },
+  "qu0b-b4-s2048-d64": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-tuned",
+    "config": {
+      "tile_m": 128,
+      "tile_n": 128,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "fa2",
+    "wall_competitor": "fa2"
+  },
+  "sdxl-q1024-k77": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-tuned",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "flashinfer",
+    "wall_competitor": "flashinfer"
+  },
+  "sdxl-q1024-k1024": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "fa2",
+    "wall_competitor": "flashinfer"
+  },
+  "sdxl-q1536-k77": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "fa2",
+    "wall_competitor": "flashinfer"
+  },
+  "sdxl-q1536-k1536": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "fa2",
+    "wall_competitor": "fa2"
+  },
+  "sdxl-q4096-k77": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "flashinfer",
+    "wall_competitor": "flashinfer"
+  },
+  "sdxl-q4096-k4096": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "fa2",
+    "wall_competitor": "fa2"
+  },
+  "sdxl-q6144-k77": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-tuned",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "flashinfer",
+    "wall_competitor": "flashinfer"
+  },
+  "sdxl-q6144-k6144": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "fa2",
+    "wall_competitor": "fa2"
+  },
+  "transformer-s1024-kv4": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-tuned",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "sdpa-cudnn",
+    "wall_competitor": "sdpa-cudnn"
+  },
+  "transformer-s1024-kv16": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-tuned",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "sdpa-cudnn",
+    "wall_competitor": "sdpa-cudnn"
+  },
+  "transformer-s4096-kv4": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-no-qregs",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "sdpa-cudnn",
+    "wall_competitor": "sdpa-cudnn"
+  },
+  "transformer-s4096-kv16": {
+    "fa4": "fa4-qualified",
+    "development_recipe": "direct-tuned",
+    "config": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": false,
+      "Q_in_regs": false
+    },
+    "graph_competitor": "sdpa-cudnn",
+    "wall_competitor": "sdpa-cudnn"
+  }
+}

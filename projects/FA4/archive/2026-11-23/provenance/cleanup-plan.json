@@ -1,0 +1,30 @@
+{
+  "scope": "/home/gob001915/compare/github/BestPracticesRSI/projects/FA4",
+  "keep": [
+    "archive",
+    "references-local",
+    "README.md",
+    "AGENTS.md",
+    ".gitignore"
+  ],
+  "remove_after_archive_verification_and_publication": [
+    ".cache",
+    "DEPLOYMENT.md",
+    "benchmarks",
+    "comparisons",
+    "configs",
+    "hardware",
+    "kernels",
+    "optimization",
+    "paper",
+    "profile",
+    "releases",
+    "reports",
+    "research",
+    "runs",
+    "task.json",
+    "vendor"
+  ],
+  "untouched": "All paths outside projects/FA4, especially projects/pro6000se, global RSI work, /data, existing models and unrelated Git worktree changes.",
+  "raw_policy": "Discard intermediate logs, caches, source duplicates, offline release bundles and binary NCU. Preserve compact extracted evidence, source pins, reports, reusable code, user supplied originals locally."
+}

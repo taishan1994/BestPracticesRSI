@@ -1,0 +1,52 @@
+{
+  "scenario": "bfloat16-d64-mqa-s8192-causal",
+  "pr3109": {
+    "kernel": "kernel_cutlass_kernel_flash_attncutesm120flash_fwdFlashAttentionForwardSm120_object_at__tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensor0000o11101213_tensor0000o10111213_tensorptrbf_0",
+    "duration_us": 399.616,
+    "clock_mhz": 2290.702,
+    "sm": 58.264225,
+    "tensor": 58.264225,
+    "dram": 33.964089,
+    "l1tex": 35.300375,
+    "l2hit": 89.996867,
+    "l2thr": 52.524395,
+    "smem_wavefront": 59413654.0,
+    "tensor_ops": 102676561920.0,
+    "samples": 41291.0,
+    "stalls": {
+      "barrier": 1.0365454941754861,
+      "long_scoreboard": 8.568453173815117,
+      "short_scoreboard": 6.880433992879804,
+      "mio_throttle": 0.7095977331621903,
+      "wait": 38.13421811048413,
+      "math_pipe_throttle": 15.73466372817321,
+      "not_selected": 0.31483858467947007,
+      "lg_throttle": 0.024218352667651544
+    }
+  },
+  "pr3132": {
+    "kernel": "kernel_cutlass_kernel_flash_attncutesm120flash_fwdFlashAttentionForwardSm120_object_at__tensorptrf8E4M3FNgmemalign16oi64div161i64div16i64div16_tensor0000o11101213_tensor0000o10111213_tens_0",
+    "duration_us": 201.376,
+    "clock_mhz": 2238.112,
+    "sm": 62.649482,
+    "tensor": 62.649482,
+    "dram": 39.301567,
+    "l1tex": 33.410531,
+    "l2hit": 81.396325,
+    "l2thr": 56.661102,
+    "smem_wavefront": 27163093.0,
+    "tensor_ops": 108716359680.0,
+    "samples": 19975.0,
+    "stalls": {
+      "barrier": 2.052565707133917,
+      "long_scoreboard": 7.589486858573216,
+      "short_scoreboard": 7.133917396745932,
+      "mio_throttle": 2.8986232790988735,
+      "wait": 27.669586983729662,
+      "math_pipe_throttle": 20.180225281602002,
+      "not_selected": 4.6958698372966206,
+      "lg_throttle": 0.2503128911138924
+    }
+  },
+  "notes": "stall percent=PC sampling count/sample count; eligible warps and issue active unavailable in this capture"
+}

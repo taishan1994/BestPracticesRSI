@@ -1,0 +1,5283 @@
+{
+  "schema_version": 1,
+  "status": "audited",
+  "candidate_family": "FA4 only",
+  "prefill_preflight": {
+    "version": "operator-evidence-0.1.0",
+    "status": "Local Validation Only",
+    "pass_": true,
+    "errors": [],
+    "differences": [],
+    "metric": "graph_ms",
+    "measurements": [
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1009,
+        "value": 0.020559040009975434
+      },
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1013,
+        "value": 0.020678720027208327
+      },
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1019,
+        "value": 0.020578079968690873
+      },
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1021,
+        "value": 0.020769279897212983
+      },
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1031,
+        "value": 0.020614560097455978
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1009,
+        "value": 0.08745647937059403
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1013,
+        "value": 0.08739360004663467
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1019,
+        "value": 0.08299663990736007
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1021,
+        "value": 0.08318271994590759
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1031,
+        "value": 0.0830116805434227
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1009,
+        "value": 0.08676351964473725
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1013,
+        "value": 0.08612560003995895
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1019,
+        "value": 0.08231840014457703
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1021,
+        "value": 0.0823147201538086
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1031,
+        "value": 0.08232816010713577
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1009,
+        "value": 0.05592048019170761
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1013,
+        "value": 0.053136000335216524
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1019,
+        "value": 0.053212320804595946
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1021,
+        "value": 0.0530292809009552
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1031,
+        "value": 0.05320623993873596
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1009,
+        "value": 0.26699615955352785
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1013,
+        "value": 0.2608668804168701
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1019,
+        "value": 0.26076815724372865
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1021,
+        "value": 0.2603276789188385
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1031,
+        "value": 0.2599836802482605
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1009,
+        "value": 0.008169600032269955
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1013,
+        "value": 0.008170399963855744
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1019,
+        "value": 0.008124799989163876
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1021,
+        "value": 0.008148800022900105
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1031,
+        "value": 0.008147679977118969
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1009,
+        "value": 0.021006079986691475
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1013,
+        "value": 0.021082239970564843
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1019,
+        "value": 0.021013280004262926
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1021,
+        "value": 0.021164000108838083
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1031,
+        "value": 0.02100527986884117
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1009,
+        "value": 0.1409342396259308
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1013,
+        "value": 0.14090767860412598
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1019,
+        "value": 0.14097360014915467
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1021,
+        "value": 0.1408921605348587
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1031,
+        "value": 0.14088704109191894
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1009,
+        "value": 1.5371047973632812
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1013,
+        "value": 1.5564243173599244
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1019,
+        "value": 1.5591320037841796
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1021,
+        "value": 1.565117130279541
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1031,
+        "value": 1.568135199546814
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1009,
+        "value": 0.7772334361076355
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1013,
+        "value": 0.7972616004943848
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1019,
+        "value": 0.7910825634002686
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1021,
+        "value": 0.7977742409706116
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1031,
+        "value": 0.7982206392288208
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1009,
+        "value": 0.5725646352767945
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1013,
+        "value": 0.5793859148025513
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1019,
+        "value": 0.5750251269340515
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1021,
+        "value": 0.582515516281128
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1031,
+        "value": 0.5838684725761414
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1009,
+        "value": 0.3868483209609985
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1013,
+        "value": 0.4063976001739502
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1019,
+        "value": 0.40819215536117553
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1021,
+        "value": 0.40674863576889037
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1031,
+        "value": 0.4072761607170105
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1009,
+        "value": 0.007577919997274875
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1013,
+        "value": 0.007622079998254776
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1019,
+        "value": 0.007715840041637421
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1021,
+        "value": 0.007592800036072731
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1031,
+        "value": 0.007563359998166561
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1009,
+        "value": 0.036683520078659056
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1013,
+        "value": 0.03646207988262176
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1019,
+        "value": 0.03650672003626823
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1021,
+        "value": 0.03655535995960236
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1031,
+        "value": 0.036476800441741945
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1009,
+        "value": 0.009893440045416355
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1013,
+        "value": 0.00987743992358446
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1019,
+        "value": 0.009842560030519962
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1021,
+        "value": 0.009849280007183553
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1031,
+        "value": 0.009845280013978481
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1009,
+        "value": 0.0834726396203041
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1013,
+        "value": 0.07912127941846847
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1019,
+        "value": 0.07957391947507858
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1021,
+        "value": 0.07916592001914978
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1031,
+        "value": 0.07916431993246079
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1009,
+        "value": 0.012395680025219917
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1013,
+        "value": 0.011611039936542512
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1019,
+        "value": 0.011921119950711727
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1021,
+        "value": 0.011605760008096695
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1031,
+        "value": 0.01172400001436472
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1009,
+        "value": 0.25377328038215635
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1013,
+        "value": 0.2503859186172485
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1019,
+        "value": 0.26042831897735597
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1021,
+        "value": 0.2504628801345825
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1031,
+        "value": 0.26256687760353087
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1009,
+        "value": 0.016242560073733328
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1013,
+        "value": 0.016149120032787324
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1019,
+        "value": 0.01618928000330925
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1021,
+        "value": 0.016185920014977456
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1031,
+        "value": 0.016257119923830034
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1009,
+        "value": 0.5937369585037231
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1013,
+        "value": 0.595544319152832
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1019,
+        "value": 0.5977553582191467
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1021,
+        "value": 0.5980068802833557
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1031,
+        "value": 0.5982414388656616
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1009,
+        "value": 0.045656960159540176
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1013,
+        "value": 0.04536623999476433
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1019,
+        "value": 0.04518959999084473
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1021,
+        "value": 0.04536384001374245
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1031,
+        "value": 0.045178879797458646
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1009,
+        "value": 0.04714351981878281
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1013,
+        "value": 0.04549439996480942
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1019,
+        "value": 0.04560560017824173
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1021,
+        "value": 0.04556623995304108
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1031,
+        "value": 0.04554800033569336
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1009,
+        "value": 0.45242655992507935
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1013,
+        "value": 0.4497288012504578
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1019,
+        "value": 0.4501601552963257
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1021,
+        "value": 0.4499236798286438
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1031,
+        "value": 0.4503966403007507
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1009,
+        "value": 0.45457887649536133
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1013,
+        "value": 0.45291823863983155
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1019,
+        "value": 0.4544430327415466
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1021,
+        "value": 0.45404688119888303
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1031,
+        "value": 0.45366688251495363
+      }
+    ],
+    "external_reference": null,
+    "note": "Gate proves only the declared operator matrix and precision. Upstream tolerance comparison is separate; no strict scientific-reproduction claim."
+  },
+  "wall_preflight": {
+    "version": "operator-evidence-0.1.0",
+    "status": "Local Validation Only",
+    "pass_": true,
+    "errors": [],
+    "differences": [],
+    "metric": "wall_ms",
+    "measurements": [
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1009,
+        "value": 0.020170583855360746
+      },
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1013,
+        "value": 0.020182444248348475
+      },
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1019,
+        "value": 0.020031813764944673
+      },
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1021,
+        "value": 0.020179728278890252
+      },
+      {
+        "shape": "mha-s1k-d64",
+        "seed": 1031,
+        "value": 0.02009301190264523
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1009,
+        "value": 0.08721454977057874
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1013,
+        "value": 0.08344507217407227
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1019,
+        "value": 0.08271339978091419
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1021,
+        "value": 0.08268519164994359
+      },
+      {
+        "shape": "mha-s2k-d128-causal",
+        "seed": 1031,
+        "value": 0.08267072401940823
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1009,
+        "value": 0.08656355435959995
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1013,
+        "value": 0.08195372624322772
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1019,
+        "value": 0.08191584167070687
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1021,
+        "value": 0.08198103215545416
+      },
+      {
+        "shape": "gqa-s2k-d128-causal",
+        "seed": 1031,
+        "value": 0.08194733993150294
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1009,
+        "value": 0.053010135889053345
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1013,
+        "value": 0.05208748229779303
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1019,
+        "value": 0.05206727609038353
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1021,
+        "value": 0.05194645351730287
+      },
+      {
+        "shape": "gqa-b4-s1k-d64",
+        "seed": 1031,
+        "value": 0.05204955814406276
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1009,
+        "value": 0.26108815404586494
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1013,
+        "value": 0.2600391898304224
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1019,
+        "value": 0.2606533400248736
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1021,
+        "value": 0.2596043318044394
+      },
+      {
+        "shape": "mha-s4k-d128-causal",
+        "seed": 1031,
+        "value": 0.2591635237913579
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1009,
+        "value": 0.015806045616045594
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1013,
+        "value": 0.015682460041716695
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1019,
+        "value": 0.015412065898999572
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1021,
+        "value": 0.015681335935369134
+      },
+      {
+        "shape": "mha-s513-d64-fp16",
+        "seed": 1031,
+        "value": 0.015610817819833755
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1009,
+        "value": 0.02071097190491855
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1013,
+        "value": 0.020806913962587714
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1019,
+        "value": 0.020649104146286845
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1021,
+        "value": 0.020683462265878916
+      },
+      {
+        "shape": "mha-s512-d256",
+        "seed": 1031,
+        "value": 0.020660103764384985
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1009,
+        "value": 0.14078907226212323
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1013,
+        "value": 0.1407487962860614
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1019,
+        "value": 0.14057901175692677
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1021,
+        "value": 0.14059919235296547
+      },
+      {
+        "shape": "gqa-decode-k8k-d128",
+        "seed": 1031,
+        "value": 0.14059478999115527
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1009,
+        "value": 1.5496845080051571
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1013,
+        "value": 1.5580300122965127
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1019,
+        "value": 1.5657815979793668
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1021,
+        "value": 1.5715453156735748
+      },
+      {
+        "shape": "qu0b-b1-s8192-d128",
+        "seed": 1031,
+        "value": 1.5765767940320075
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1009,
+        "value": 0.7912596198730171
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1013,
+        "value": 0.7949332599528134
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1019,
+        "value": 0.795257305726409
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1021,
+        "value": 0.7987192100845277
+      },
+      {
+        "shape": "qu0b-b2-s4096-d128",
+        "seed": 1031,
+        "value": 0.8020572096575052
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1009,
+        "value": 0.5808238401077688
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1013,
+        "value": 0.5837205103598535
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1019,
+        "value": 0.5803611895535141
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1021,
+        "value": 0.5871135939378291
+      },
+      {
+        "shape": "qu0b-b2-s4096-d96",
+        "seed": 1031,
+        "value": 0.584417830221355
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1009,
+        "value": 0.40549908368848264
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1013,
+        "value": 0.41113335359841585
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1019,
+        "value": 0.41094096191227436
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1021,
+        "value": 0.41194329992868006
+      },
+      {
+        "shape": "qu0b-b4-s2048-d64",
+        "seed": 1031,
+        "value": 0.41121768788434565
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1009,
+        "value": 0.015853390330448747
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1013,
+        "value": 0.015597662189975381
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1019,
+        "value": 0.015731958206743002
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1021,
+        "value": 0.015518773812800646
+      },
+      {
+        "shape": "sdxl-q1024-k77",
+        "seed": 1031,
+        "value": 0.015429115854203701
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1009,
+        "value": 0.03596293390728533
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1013,
+        "value": 0.035722241969779134
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1019,
+        "value": 0.03583188611082733
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1021,
+        "value": 0.03583885566331446
+      },
+      {
+        "shape": "sdxl-q1024-k1024",
+        "seed": 1031,
+        "value": 0.0357849458232522
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1009,
+        "value": 0.016440256033092737
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1013,
+        "value": 0.016442378051579
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1019,
+        "value": 0.016432664124295115
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1021,
+        "value": 0.016091493656858802
+      },
+      {
+        "shape": "sdxl-q1536-k77",
+        "seed": 1031,
+        "value": 0.016300943912938237
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1009,
+        "value": 0.07901429804041982
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1013,
+        "value": 0.07915218803100288
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1019,
+        "value": 0.07908601593226194
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1021,
+        "value": 0.07894343812949955
+      },
+      {
+        "shape": "sdxl-q1536-k1536",
+        "seed": 1031,
+        "value": 0.07913656812161207
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1009,
+        "value": 0.015858252067118883
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1013,
+        "value": 0.015978429932147264
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1019,
+        "value": 0.015665451297536492
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1021,
+        "value": 0.018804728286340833
+      },
+      {
+        "shape": "sdxl-q4096-k77",
+        "seed": 1031,
+        "value": 0.015697736060246825
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1009,
+        "value": 0.2569257481954992
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1013,
+        "value": 0.2622230302076787
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1019,
+        "value": 0.2636458177585155
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1021,
+        "value": 0.2632503060158342
+      },
+      {
+        "shape": "sdxl-q4096-k4096",
+        "seed": 1031,
+        "value": 0.2645132595207542
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1009,
+        "value": 0.015569744165986776
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1013,
+        "value": 0.015831019962206483
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1019,
+        "value": 0.015623768325895071
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1021,
+        "value": 0.015800772234797478
+      },
+      {
+        "shape": "sdxl-q6144-k77",
+        "seed": 1031,
+        "value": 0.015661225887015462
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1009,
+        "value": 0.5957316837739199
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1013,
+        "value": 0.5965426701586694
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1019,
+        "value": 0.5972425621002913
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1021,
+        "value": 0.5976795223541558
+      },
+      {
+        "shape": "sdxl-q6144-k6144",
+        "seed": 1031,
+        "value": 0.5978337679989636
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1009,
+        "value": 0.045063689816743135
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1013,
+        "value": 0.044958977960050106
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1019,
+        "value": 0.044689160073176026
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1021,
+        "value": 0.04473306820727885
+      },
+      {
+        "shape": "transformer-s1024-kv4",
+        "seed": 1031,
+        "value": 0.044759281910955906
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1009,
+        "value": 0.04512482020072639
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1013,
+        "value": 0.045031556161120534
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1019,
+        "value": 0.04498749761842191
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1021,
+        "value": 0.04500269191339612
+      },
+      {
+        "shape": "transformer-s1024-kv16",
+        "seed": 1031,
+        "value": 0.044927668292075396
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1009,
+        "value": 0.449419115902856
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1013,
+        "value": 0.44970585010014474
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1019,
+        "value": 0.4493309981189668
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1021,
+        "value": 0.4497431144118309
+      },
+      {
+        "shape": "transformer-s4096-kv4",
+        "seed": 1031,
+        "value": 0.44979176414199173
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1009,
+        "value": 0.4539381400682032
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1013,
+        "value": 0.45389088802039623
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1019,
+        "value": 0.45440065604634583
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1021,
+        "value": 0.45493595604784787
+      },
+      {
+        "shape": "transformer-s4096-kv16",
+        "seed": 1031,
+        "value": 0.4551591160707176
+      }
+    ],
+    "external_reference": null,
+    "note": "Gate proves only the declared operator matrix and precision. Upstream tolerance comparison is separate; no strict scientific-reproduction claim."
+  },
+  "raw_sha256": "f85975976fdd323dc7f42096fe31b7875264c3e2728a9a218f091d73c5335f49",
+  "cases": [
+    {
+      "shape": "mha-s1k-d64",
+      "raw_run_ref": "runs/final-confirmation/mha-s1k-d64.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.021431840062141418,
+          "candidate_ms": 0.02063993600010872,
+          "relative_gain_pct": 3.836819049921991,
+          "ci95_gain_pct": [
+            2.9721301131037103,
+            4.708769048122963
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.024019743889570237,
+          "candidate_ms": 0.02063993600010872,
+          "relative_gain_pct": 16.37570190026212,
+          "ci95_gain_pct": [
+            15.750138205638663,
+            17.00464641103059
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.02058092799782753,
+          "candidate_ms": 0.02063993600010872,
+          "relative_gain_pct": -0.2865165303415407,
+          "ci95_gain_pct": [
+            -1.3432095861725335,
+            0.7814945524550199
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08515132432803511,
+          "candidate_ms": 0.020131516410037874,
+          "relative_gain_pct": 320.1312236172642,
+          "ci95_gain_pct": [
+            259.6370069649437,
+            390.8011179042687
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.028033335274085403,
+          "candidate_ms": 0.020131516410037874,
+          "relative_gain_pct": 39.24824951393673,
+          "ci95_gain_pct": [
+            38.18636935604876,
+            40.31828959002046
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.020465178042650224,
+          "candidate_ms": 0.020131516410037874,
+          "relative_gain_pct": 1.6121635468785422,
+          "ci95_gain_pct": [
+            -2.391399753165857,
+            5.779939007090484
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "mha-s2k-d128-causal",
+      "raw_run_ref": "runs/final-confirmation/mha-s2k-d128-causal.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.11485532736778259,
+          "candidate_ms": 0.08480822396278381,
+          "relative_gain_pct": 35.44759479385775,
+          "ci95_gain_pct": [
+            30.324791471885916,
+            40.771765128039725
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10156294417381287,
+          "candidate_ms": 0.08480822396278381,
+          "relative_gain_pct": 19.758539845873546,
+          "ci95_gain_pct": [
+            19.564787161287732,
+            19.952606503357885
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08494675207138061,
+          "candidate_ms": 0.08480822396278381,
+          "relative_gain_pct": 0.1655650722573565,
+          "ci95_gain_pct": [
+            -4.12731486343988,
+            4.650666787453761
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.11507254112511874,
+          "candidate_ms": 0.0837457874789834,
+          "relative_gain_pct": 37.39608665230316,
+          "ci95_gain_pct": [
+            33.054477820757455,
+            41.87936352505186
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10172726199962198,
+          "candidate_ms": 0.0837457874789834,
+          "relative_gain_pct": 21.45766710905623,
+          "ci95_gain_pct": [
+            18.5409293854079,
+            24.446172103238585
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08382690530270338,
+          "candidate_ms": 0.0837457874789834,
+          "relative_gain_pct": 0.09587958703973776,
+          "ci95_gain_pct": [
+            -0.18940575654878833,
+            0.38198035235659233
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "gqa-s2k-d128-causal",
+      "raw_run_ref": "runs/final-confirmation/gqa-s2k-d128-causal.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10704655969142914,
+          "candidate_ms": 0.08397008001804351,
+          "relative_gain_pct": 27.48970275001934,
+          "ci95_gain_pct": [
+            24.24757002069018,
+            30.816436124921175
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10114396792650222,
+          "candidate_ms": 0.08397008001804351,
+          "relative_gain_pct": 20.460190899798512,
+          "ci95_gain_pct": [
+            19.58723621296732,
+            21.339517921248287
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08323840034008026,
+          "candidate_ms": 0.08397008001804351,
+          "relative_gain_pct": -0.8627024666181926,
+          "ci95_gain_pct": [
+            -3.3695213754726616,
+            1.7091491434216843
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10754245813004673,
+          "candidate_ms": 0.08287229887209832,
+          "relative_gain_pct": 29.77069287344658,
+          "ci95_gain_pct": [
+            29.517836264764675,
+            30.024043132010213
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10133671439252794,
+          "candidate_ms": 0.08287229887209832,
+          "relative_gain_pct": 22.27915803466136,
+          "ci95_gain_pct": [
+            19.475589260192727,
+            25.148514288579538
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-s2k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08296756101772189,
+          "candidate_ms": 0.08287229887209832,
+          "relative_gain_pct": 0.11550180191319814,
+          "ci95_gain_pct": [
+            0.0072837708746886776,
+            0.2238369358446235
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "gqa-b4-s1k-d64",
+      "raw_run_ref": "runs/final-confirmation/gqa-b4-s1k-d64.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-b4-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.05758745586872101,
+          "candidate_ms": 0.05370086443424225,
+          "relative_gain_pct": 7.24078469422893,
+          "ci95_gain_pct": [
+            6.893281838114884,
+            7.589417258711273
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-b4-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.055990175545215605,
+          "candidate_ms": 0.05370086443424225,
+          "relative_gain_pct": 4.262808287861741,
+          "ci95_gain_pct": [
+            3.9414708089162254,
+            4.5851391891109206
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-b4-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.05370454400777817,
+          "candidate_ms": 0.05370086443424225,
+          "relative_gain_pct": 0.00631276534446279,
+          "ci95_gain_pct": [
+            -0.16034803152489285,
+            0.17325176652107643
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-b4-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10375494682230055,
+          "candidate_ms": 0.05223218118771911,
+          "relative_gain_pct": 98.64411887111267,
+          "ci95_gain_pct": [
+            95.4285733926283,
+            101.91257233815114
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-b4-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.05823998972773552,
+          "candidate_ms": 0.05223218118771911,
+          "relative_gain_pct": 11.501400516353065,
+          "ci95_gain_pct": [
+            9.256277825529358,
+            13.792658550583802
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-b4-s1k-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.053677213517948984,
+          "candidate_ms": 0.05223218118771911,
+          "relative_gain_pct": 2.691630328226835,
+          "ci95_gain_pct": [
+            -2.544980360264937,
+            8.209623049211135
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "mha-s4k-d128-causal",
+      "raw_run_ref": "runs/final-confirmation/mha-s4k-d128-causal.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s4k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.32260236835479733,
+          "candidate_ms": 0.26178851127624514,
+          "relative_gain_pct": 23.219873230795507,
+          "ci95_gain_pct": [
+            22.107321533041446,
+            24.342561677637487
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s4k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.2847785913944244,
+          "candidate_ms": 0.26178851127624514,
+          "relative_gain_pct": 8.78618462638463,
+          "ci95_gain_pct": [
+            7.961070225122735,
+            9.617605132002005
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s4k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.2613850867748261,
+          "candidate_ms": 0.26178851127624514,
+          "relative_gain_pct": -0.1528014645451048,
+          "ci95_gain_pct": [
+            -0.6095156856046113,
+            0.3060114270376113
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s4k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.3205307400319725,
+          "candidate_ms": 0.26010970789939164,
+          "relative_gain_pct": 23.229439399275932,
+          "ci95_gain_pct": [
+            22.785879131184615,
+            23.674602015396374
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s4k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.28421350857242944,
+          "candidate_ms": 0.26010970789939164,
+          "relative_gain_pct": 9.26716917602397,
+          "ci95_gain_pct": [
+            8.85060964669535,
+            9.685322833690835
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s4k-d128-causal",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.2596599840093404,
+          "candidate_ms": 0.26010970789939164,
+          "relative_gain_pct": -0.17272940276452653,
+          "ci95_gain_pct": [
+            -0.5111330478756781,
+            0.16682529603264662
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "mha-s513-d64-fp16",
+      "raw_run_ref": "runs/final-confirmation/mha-s513-d64-fp16.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s513-d64-fp16",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.014961823984980582,
+          "candidate_ms": 0.008152255997061729,
+          "relative_gain_pct": 83.52922079968673,
+          "ci95_gain_pct": [
+            82.5593879742335,
+            84.50420578805944
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s513-d64-fp16",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.012700543962419033,
+          "candidate_ms": 0.008152255997061729,
+          "relative_gain_pct": 55.7517887815185,
+          "ci95_gain_pct": [
+            50.87441972340763,
+            60.7868302202266
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s513-d64-fp16",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.008116992011666298,
+          "candidate_ms": 0.008152255997061729,
+          "relative_gain_pct": -0.43312035061404686,
+          "ci95_gain_pct": [
+            -0.8611506217900633,
+            -0.0032420661295162745
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s513-d64-fp16",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10263007432222367,
+          "candidate_ms": 0.01563854506239295,
+          "relative_gain_pct": 556.2195665732391,
+          "ci95_gain_pct": [
+            543.235799232962,
+            569.4654123216949
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s513-d64-fp16",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.03773900889791548,
+          "candidate_ms": 0.01563854506239295,
+          "relative_gain_pct": 141.3252399113001,
+          "ci95_gain_pct": [
+            140.1263882239612,
+            142.53007696900525
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s513-d64-fp16",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.021082686306908727,
+          "candidate_ms": 0.01563854506239295,
+          "relative_gain_pct": 34.79824697108107,
+          "ci95_gain_pct": [
+            33.13907639960454,
+            36.47809401906397
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "mha-s512-d256",
+      "raw_run_ref": "runs/final-confirmation/mha-s512-d256.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s512-d256",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Not Comparable",
+          "promote": false,
+          "errors": [
+            "stock execution/numerical failure",
+            "stock execution/numerical failure",
+            "stock execution/numerical failure",
+            "stock execution/numerical failure",
+            "stock execution/numerical failure"
+          ],
+          "relative_gain_pct": null
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s512-d256",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.0171437119692564,
+          "candidate_ms": 0.0210541759878397,
+          "relative_gain_pct": -18.57628580588636,
+          "ci95_gain_pct": [
+            -19.551048371026237,
+            -17.58971249568195
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s512-d256",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.02107072003185749,
+          "candidate_ms": 0.0210541759878397,
+          "relative_gain_pct": 0.07862098202477963,
+          "ci95_gain_pct": [
+            -0.6471297166979029,
+            0.8096731287599468
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s512-d256",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Not Comparable",
+          "promote": false,
+          "errors": [
+            "stock execution/numerical failure",
+            "stock execution/numerical failure",
+            "stock execution/numerical failure",
+            "stock execution/numerical failure",
+            "stock execution/numerical failure"
+          ],
+          "relative_gain_pct": null
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s512-d256",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.03604974481277168,
+          "candidate_ms": 0.0207021112088114,
+          "relative_gain_pct": 74.12981694124818,
+          "ci95_gain_pct": [
+            72.0807407641875,
+            76.20329278767777
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "mha-s512-d256",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.020968962367624043,
+          "candidate_ms": 0.0207021112088114,
+          "relative_gain_pct": 1.2853679758496162,
+          "ci95_gain_pct": [
+            0.23344751268632447,
+            2.3483280339613
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "gqa-decode-k8k-d128",
+      "raw_run_ref": "runs/final-confirmation/gqa-decode-k8k-d128.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-decode-k8k-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.2737323205471039,
+          "candidate_ms": 0.1409189440011978,
+          "relative_gain_pct": 94.24800929251651,
+          "ci95_gain_pct": [
+            94.0921036100982,
+            94.40404020713827
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-decode-k8k-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.008603135980665684,
+          "candidate_ms": 0.1409189440011978,
+          "relative_gain_pct": -93.895717150308,
+          "ci95_gain_pct": [
+            -94.02577586830118,
+            -93.76282705710136
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-decode-k8k-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.14091247975826263,
+          "candidate_ms": 0.1409189440011978,
+          "relative_gain_pct": -0.0045899331464038795,
+          "ci95_gain_pct": [
+            -0.055478795426977534,
+            0.0463248402724048
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-decode-k8k-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.27427972122095523,
+          "candidate_ms": 0.14066217252984642,
+          "relative_gain_pct": 94.99183146366161,
+          "ci95_gain_pct": [
+            94.78341317037862,
+            95.20047276456252
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-decode-k8k-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.03726418842561543,
+          "candidate_ms": 0.14066217252984642,
+          "relative_gain_pct": -73.50907401160605,
+          "ci95_gain_pct": [
+            -73.82967743036014,
+            -73.18454299311207
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "gqa-decode-k8k-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.1407616284210235,
+          "candidate_ms": 0.14066217252984642,
+          "relative_gain_pct": 0.07071894665646727,
+          "ci95_gain_pct": [
+            0.009593948229102978,
+            0.13188130415393573
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "qu0b-b1-s8192-d128",
+      "raw_run_ref": "runs/final-confirmation/qu0b-b1-s8192-d128.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b1-s8192-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 1.6381586589813233,
+          "candidate_ms": 1.557182689666748,
+          "relative_gain_pct": 5.202461370263456,
+          "ci95_gain_pct": [
+            4.156831301187713,
+            6.258588515985042
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b1-s8192-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 1.5278385972976685,
+          "candidate_ms": 1.557182689666748,
+          "relative_gain_pct": -1.885570083332344,
+          "ci95_gain_pct": [
+            -2.5544209497606496,
+            -1.2121283315516096
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b1-s8192-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 1.5535664281845094,
+          "candidate_ms": 1.557182689666748,
+          "relative_gain_pct": -0.23193311658973315,
+          "ci95_gain_pct": [
+            -0.4454410968841138,
+            -0.017967240060856593
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b1-s8192-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 1.643263700744137,
+          "candidate_ms": 1.5643236455973237,
+          "relative_gain_pct": 5.04740728700972,
+          "ci95_gain_pct": [
+            4.523094086249957,
+            5.5743505700005525
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b1-s8192-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 1.5507279176730662,
+          "candidate_ms": 1.5643236455973237,
+          "relative_gain_pct": -0.8683330910881693,
+          "ci95_gain_pct": [
+            -1.0754633723965679,
+            -0.6607691160279705
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b1-s8192-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 1.564135578693822,
+          "candidate_ms": 1.5643236455973237,
+          "relative_gain_pct": -0.011593320439062804,
+          "ci95_gain_pct": [
+            -0.28209670710405144,
+            0.25964385704766446
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "qu0b-b2-s4096-d128",
+      "raw_run_ref": "runs/final-confirmation/qu0b-b2-s4096-d128.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.8327405748367309,
+          "candidate_ms": 0.7923144960403442,
+          "relative_gain_pct": 5.104958069623744,
+          "ci95_gain_pct": [
+            3.914462252904416,
+            6.309092799145932
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.7777911686897278,
+          "candidate_ms": 0.7923144960403442,
+          "relative_gain_pct": -1.831692734416579,
+          "ci95_gain_pct": [
+            -2.9359068297058366,
+            -0.71491695201511
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.7890982069969177,
+          "candidate_ms": 0.7923144960403442,
+          "relative_gain_pct": -0.403224279113068,
+          "ci95_gain_pct": [
+            -0.9854980229102361,
+            0.18247363696133334
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.8367734816391021,
+          "candidate_ms": 0.7964453210588545,
+          "relative_gain_pct": 5.0642161475892955,
+          "ci95_gain_pct": [
+            4.696711290891775,
+            5.433011014431632
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.7889833491761238,
+          "candidate_ms": 0.7964453210588545,
+          "relative_gain_pct": -0.936211035075285,
+          "ci95_gain_pct": [
+            -1.6062875273002097,
+            -0.2615712176728846
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d128",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.7974489850923419,
+          "candidate_ms": 0.7964453210588545,
+          "relative_gain_pct": 0.1265690980965406,
+          "ci95_gain_pct": [
+            -0.15608498284380712,
+            0.4100233612959414
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "qu0b-b2-s4096-d96",
+      "raw_run_ref": "runs/final-confirmation/qu0b-b2-s4096-d96.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d96",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5791138858795166,
+          "candidate_ms": 0.5786719331741333,
+          "relative_gain_pct": 0.07696400250780666,
+          "ci95_gain_pct": [
+            -0.4757346841452459,
+            0.6327320495551181
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d96",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5814386229515076,
+          "candidate_ms": 0.5786719331741333,
+          "relative_gain_pct": 0.4800163910988253,
+          "ci95_gain_pct": [
+            -0.1728499544353057,
+            1.137152461501767
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d96",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5797131848335266,
+          "candidate_ms": 0.5786719331741333,
+          "relative_gain_pct": 0.17790037743032894,
+          "ci95_gain_pct": [
+            -0.1656017184992975,
+            0.5225843674960373
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d96",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.584158143075183,
+          "candidate_ms": 0.5832873928360641,
+          "relative_gain_pct": 0.14945832040860196,
+          "ci95_gain_pct": [
+            -0.18023558880830848,
+            0.48024117302678526
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d96",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5855930380057544,
+          "candidate_ms": 0.5832873928360641,
+          "relative_gain_pct": 0.3959547164157806,
+          "ci95_gain_pct": [
+            -0.13919116917656682,
+            0.9339684049251895
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b2-s4096-d96",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5829019560012967,
+          "candidate_ms": 0.5832873928360641,
+          "relative_gain_pct": -0.06623064711076543,
+          "ci95_gain_pct": [
+            -0.4815632827082639,
+            0.35083534769013713
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "qu0b-b4-s2048-d64",
+      "raw_run_ref": "runs/final-confirmation/qu0b-b4-s2048-d64.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b4-s2048-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.40100700736045836,
+          "candidate_ms": 0.403092574596405,
+          "relative_gain_pct": -0.5155957518239718,
+          "ci95_gain_pct": [
+            -1.8696372668531303,
+            0.857129362993847
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b4-s2048-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.3822273910045624,
+          "candidate_ms": 0.403092574596405,
+          "relative_gain_pct": -5.172019232524871,
+          "ci95_gain_pct": [
+            -7.603365196834688,
+            -2.6766942801192295
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b4-s2048-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.40404198336601255,
+          "candidate_ms": 0.403092574596405,
+          "relative_gain_pct": 0.23321619686813566,
+          "ci95_gain_pct": [
+            -0.05722320278498394,
+            0.5244996299529125
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b4-s2048-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.41220640214160087,
+          "candidate_ms": 0.4101468774024397,
+          "relative_gain_pct": 0.5009146102463502,
+          "ci95_gain_pct": [
+            0.10594129313157286,
+            0.897446315596806
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b4-s2048-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.3939815546385944,
+          "candidate_ms": 0.4101468774024397,
+          "relative_gain_pct": -3.943607442230257,
+          "ci95_gain_pct": [
+            -5.425903771517793,
+            -2.4380785101958624
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "qu0b-b4-s2048-d64",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.41131075182929633,
+          "candidate_ms": 0.4101468774024397,
+          "relative_gain_pct": 0.28209723519527774,
+          "ci95_gain_pct": [
+            -0.2509955701201605,
+            0.8180390708414143
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "sdxl-q1024-k77",
+      "raw_run_ref": "runs/final-confirmation/sdxl-q1024-k77.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.008083327956497669,
+          "candidate_ms": 0.007614400014281273,
+          "relative_gain_pct": 6.160863823615781,
+          "ci95_gain_pct": [
+            5.0791803270534785,
+            7.253682153768248
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.00860563200712204,
+          "candidate_ms": 0.007614400014281273,
+          "relative_gain_pct": 13.017005062499942,
+          "ci95_gain_pct": [
+            11.044753021828635,
+            15.024286026250255
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.0075875200107693675,
+          "candidate_ms": 0.007614400014281273,
+          "relative_gain_pct": -0.3526420576455691,
+          "ci95_gain_pct": [
+            -1.5470017186870577,
+            0.8562066999681539
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10166591820307076,
+          "candidate_ms": 0.015626180078834297,
+          "relative_gain_pct": 550.5712492208708,
+          "ci95_gain_pct": [
+            534.9658248429822,
+            566.5602049015254
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.03323995019309223,
+          "candidate_ms": 0.015626180078834297,
+          "relative_gain_pct": 112.72668816090605,
+          "ci95_gain_pct": [
+            109.49782358963205,
+            116.00531728935302
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.02091825767420232,
+          "candidate_ms": 0.015626180078834297,
+          "relative_gain_pct": 33.86340775034486,
+          "ci95_gain_pct": [
+            31.830703280246443,
+            35.92745459638418
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "sdxl-q1024-k1024",
+      "raw_run_ref": "runs/final-confirmation/sdxl-q1024-k1024.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k1024",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.03799663999676704,
+          "candidate_ms": 0.03653689607977867,
+          "relative_gain_pct": 3.9947724455627,
+          "ci95_gain_pct": [
+            3.6320324189018205,
+            4.358782160020591
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k1024",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.03777520003914833,
+          "candidate_ms": 0.03653689607977867,
+          "relative_gain_pct": 3.389244226338639,
+          "ci95_gain_pct": [
+            2.8753526444327937,
+            3.9057028425356632
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k1024",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.03661356806755066,
+          "candidate_ms": 0.03653689607977867,
+          "relative_gain_pct": 0.20923029745549826,
+          "ci95_gain_pct": [
+            -0.12313715489596921,
+            0.5427037929909062
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k1024",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08599653071723878,
+          "candidate_ms": 0.03582817269489169,
+          "relative_gain_pct": 138.99826361466435,
+          "ci95_gain_pct": [
+            111.21359030933684,
+            170.43794827391636
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k1024",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.03770985566079617,
+          "candidate_ms": 0.03582817269489169,
+          "relative_gain_pct": 5.251830146854952,
+          "ci95_gain_pct": [
+            4.8736615855171195,
+            5.631362362885706
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1024-k1024",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.035913877096027134,
+          "candidate_ms": 0.03582817269489169,
+          "relative_gain_pct": 0.23915780657817187,
+          "ci95_gain_pct": [
+            0.06943206819072234,
+            0.409171413355347
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "sdxl-q1536-k77",
+      "raw_run_ref": "runs/final-confirmation/sdxl-q1536-k77.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.011524160012602806,
+          "candidate_ms": 0.009861600004136563,
+          "relative_gain_pct": 16.8584402906351,
+          "ci95_gain_pct": [
+            16.362290355687815,
+            17.356705728441547
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.012536415949463845,
+          "candidate_ms": 0.009861600004136563,
+          "relative_gain_pct": 27.121204652723453,
+          "ci95_gain_pct": [
+            26.223335558653837,
+            28.025460592034612
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.009887520037591458,
+          "candidate_ms": 0.009861600004136563,
+          "relative_gain_pct": 0.2613628030516235,
+          "ci95_gain_pct": [
+            -0.30185656586245724,
+            0.8277639369073109
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10318429619073868,
+          "candidate_ms": 0.016341547155752777,
+          "relative_gain_pct": 531.3982946637134,
+          "ci95_gain_pct": [
+            521.931995116029,
+            541.008678818445
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.034553597355261444,
+          "candidate_ms": 0.016341547155752777,
+          "relative_gain_pct": 111.45019329577428,
+          "ci95_gain_pct": [
+            110.02614096416438,
+            112.88390121136933
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.022145933518186212,
+          "candidate_ms": 0.016341547155752777,
+          "relative_gain_pct": 35.50947808192815,
+          "ci95_gain_pct": [
+            33.24511902162346,
+            37.812317515785224
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "sdxl-q1536-k1536",
+      "raw_run_ref": "runs/final-confirmation/sdxl-q1536-k1536.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k1536",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08278371167182923,
+          "candidate_ms": 0.08009961569309235,
+          "relative_gain_pct": 3.350020392253872,
+          "ci95_gain_pct": [
+            2.8275304355696917,
+            3.875165238671152
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k1536",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08108473592996597,
+          "candidate_ms": 0.08009961569309235,
+          "relative_gain_pct": 1.2516444581099018,
+          "ci95_gain_pct": [
+            -1.7232029470075183,
+            4.31654075929544
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k1536",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08014780807495117,
+          "candidate_ms": 0.08009961569309235,
+          "relative_gain_pct": 0.05978848107732748,
+          "ci95_gain_pct": [
+            -0.38298559337757165,
+            0.5045305815986056
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k1536",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.0820256625302136,
+          "candidate_ms": 0.07906650165095926,
+          "relative_gain_pct": 3.7425503512216407,
+          "ci95_gain_pct": [
+            3.430742590621172,
+            4.055298103908944
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k1536",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08096765517257154,
+          "candidate_ms": 0.07906650165095926,
+          "relative_gain_pct": 2.404267209811173,
+          "ci95_gain_pct": [
+            2.101713610578515,
+            2.7077173530603016
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q1536-k1536",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.07916593826375902,
+          "candidate_ms": 0.07906650165095926,
+          "relative_gain_pct": 0.12571959427118973,
+          "ci95_gain_pct": [
+            -0.12184475140495366,
+            0.37389756867420854
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "sdxl-q4096-k77",
+      "raw_run_ref": "runs/final-confirmation/sdxl-q4096-k77.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.013963104009628295,
+          "candidate_ms": 0.011851519986987115,
+          "relative_gain_pct": 17.829588076947633,
+          "ci95_gain_pct": [
+            15.927057019157642,
+            19.76334242737461
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.015280768036842347,
+          "candidate_ms": 0.011851519986987115,
+          "relative_gain_pct": 28.937532727592096,
+          "ci95_gain_pct": [
+            27.449467543551332,
+            30.442972154418136
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.011853823959827424,
+          "candidate_ms": 0.011851519986987115,
+          "relative_gain_pct": 0.021445269297482028,
+          "ci95_gain_pct": [
+            -1.1122530321542534,
+            1.1681408517888237
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10131060755811631,
+          "candidate_ms": 0.01640091952867806,
+          "relative_gain_pct": 519.2035458535744,
+          "ci95_gain_pct": [
+            459.2309605781396,
+            585.6076616381589
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.03454287233762443,
+          "candidate_ms": 0.01640091952867806,
+          "relative_gain_pct": 111.1448263725396,
+          "ci95_gain_pct": [
+            92.51479779701195,
+            131.57771877306493
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.02132040592841804,
+          "candidate_ms": 0.01640091952867806,
+          "relative_gain_pct": 30.321749414346243,
+          "ci95_gain_pct": [
+            17.773667740163333,
+            44.2067543305678
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "sdxl-q4096-k4096",
+      "raw_run_ref": "runs/final-confirmation/sdxl-q4096-k4096.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k4096",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.27383737683296205,
+          "candidate_ms": 0.25552345514297486,
+          "relative_gain_pct": 7.184824195909623,
+          "ci95_gain_pct": [
+            3.3519898530117276,
+            11.159800157183586
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k4096",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.2704374721050262,
+          "candidate_ms": 0.25552345514297486,
+          "relative_gain_pct": 5.856145495528753,
+          "ci95_gain_pct": [
+            3.6900008998623335,
+            8.067542115195693
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k4096",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.25551769661903384,
+          "candidate_ms": 0.25552345514297486,
+          "relative_gain_pct": -0.002762197811823075,
+          "ci95_gain_pct": [
+            -5.202357275288461,
+            5.482027618612384
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k4096",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.2723431586753577,
+          "candidate_ms": 0.26211163233965634,
+          "relative_gain_pct": 3.9089593892281282,
+          "ci95_gain_pct": [
+            2.557848352139813,
+            5.277870146804653
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k4096",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.2696405588183552,
+          "candidate_ms": 0.26211163233965634,
+          "relative_gain_pct": 2.87774453698435,
+          "ci95_gain_pct": [
+            1.2481466038114508,
+            4.533570993966141
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q4096-k4096",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.261409939173609,
+          "candidate_ms": 0.26211163233965634,
+          "relative_gain_pct": -0.26723569997030294,
+          "ci95_gain_pct": [
+            -1.3455241156732023,
+            0.8228383534040429
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "sdxl-q6144-k77",
+      "raw_run_ref": "runs/final-confirmation/sdxl-q6144-k77.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.018488704055547714,
+          "candidate_ms": 0.016204800009727478,
+          "relative_gain_pct": 14.08826327219652,
+          "ci95_gain_pct": [
+            12.57728968109153,
+            15.619516630201957
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.02015996803343296,
+          "candidate_ms": 0.016204800009727478,
+          "relative_gain_pct": 24.40580126209051,
+          "ci95_gain_pct": [
+            23.45188983571582,
+            25.367083551807834
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.01627087989449501,
+          "candidate_ms": 0.016204800009727478,
+          "relative_gain_pct": 0.4054705484526355,
+          "ci95_gain_pct": [
+            -0.47652436113200247,
+            1.2952818552796286
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10089092277921737,
+          "candidate_ms": 0.015697306115180255,
+          "relative_gain_pct": 542.6778811755622,
+          "ci95_gain_pct": [
+            531.9368546734489,
+            553.6014728334595
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "flashinfer",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.0333503516856581,
+          "candidate_ms": 0.015697306115180255,
+          "relative_gain_pct": 112.45332688471498,
+          "ci95_gain_pct": [
+            110.78036138145518,
+            114.13957072926225
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k77",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.021227241307497025,
+          "candidate_ms": 0.015697306115180255,
+          "relative_gain_pct": 35.22434753806238,
+          "ci95_gain_pct": [
+            32.16996506996346,
+            38.3493152730674
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "sdxl-q6144-k6144",
+      "raw_run_ref": "runs/final-confirmation/sdxl-q6144-k6144.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k6144",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5977168006896972,
+          "candidate_ms": 0.5966569910049438,
+          "relative_gain_pct": 0.17799632761172912,
+          "ci95_gain_pct": [
+            -0.33987124806430513,
+            0.6985549175308359
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k6144",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5962633929252624,
+          "candidate_ms": 0.5966569910049438,
+          "relative_gain_pct": -0.06586451903402013,
+          "ci95_gain_pct": [
+            -0.4662120376303647,
+            0.33609328827861606
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k6144",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5962040305137634,
+          "candidate_ms": 0.5966569910049438,
+          "relative_gain_pct": -0.075980231823225,
+          "ci95_gain_pct": [
+            -0.4757524932736734,
+            0.3253978479582198
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k6144",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.6007678430061787,
+          "candidate_ms": 0.5970060412772,
+          "relative_gain_pct": 0.6300686182625803,
+          "ci95_gain_pct": [
+            0.41616591352697796,
+            0.8444269704198426
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k6144",
+          "candidate": "fa4-qualified",
+          "baseline": "fa2",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5968293565325439,
+          "candidate_ms": 0.5970060412772,
+          "relative_gain_pct": -0.029810226541782114,
+          "ci95_gain_pct": [
+            -0.29756231173546643,
+            0.23866091006916612
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "sdxl-q6144-k6144",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5971911128610372,
+          "candidate_ms": 0.5970060412772,
+          "relative_gain_pct": 0.03097901334421227,
+          "ci95_gain_pct": [
+            -0.056241703799386755,
+            0.11827584783250522
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "transformer-s1024-kv4",
+      "raw_run_ref": "runs/final-confirmation/transformer-s1024-kv4.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.05592067176103592,
+          "candidate_ms": 0.04535110399127006,
+          "relative_gain_pct": 23.306535548739184,
+          "ci95_gain_pct": [
+            22.702548136277677,
+            23.913496011067625
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.05365225571393967,
+          "candidate_ms": 0.04535110399127006,
+          "relative_gain_pct": 18.30461726447268,
+          "ci95_gain_pct": [
+            17.96742785400283,
+            18.642770472327964
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.04536444810032844,
+          "candidate_ms": 0.04535110399127006,
+          "relative_gain_pct": 0.02989657101453158,
+          "ci95_gain_pct": [
+            -0.4383777739041972,
+            0.5003733796658194
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.08404154288582504,
+          "candidate_ms": 0.044840835593640806,
+          "relative_gain_pct": 86.49820727331559,
+          "ci95_gain_pct": [
+            63.55841175660555,
+            112.65541125405237
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.05359515752643347,
+          "candidate_ms": 0.044840835593640806,
+          "relative_gain_pct": 19.52303872286416,
+          "ci95_gain_pct": [
+            19.312153071542927,
+            19.73429711708532
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.04490426001138985,
+          "candidate_ms": 0.044840835593640806,
+          "relative_gain_pct": 0.1416244266436273,
+          "ci95_gain_pct": [
+            -0.05813092232596073,
+            0.34177902969771967
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "transformer-s1024-kv16",
+      "raw_run_ref": "runs/final-confirmation/transformer-s1024-kv16.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.0599984964132309,
+          "candidate_ms": 0.04587155205011368,
+          "relative_gain_pct": 30.781984539034713,
+          "ci95_gain_pct": [
+            29.575733678468374,
+            31.999464671450895
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.05440537601709366,
+          "candidate_ms": 0.04587155205011368,
+          "relative_gain_pct": 18.590550841113295,
+          "ci95_gain_pct": [
+            17.528796482786046,
+            19.661897081184954
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.046066336065530775,
+          "candidate_ms": 0.04587155205011368,
+          "relative_gain_pct": 0.41236544196885383,
+          "ci95_gain_pct": [
+            -0.5641568439818112,
+            1.398477788653052
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.10135123683139682,
+          "candidate_ms": 0.04501484683714807,
+          "relative_gain_pct": 125.14141276316116,
+          "ci95_gain_pct": [
+            122.18520338293,
+            128.13695497819276
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.05521380193531513,
+          "candidate_ms": 0.04501484683714807,
+          "relative_gain_pct": 22.655815622415275,
+          "ci95_gain_pct": [
+            21.75783150713677,
+            23.560422518843115
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s1024-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.04526319350115955,
+          "candidate_ms": 0.04501484683714807,
+          "relative_gain_pct": 0.5482069498690123,
+          "ci95_gain_pct": [
+            -0.45888688620981943,
+            1.5654899225060026
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "transformer-s4096-kv4",
+      "raw_run_ref": "runs/final-confirmation/transformer-s4096-kv4.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5206944942474365,
+          "candidate_ms": 0.45052716732025144,
+          "relative_gain_pct": 15.573097384227141,
+          "ci95_gain_pct": [
+            15.052455812685306,
+            16.096094991058287
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.47979001426696777,
+          "candidate_ms": 0.45052716732025144,
+          "relative_gain_pct": 6.495471921709539,
+          "ci95_gain_pct": [
+            6.135781318826661,
+            6.856381503980868
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.45067382192611694,
+          "candidate_ms": 0.45052716732025144,
+          "relative_gain_pct": 0.03240792501015832,
+          "ci95_gain_pct": [
+            -0.17720511879736334,
+            0.24246112507846362
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5199747799430042,
+          "candidate_ms": 0.44959816853515805,
+          "relative_gain_pct": 15.65319818050057,
+          "ci95_gain_pct": [
+            15.50606240639949,
+            15.800521381439413
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.4800692666787654,
+          "candidate_ms": 0.44959816853515805,
+          "relative_gain_pct": 6.777384084576266,
+          "ci95_gain_pct": [
+            6.674688626232372,
+            6.880178407583348
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv4",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.4496971458662301,
+          "candidate_ms": 0.44959816853515805,
+          "relative_gain_pct": 0.021935347866408605,
+          "ci95_gain_pct": [
+            -0.16479094096598645,
+            0.2090108792883738
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    },
+    {
+      "shape": "transformer-s4096-kv16",
+      "raw_run_ref": "runs/final-confirmation/transformer-s4096-kv16.json",
+      "graph_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5441328663825988,
+          "candidate_ms": 0.45393078231811523,
+          "relative_gain_pct": 19.871336228288495,
+          "ci95_gain_pct": [
+            19.616106408035506,
+            20.12711064293684
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "graph_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.48637952184677125,
+          "candidate_ms": 0.45393078231811523,
+          "relative_gain_pct": 7.1480311956619635,
+          "ci95_gain_pct": [
+            6.57031347401249,
+            7.72888072536404
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "graph_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.4535770225524902,
+          "candidate_ms": 0.45393078231811523,
+          "relative_gain_pct": -0.07792218613423829,
+          "ci95_gain_pct": [
+            -0.2521576709163087,
+            0.09661764612491908
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      },
+      "wall_ms": {
+        "stock": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "stock",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.5449400067329406,
+          "candidate_ms": 0.45446495125070213,
+          "relative_gain_pct": 19.908085946579025,
+          "ci95_gain_pct": [
+            19.796428037489356,
+            20.019847927959212
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "competitive": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "sdpa-cudnn",
+          "metric": "wall_ms",
+          "status": "Confirmed Improvement",
+          "promote": true,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.48458371688611807,
+          "candidate_ms": 0.45446495125070213,
+          "relative_gain_pct": 6.627180676313205,
+          "ci95_gain_pct": [
+            6.199187394733263,
+            7.056898813361179
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        },
+        "host_ablation": {
+          "version": "operator-paired-0.1.0",
+          "shape": "transformer-s4096-kv16",
+          "candidate": "fa4-qualified",
+          "baseline": "fa4-json",
+          "metric": "wall_ms",
+          "status": "No Confirmed Improvement",
+          "promote": false,
+          "errors": [],
+          "paired_seeds": [
+            1009,
+            1013,
+            1019,
+            1021,
+            1031
+          ],
+          "baseline_ms": 0.4545856661628932,
+          "candidate_ms": 0.45446495125070213,
+          "relative_gain_pct": 0.026579342932464556,
+          "ci95_gain_pct": [
+            -0.10327346698509876,
+            0.15660094468963326
+          ],
+          "min_gain_pct": 3,
+          "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+        }
+      }
+    }
+  ],
+  "decode": {
+    "raw_ref": "runs/fa4-direct-decode-confirm.json",
+    "profile_proven": true,
+    "readback": {
+      "decode_key": "(<class 'cutlass.base_dsl.typing.BFloat16'>, <class 'cutlass.base_dsl.typing.BFloat16'>, 128, 4, 47, 64, False, False)",
+      "combine_key": "(120, <class 'cutlass.base_dsl.typing.BFloat16'>, <class 'cutlass.base_dsl.typing.Float32'>, 128, 16, 8, 128, 6, False, False, False, False, False, False)",
+      "num_splits": 47,
+      "partial_dtype": "float32",
+      "input_dtype": "bfloat16",
+      "kv_quantization": false,
+      "source": {
+        "schema_version": 1,
+        "base_revision": "baabf5a1b106c3fb95c365852e2e75c0078af837",
+        "file": "flash_attn/cute/interface.py",
+        "before_sha256": "d90d8dc822df495e3451abfc3c0d6949c7b212e53cb0919c0152a501ad12ddb6",
+        "after_sha256": "1b7f90bced17c18505adfefe0bb1b57ab28f018d8055e0f36a2a95ed2ce82bb1",
+        "patch_sha256": "b0f57ec2c2958476e1b974080de80b842df21fbdbdfaace78a824cd16bc52140",
+        "observed_failure": "runs/thad-gated-strict.json: forward expects 4 results, gated branch returns 2",
+        "qualification_scope": "BF16 inference-only; no new autograd or FP8 claim"
+      }
+    },
+    "graph_ms": {
+      "fa4-default": {
+        "version": "operator-paired-0.1.0",
+        "shape": "gqa-decode-k8k-d128",
+        "candidate": "fa4-direct-gemv",
+        "baseline": "fa4-default",
+        "metric": "graph_ms",
+        "status": "Confirmed Improvement",
+        "promote": true,
+        "errors": [],
+        "paired_seeds": [
+          1009,
+          1013,
+          1019,
+          1021,
+          1031
+        ],
+        "baseline_ms": 0.15720425629615783,
+        "candidate_ms": 0.018717152044177055,
+        "relative_gain_pct": 739.8945026587711,
+        "ci95_gain_pct": [
+          738.611493841318,
+          741.1794743775652
+        ],
+        "min_gain_pct": 3,
+        "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+      },
+      "fa4-gemv": {
+        "version": "operator-paired-0.1.0",
+        "shape": "gqa-decode-k8k-d128",
+        "candidate": "fa4-direct-gemv",
+        "baseline": "fa4-gemv",
+        "metric": "graph_ms",
+        "status": "No Confirmed Improvement",
+        "promote": false,
+        "errors": [],
+        "paired_seeds": [
+          1009,
+          1013,
+          1019,
+          1021,
+          1031
+        ],
+        "baseline_ms": 0.01874537605047226,
+        "candidate_ms": 0.018717152044177055,
+        "relative_gain_pct": 0.15083752986975174,
+        "ci95_gain_pct": [
+          -0.010163000928675725,
+          0.3120972987237236
+        ],
+        "min_gain_pct": 3,
+        "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+      }
+    },
+    "wall_ms": {
+      "fa4-default": {
+        "version": "operator-paired-0.1.0",
+        "shape": "gqa-decode-k8k-d128",
+        "candidate": "fa4-direct-gemv",
+        "baseline": "fa4-default",
+        "metric": "wall_ms",
+        "status": "Confirmed Improvement",
+        "promote": true,
+        "errors": [],
+        "paired_seeds": [
+          1009,
+          1013,
+          1019,
+          1021,
+          1031
+        ],
+        "baseline_ms": 0.15820198114961387,
+        "candidate_ms": 0.027660689176991583,
+        "relative_gain_pct": 471.9537425453909,
+        "ci95_gain_pct": [
+          466.0149168302141,
+          477.9548804891443
+        ],
+        "min_gain_pct": 3,
+        "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+      },
+      "fa4-gemv": {
+        "version": "operator-paired-0.1.0",
+        "shape": "gqa-decode-k8k-d128",
+        "candidate": "fa4-direct-gemv",
+        "baseline": "fa4-gemv",
+        "metric": "wall_ms",
+        "status": "Confirmed Improvement",
+        "promote": true,
+        "errors": [],
+        "paired_seeds": [
+          1009,
+          1013,
+          1019,
+          1021,
+          1031
+        ],
+        "baseline_ms": 0.13578160577453674,
+        "candidate_ms": 0.027660689176991583,
+        "relative_gain_pct": 390.8959819664729,
+        "ci95_gain_pct": [
+          385.55796808351175,
+          396.29267966081744
+        ],
+        "min_gain_pct": 3,
+        "interval": "Student-t on independent paired-round log speed ratios; conditional on this fixed machine/process protocol"
+      }
+    }
+  },
+  "threshold_pct": 3,
+  "precision_erratum": "reports/reference-precision-erratum.json",
+  "scope": "One physical PRO6000 SE GPU0; fixed shapes/dtypes; paired round CI conditional on this protocol; no model-throughput or global-optimum claim"
+}

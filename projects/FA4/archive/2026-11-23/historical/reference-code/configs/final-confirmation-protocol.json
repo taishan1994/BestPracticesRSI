@@ -1,0 +1,14 @@
+{
+ "schema_version":1,"protocol_id":"fa4-synthesis-v1-dual-timing","parent":"synthesis-protocol.json",
+ "selection":"release-selection.json, frozen from development only",
+ "policy":"release-policy.json",
+ "FA4_candidate":"compiled_attention_v2; shape-qualified tuple-key direct launcher using unchanged upstream FA4 SM120 kernels",
+ "ablation":"compiled_attention v1 with identical frozen configuration; only hot dispatch differs",
+ "baseline":"same installed FA4 b38 stock default per shape; failure is Not Comparable, never a relative gain",
+ "competitors":"development-fastest graph and wall comparators; never used inside FA4 product",
+ "shape_matrix":"all 24 cases, separate sequential process per shape",
+ "holdout_seeds":[1009,1013,1019,1021,1031],"paired_rounds":5,"order":"forward/reverse alternate",
+ "timing":"identical graph and wall boundaries to synthesis dev; preserve raw samples; exclude compile/planning",
+ "promotion":"unchanged lower 95% paired-log Student-t bound >3%; no post-holdout search",
+ "decode_followup":"the gated FA4 PR2634 BF16 kernel and arity patch are evaluated separately; cannot be silently substituted for other FA4 shapes"
+}

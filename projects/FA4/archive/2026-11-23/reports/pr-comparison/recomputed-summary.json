@@ -1,0 +1,34 @@
+{
+  "same_precision": {
+    "forward": {
+      "cases": 165,
+      "geomean_speedup": 0.9961966631112934,
+      "min_speedup": 0.8480022004458343,
+      "max_speedup": 1.1069822324900846
+    },
+    "decode": {
+      "cases": 120,
+      "geomean_speedup": 0.9680453433817681,
+      "min_speedup": 0.7478917416959305,
+      "max_speedup": 1.252567740432853
+    }
+  },
+  "fp8_error_run": {
+    "forward": {
+      "cases": 165,
+      "geomean_speedup": 1.3045469603324893,
+      "min_speedup": 0.9598279292746508,
+      "max_speedup": 1.6682907307120414,
+      "max_abs_error": 0.09375,
+      "finite_outputs": 165
+    },
+    "decode": {
+      "cases": 120,
+      "geomean_speedup": 0.9130749650118979,
+      "min_speedup": 0.258951036480266,
+      "max_speedup": 2.026971160656091,
+      "max_abs_error": 0.01953125,
+      "finite_outputs": 120
+    }
+  }
+}

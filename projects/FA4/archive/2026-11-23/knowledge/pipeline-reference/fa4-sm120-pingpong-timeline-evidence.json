@@ -1,0 +1,102 @@
+{
+  "status": "audited-real-fields-with-explicit-unavailable",
+  "prefill": {
+    "shape": "mha-s2k-d128-causal",
+    "method": "ours",
+    "cache": "warm",
+    "kernel_duration_ns": 85152,
+    "sm_throughput_pct": 48.83,
+    "tensor_active_pct": 48.83,
+    "dram_throughput_pct": 0.86,
+    "l2_hit_pct": 100.0,
+    "effective_sm_clock_mhz": 2280.25116038,
+    "block_size": [
+      128,
+      1,
+      1
+    ],
+    "grid_size": [
+      32,
+      16,
+      1
+    ],
+    "registers_per_thread": 255,
+    "shared_mem_per_block_bytes": 82944,
+    "waves_per_multiprocessor": 2.72,
+    "tile": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_threads": 128
+    },
+    "stall_reason": null,
+    "stall_reason_status": "collected_fused_kernel_aggregate",
+    "stall_metrics": {
+      "smsp__warp_issue_stalled_barrier_per_warp_active_pct": 1.212838,
+      "smsp__warp_issue_stalled_long_scoreboard_per_warp_active_pct": 5.930861,
+      "smsp__warp_issue_stalled_math_pipe_throttle_per_warp_active_pct": 18.703471,
+      "kernel_duration_us": 88.224,
+      "replay_rows": 3,
+      "source": "../v3/profiles/stall-mha5.csv"
+    }
+  },
+  "decode": {
+    "shape": "gqa-decode-k8k-d128",
+    "method": "ours-decode",
+    "cache": "warm",
+    "kernel_duration_ns": 16160,
+    "sm_throughput_pct": 16.39,
+    "tensor_active_pct": 0.0,
+    "dram_throughput_pct": 3.24,
+    "l2_hit_pct": 100.02,
+    "effective_sm_clock_mhz": 2309.394091,
+    "block_size": [
+      128,
+      1,
+      1
+    ],
+    "grid_size": [
+      47,
+      4,
+      1
+    ],
+    "registers_per_thread": 122,
+    "shared_mem_per_block_bytes": 66560,
+    "waves_per_multiprocessor": 1.0,
+    "num_splits": 47,
+    "stall_reason": null,
+    "stall_reason_status": "collected_fused_decode_kernel_aggregate",
+    "stall_metrics": {
+      "smsp__warp_issue_stalled_barrier_per_warp_active_pct": 0.3265945,
+      "smsp__warp_issue_stalled_long_scoreboard_per_warp_active_pct": 6.744579,
+      "smsp__warp_issue_stalled_math_pipe_throttle_per_warp_active_pct": 0.072098,
+      "kernel_duration_us": 15.552,
+      "replay_rows": 4,
+      "source": "../v3/profiles/stall-decode.csv"
+    }
+  },
+  "sources": {
+    "ncu_summary": "../v3/reports/ncu-analysis.json",
+    "prefill_csv": "../v3/profiles/mha-s2k-d128-causal--ours--warm.csv",
+    "prefill_readback": "../v3/profiles/mha-s2k-d128-causal--ours--warm-worker.pid9522.json",
+    "decode_csv": "../v3/profiles/gqa-decode-k8k-d128--ours-decode--warm.csv",
+    "decode_readback": "../v3/profiles/gqa-decode-k8k-d128--ours-decode--warm-worker.pid19176.json",
+    "prefill_stall_summary": "fa4-sm120-stall-prefill-mha-s2k.json",
+    "decode_stall_summary": "fa4-sm120-stall-decode-gqa.json"
+  },
+  "stage_instrumentation": {
+    "nvtx_env": "FA4_STAGE_NVTX=1",
+    "marker": "profile_v3|fused-stage-map|QK>softmax>PV>correction",
+    "mode": "fused-source-map",
+    "per_stage_duration": "unavailable_until_clock64_device_buffer",
+    "stall_metrics": "prefill_fused_aggregate_collected_decode_pending",
+    "collector": "../v3/benchmarks/collect_stall_metrics.py",
+    "ncu_container": "fa4-ncu-stall-sm120",
+    "clock64_debug_abi": "enabled_in_debug_timing_profile",
+    "stage_timing_source": "fa4-sm120-stage-timing-prefill.json",
+    "stage_timing_scope": "first CTA; QK/softmax/PV first n-block; correction/epilogue CTA boundary",
+    "pc_sampling_section": "SourceCounters",
+    "pc_sampling_source": "../v3/profiles/pcsamp-source-lineinfo-source.csv",
+    "pc_sampling_attribution": "fa4-sm120-pcsamp-stage-attribution.json",
+    "pc_sampling_semantics": "SASS PC intervals anchored by clock64 CS2R markers; first CTA"
+  }
+}

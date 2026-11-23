@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/Dao-AILab/flash-attention",
+  "PR3109": "064643897f27c3d7b2058743d9e4dbdbf0d66325",
+  "PR3132": "e1f207e9e8453a7343a1a72f741225de93673763",
+  "source_policy": "Pinned source is fetched on demand; no repeated source trees, build cache or installed dependencies are archived."
+}

@@ -1,0 +1,168 @@
+{
+  "source": "../v3/profiles/pcsamp-source-lineinfo-source.csv",
+  "method": "PC address intervals anchored by clock64 CS2R instructions",
+  "stages": [
+    {
+      "stage": "kernel_entry",
+      "pc_start": "0x76cd771e83b0",
+      "pc_end": "0x76cd771e9200",
+      "rows": 229,
+      "samples": 441.0,
+      "stall_counts": {
+        "stall_barrier": 0.0,
+        "stall_long_sb": 386.0,
+        "stall_math": 1.0,
+        "stall_lg": 6.0,
+        "stall_mio": 3.0,
+        "stall_short_sb": 0.0,
+        "stall_wait": 9.0,
+        "stall_not_selected": 0.0
+      },
+      "stall_pct_of_samples": {
+        "stall_barrier": 0.0,
+        "stall_long_sb": 87.52834467120181,
+        "stall_math": 0.22675736961451248,
+        "stall_lg": 1.3605442176870748,
+        "stall_mio": 0.6802721088435374,
+        "stall_short_sb": 0.0,
+        "stall_wait": 2.0408163265306123,
+        "stall_not_selected": 0.0
+      }
+    },
+    {
+      "stage": "qk",
+      "pc_start": "0x76cd771e9200",
+      "pc_end": "0x76cd771ea440",
+      "rows": 292,
+      "samples": 665.0,
+      "stall_counts": {
+        "stall_barrier": 17.0,
+        "stall_long_sb": 317.0,
+        "stall_math": 91.0,
+        "stall_lg": 13.0,
+        "stall_mio": 27.0,
+        "stall_short_sb": 0.0,
+        "stall_wait": 163.0,
+        "stall_not_selected": 0.0
+      },
+      "stall_pct_of_samples": {
+        "stall_barrier": 2.556390977443609,
+        "stall_long_sb": 47.669172932330824,
+        "stall_math": 13.68421052631579,
+        "stall_lg": 1.9548872180451127,
+        "stall_mio": 4.06015037593985,
+        "stall_short_sb": 0.0,
+        "stall_wait": 24.51127819548872,
+        "stall_not_selected": 0.0
+      }
+    },
+    {
+      "stage": "softmax",
+      "pc_start": "0x76cd771ea440",
+      "pc_end": "0x76cd771ec090",
+      "rows": 453,
+      "samples": 207.0,
+      "stall_counts": {
+        "stall_barrier": 28.0,
+        "stall_long_sb": 39.0,
+        "stall_math": 1.0,
+        "stall_lg": 8.0,
+        "stall_mio": 3.0,
+        "stall_short_sb": 38.0,
+        "stall_wait": 34.0,
+        "stall_not_selected": 0.0
+      },
+      "stall_pct_of_samples": {
+        "stall_barrier": 13.526570048309178,
+        "stall_long_sb": 18.840579710144926,
+        "stall_math": 0.4830917874396135,
+        "stall_lg": 3.864734299516908,
+        "stall_mio": 1.4492753623188406,
+        "stall_short_sb": 18.357487922705314,
+        "stall_wait": 16.42512077294686,
+        "stall_not_selected": 0.0
+      }
+    },
+    {
+      "stage": "pv",
+      "pc_start": "0x76cd771ec090",
+      "pc_end": "0x76cd771ecf40",
+      "rows": 235,
+      "samples": 264.0,
+      "stall_counts": {
+        "stall_barrier": 0.0,
+        "stall_long_sb": 0.0,
+        "stall_math": 75.0,
+        "stall_lg": 0.0,
+        "stall_mio": 7.0,
+        "stall_short_sb": 1.0,
+        "stall_wait": 155.0,
+        "stall_not_selected": 0.0
+      },
+      "stall_pct_of_samples": {
+        "stall_barrier": 0.0,
+        "stall_long_sb": 0.0,
+        "stall_math": 28.40909090909091,
+        "stall_lg": 0.0,
+        "stall_mio": 2.6515151515151514,
+        "stall_short_sb": 0.3787878787878788,
+        "stall_wait": 58.71212121212121,
+        "stall_not_selected": 0.0
+      }
+    },
+    {
+      "stage": "correction",
+      "pc_start": "0x76cd771ecf40",
+      "pc_end": "0x76cd771f9fd0",
+      "rows": 3337,
+      "samples": 5022.0,
+      "stall_counts": {
+        "stall_barrier": 33.0,
+        "stall_long_sb": 82.0,
+        "stall_math": 1000.0,
+        "stall_lg": 49.0,
+        "stall_mio": 87.0,
+        "stall_short_sb": 114.0,
+        "stall_wait": 2562.0,
+        "stall_not_selected": 0.0
+      },
+      "stall_pct_of_samples": {
+        "stall_barrier": 0.6571087216248507,
+        "stall_long_sb": 1.632815611310235,
+        "stall_math": 19.91238550378335,
+        "stall_lg": 0.9757068896853843,
+        "stall_mio": 1.7323775388291518,
+        "stall_short_sb": 2.270011947431302,
+        "stall_wait": 51.01553166069295,
+        "stall_not_selected": 0.0
+      }
+    },
+    {
+      "stage": "epilogue",
+      "pc_start": "0x76cd771f9fd0",
+      "pc_end": "0x76cd771fa8f0",
+      "rows": 146,
+      "samples": 85.0,
+      "stall_counts": {
+        "stall_barrier": 5.0,
+        "stall_long_sb": 0.0,
+        "stall_math": 0.0,
+        "stall_lg": 0.0,
+        "stall_mio": 11.0,
+        "stall_short_sb": 25.0,
+        "stall_wait": 12.0,
+        "stall_not_selected": 0.0
+      },
+      "stall_pct_of_samples": {
+        "stall_barrier": 5.882352941176471,
+        "stall_long_sb": 0.0,
+        "stall_math": 0.0,
+        "stall_lg": 0.0,
+        "stall_mio": 12.941176470588236,
+        "stall_short_sb": 29.41176470588235,
+        "stall_wait": 14.117647058823529,
+        "stall_not_selected": 0.0
+      }
+    }
+  ]
+}

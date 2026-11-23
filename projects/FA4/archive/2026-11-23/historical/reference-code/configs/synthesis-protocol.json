@@ -1,0 +1,16 @@
+{
+ "schema_version":1,"protocol_id":"fa4-synthesis-v1-dual-timing",
+ "parent":"fa4-sm120-v1; research-extension.json; Nebius source reproduction",
+ "reason":"Combine research-derived shape tuning and direct launcher on current FA4 b38; keep graph device latency and synchronized Python-inclusive call latency separate",
+ "dev_seeds":[181,191,211],"holdout_seeds":[1009,1013,1019,1021,1031],
+ "seed_reason":"Earlier 101..505 seeds were consumed by source reproduction before synthesis; new holdout is locked before synthesis search",
+ "matrix":"benchmarks/synthesis.py:matrix; 24 fixed shapes (original 12 + 12 Nebius)",
+ "candidates":["stock","api-tuned","direct-default","direct-tuned","direct-no-qregs","fa2","sdpa-cudnn","flashinfer"],
+ "graph":"5 warmups; 20 raw CUDA-event samples; each graph has 10 calls; ms/call",
+ "wall":"50 warmups; 5 synchronized blocks x 100 calls; raw wall samples; allocation and Python included; compile and FlashInfer planning excluded and separately recorded",
+ "numerical_gate":{"atol":0.02,"rtol":0.02,"reference":"chunked FP32 math, correct bottom-right causal mask"},
+ "confirmation":{"paired_rounds":5,"interval":"95% Student-t of log baseline/candidate; df4","minimum_lower_gain_pct":3},
+ "bounds":{"gpu_hours":2,"wall_hours":3,"stop":"finite declared candidates; no post-holdout search"},
+ "sources":["c-sm120","c-qu0b","c-nebius-opt"],
+ "inference_only":true,"no_model_throughput_claim":true
+}

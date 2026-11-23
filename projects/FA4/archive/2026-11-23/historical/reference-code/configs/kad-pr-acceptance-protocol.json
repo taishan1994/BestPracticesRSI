@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "forward_case_source": "optimization/pr3109-forward-grid-v48/cases.json",
+  "decode_case_source": "optimization/pr3109-full-decode-v96/decode-cases.json",
+  "pr_forward_cases": 165,
+  "pr_decode_cases": 120,
+  "pr_non_backward_cases": 285,
+  "main_comparable_cases": 111,
+  "required_arms": ["pr3109", "kad"],
+  "numerical_gate": "abs_error <= 0.02 + 0.02 * abs(reference), FP32/FP64 control < 0.02, LSE error < 0.002",
+  "timing_protocol": "ABAB, same frozen case order, CUDA graph replay, retain every sample",
+  "promotion_rule": "all 165 forward and 120 decode PR cases must have completed pr3109/kad rows; the historical main comparison is context only and is not a KAD acceptance arm",
+  "not_comparable_rule": "retain native/resource failures with reason; never convert an unavailable baseline into speedup"
+}

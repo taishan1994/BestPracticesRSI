@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "base_revision": "baabf5a1b106c3fb95c365852e2e75c0078af837",
+  "file": "flash_attn/cute/interface.py",
+  "before_sha256": "d90d8dc822df495e3451abfc3c0d6949c7b212e53cb0919c0152a501ad12ddb6",
+  "after_sha256": "1b7f90bced17c18505adfefe0bb1b57ab28f018d8055e0f36a2a95ed2ce82bb1",
+  "patch_sha256": "b0f57ec2c2958476e1b974080de80b842df21fbdbdfaace78a824cd16bc52140",
+  "observed_failure": "runs/thad-gated-strict.json: forward expects 4 results, gated branch returns 2",
+  "qualification_scope": "BF16 inference-only; no new autograd or FP8 claim"
+}

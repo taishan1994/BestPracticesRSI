@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "baseline": "pr3109",
+  "promoted_shapes": {},
+  "promotion_rule": "PR-source paired lower bound must clear 1.10x with numerical/resource gates; release-package KAD evidence is not transferable",
+  "rejected_campaign": "runs/kad-pr-forward-full-001.json",
+  "rejection_reason": "54 direct PR-source KAD rows produced 0.9068698844866884x geometric mean; no PR-source candidate qualifies",
+  "backend_tests": false,
+  "backward": false
+}

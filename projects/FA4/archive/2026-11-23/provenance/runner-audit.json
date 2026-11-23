@@ -1,0 +1,26 @@
+[
+  {
+    "runner": "compare_bf16_source_forward.py",
+    "recorded_sha256": "411b15d41d07ccf1f67b575321e589010f9249c06c194b484157022effda8f27",
+    "retained_file_sha256": "411b15d41d07ccf1f67b575321e589010f9249c06c194b484157022effda8f27",
+    "byte_match": true
+  },
+  {
+    "runner": "compare_bf16_source_decode.py",
+    "recorded_sha256": "b66037cb5a2979f6bd559859cb1e2ce42293f936574451a1a7d0c13e2d045cff",
+    "retained_file_sha256": "b66037cb5a2979f6bd559859cb1e2ce42293f936574451a1a7d0c13e2d045cff",
+    "byte_match": true
+  },
+  {
+    "runner": "pr3132_fp8_full_forward.py",
+    "recorded_sha256": "69c1d253e4d7102f2fa3405399f7b8cea0d546550bf3f5e7d95ba5dcb9fd9b1d",
+    "retained_file_sha256": "8d054511b8d4062d3b33fd712da4f6c32d485033c075d178fdd082ffaf7275f9",
+    "byte_match": false
+  },
+  {
+    "runner": "pr3132_fp8_full_decode.py",
+    "recorded_sha256": "a4075a089f42e80a491a87a6bf91a979f741c2bce3d304366889d6da473ccdf9",
+    "retained_file_sha256": "9621fa002a5cb945de94ca7033f17266b6e734d7026b979277ad2cc8eed4b7f9",
+    "byte_match": false
+  }
+]

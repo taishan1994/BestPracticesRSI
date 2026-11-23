@@ -1,0 +1,45 @@
+{
+  "status": "completed",
+  "completed_UTC": "2026-11-23T07:10:28.579733+00:00",
+  "timing_cases": 285,
+  "profile_cases": 285,
+  "joined_cases": 285,
+  "kernel_launches": 1375,
+  "main_launches": 855,
+  "fixed_resource_differences": [],
+  "fixed_main_differences": [],
+  "fixed_spill_count_differences": [],
+  "auto_new_spill_cases": [],
+  "fixed_new_spill_cases": [],
+  "missing_requested_metrics": [],
+  "source_commit": "064643897f27c3d7b2058743d9e4dbdbf0d66325",
+  "ncu_report_sha256": {
+    "forward.ncu-rep": "fd74a9a1855887d606a981f2a79a09f93791ee7ec96fdd4d2daaa5790c502201",
+    "decode.ncu-rep": "8ceb06e67817acfe1e3a36f252892736848bc03f9171a7bfeddca72562391332"
+  },
+  "hardware_proofs": {
+    "forward-": [
+      188,
+      80
+    ],
+    "forward-profile-": [
+      188,
+      80
+    ],
+    "decode-": [
+      188,
+      80
+    ],
+    "decode-profile-": [
+      188,
+      80
+    ]
+  },
+  "CUDA_graph_hardware_SM_proof": [
+    188,
+    80
+  ],
+  "source_files_reverified": 74,
+  "cross_GPU_previous_10_case_resource_differences": [],
+  "cross_GPU_previous_10_case_kernel_comparisons": 53
+}

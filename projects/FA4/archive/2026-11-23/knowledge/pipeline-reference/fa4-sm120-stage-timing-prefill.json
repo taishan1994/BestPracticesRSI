@@ -1,0 +1,51 @@
+{
+  "shape": "mha-s2k-d128-causal",
+  "method": "ours",
+  "seed": 2003,
+  "cta": "first CTA",
+  "clock_source": "prefill NCU effective SM clock MHz",
+  "effective_sm_clock_mhz": 2280.25116038,
+  "timestamps_clock64": {
+    "kernel_entry": 878520486501428,
+    "qk_start": 878520486503965,
+    "qk_done": 878520486506744,
+    "softmax_done": 878520486507797,
+    "pv_done": 878520486509932,
+    "correction_done": 878520486510215,
+    "epilogue_done": 878520486510761
+  },
+  "durations": {
+    "kernel_entry__to__qk_start": {
+      "cycles": 2537,
+      "estimated_us": 1.1125967367459704
+    },
+    "qk_start__to__qk_done": {
+      "cycles": 2779,
+      "estimated_us": 1.2187253966957239
+    },
+    "qk_done__to__softmax_done": {
+      "cycles": 1053,
+      "estimated_us": 0.46179123523591126
+    },
+    "softmax_done__to__pv_done": {
+      "cycles": 2135,
+      "estimated_us": 0.9363003677385284
+    },
+    "pv_done__to__correction_done": {
+      "cycles": 283,
+      "estimated_us": 0.1241091353957862
+    },
+    "correction_done__to__epilogue_done": {
+      "cycles": 546,
+      "estimated_us": 0.23944730715936136
+    }
+  },
+  "semantics": "first n-block only for QK/softmax/PV; correction and epilogue are CTA-level boundaries",
+  "debug_ncu_aggregate": {
+    "gpu__time_duration.avg": 90.912,
+    "smsp__warp_issue_stalled_barrier_per_warp_active.pct": 1.203252,
+    "smsp__warp_issue_stalled_long_scoreboard_per_warp_active.pct": 5.846996,
+    "smsp__warp_issue_stalled_math_pipe_throttle_per_warp_active.pct": 18.449383,
+    "source": "../v3/profiles/debug-stage-ncu.csv"
+  }
+}

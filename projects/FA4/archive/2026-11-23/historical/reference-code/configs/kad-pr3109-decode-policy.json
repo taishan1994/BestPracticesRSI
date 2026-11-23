@@ -1,0 +1,660 @@
+{
+  "source": "PR3109 full decode v96; repeated full 120-case KAD confirmation",
+  "evidence": "runs/kad-pr-decode-candidate-fallback-tile128-repeat.json",
+  "cases": {
+    "bf16-d256-h8-hk2-b128-dense-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-dense-uniform512": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b128-dense-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-paged256-uniform512": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-dense-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-paged256-one_long_short128": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b8-paged256-one_long_short128": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-dense-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-paged256-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b8-dense-uniform4096": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b8-dense-uniform32768": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-dense-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-paged256-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b128-paged256-loguniform64to32768": {
+      "num_splits": 4,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-dense-uniform512": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b128-paged256-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-dense-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-dense-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-paged256-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-dense-one_long_short128": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b8-paged256-uniform32768": {
+      "tile_m": 16,
+      "tile_n": 64,
+      "num_splits": 4,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-paged256-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-dense-uniform512": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b128-dense-uniform512": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-dense-uniform32768": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-dense-uniform32768": {
+      "num_splits": 4,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-paged256-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b128-dense-uniform512": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-paged256-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-paged256-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-dense-uniform4096": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-dense-uniform512": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-dense-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b128-dense-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b128-paged256-uniform512": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-paged256-uniform512": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-paged256-loguniform64to32768": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b128-dense-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-paged256-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-paged256-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-paged256-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b128-paged256-uniform512": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-paged256-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-paged256-uniform512": {
+      "tile_m": 32,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-dense-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-paged256-uniform4096": {
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-dense-loguniform64to32768": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-dense-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-dense-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-paged256-uniform512": {
+      "tile_m": 128,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-dense-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-paged256-loguniform64to32768": {
+      "num_splits": 8,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-paged256-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-dense-loguniform64to32768": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-paged256-uniform512": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b128-dense-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-paged256-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b128-dense-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-dense-one_long_short128": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-dense-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-paged256-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-dense-uniform32768": {
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-paged256-uniform512": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-dense-uniform512": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-paged256-loguniform64to32768": {
+      "num_splits": 8,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-dense-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-dense-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-dense-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-dense-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b8-paged256-uniform4096": {
+      "tile_m": 16,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-dense-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b8-dense-one_long_short128": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-dense-uniform512": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": true,
+      "mma_pv_is_rs": true,
+      "intra_wg_overlap": null
+    },
+    "bf16-d64-h32-hk8-b8-dense-uniform512": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b128-paged256-uniform32768": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-dense-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-dense-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b128-dense-loguniform64to32768": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-paged256-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-dense-uniform512": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-paged256-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-paged256-one_long_short128": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-dense-uniform512": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": true,
+      "mma_pv_is_rs": true,
+      "intra_wg_overlap": null
+    },
+    "bf16-d128-h16-hk4-b128-paged256-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-paged256-uniform32768": {
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b8-dense-loguniform64to32768": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-paged256-one_long_short128": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-paged256-uniform4096": {
+      "tile_m": 16,
+      "tile_n": 64,
+      "num_splits": 4,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b8-paged256-uniform512": {
+      "tile_m": 16,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-paged256-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-dense-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b128-paged256-one_long_short128": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-dense-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-paged256-uniform32768": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-dense-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-paged256-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-dense-uniform512": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-dense-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-paged256-one_long_short128": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b128-paged256-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-dense-uniform4096": {
+      "num_splits": 16,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-dense-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-paged256-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b128-paged256-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b8-paged256-uniform512": {
+      "tile_m": 16,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b128-paged256-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 96,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-dense-uniform32768": {
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b8-paged256-uniform32768": {
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-paged256-loguniform64to32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 2,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-paged256-uniform512": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 1,
+      "pack_gqa": null,
+      "mma_pv_is_rs": true,
+      "intra_wg_overlap": null
+    },
+    "bf16-d64-h32-hk8-b8-paged256-loguniform64to32768": {
+      "num_splits": 8,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b32-dense-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b32-paged256-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b1-paged256-one_long_short128": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-dense-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 32,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b128-dense-uniform32768": {
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d128-h16-hk4-b1-paged256-uniform512": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b128-paged256-uniform32768": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bf16-d256-h8-hk2-b1-paged256-uniform4096": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_splits": 0,
+      "pack_gqa": null
+    },
+    "bf16-d64-h32-hk8-b32-dense-one_long_short128": {
+      "tile_m": 64,
+      "tile_n": 128,
+      "num_splits": 0,
+      "pack_gqa": null
+    }
+  }
+}

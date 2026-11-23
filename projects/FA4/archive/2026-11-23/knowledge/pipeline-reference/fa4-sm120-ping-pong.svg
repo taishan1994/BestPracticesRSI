@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <style>
+    text { font-family: Arial, "Noto Sans CJK SC", sans-serif; fill: #172033; }
+    .title { font-size: 28px; font-weight: 700; }
+    .sub { font-size: 16px; fill: #526071; }
+    .label { font-size: 20px; font-weight: 700; }
+    .small { font-size: 15px; }
+    .box { stroke: #26364a; stroke-width: 2; rx: 12; }
+    .mem { fill: #e7f0ff; }
+    .dma { fill: #fff1cc; }
+    .mma { fill: #dff5e5; }
+    .soft { fill: #f0e3ff; }
+    .out { fill: #ffe3e3; }
+    .stage0 { fill: #eef6ff; stroke: #4383c4; stroke-width: 3; }
+    .stage1 { fill: #fff7e6; stroke: #d18b16; stroke-width: 3; }
+    .arrow { stroke: #40556e; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    .dash { stroke-dasharray: 9 7; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#40556e"/>
+    </marker>
+  </defs>
+  <text x="60" y="52" class="title">FA4 SM120 双缓冲 Ping-Pong 流水</text>
+  <text x="60" y="82" class="sub">TMA/异步搬运与 warp-MMA 计算重叠；Stage 0/1 交替承载 K/V tile</text>
+
+  <rect x="60" y="120" width="185" height="86" class="box mem"/>
+  <text x="152" y="153" text-anchor="middle" class="label">Global Memory</text>
+  <text x="152" y="180" text-anchor="middle" class="small">Q / K / V / page table</text>
+
+  <rect x="290" y="120" width="185" height="86" class="box dma"/>
+  <text x="382" y="153" text-anchor="middle" class="label">TMA / async</text>
+  <text x="382" y="180" text-anchor="middle" class="small">prefetch tile n+1</text>
+
+  <rect x="540" y="108" width="330" height="110" class="stage0"/>
+  <text x="705" y="140" text-anchor="middle" class="label">Ping：SMEM Stage 0</text>
+  <text x="705" y="170" text-anchor="middle" class="small">K/V tile n · mbarrier ready</text>
+  <text x="705" y="194" text-anchor="middle" class="small">warp MMA consumes current tile</text>
+
+  <rect x="930" y="120" width="185" height="86" class="box mma"/>
+  <text x="1022" y="153" text-anchor="middle" class="label">QK MMA</text>
+  <text x="1022" y="180" text-anchor="middle" class="small">warp-level BF16/FP16</text>
+
+  <rect x="1175" y="120" width="165" height="86" class="box soft"/>
+  <text x="1257" y="153" text-anchor="middle" class="label">Softmax</text>
+  <text x="1257" y="180" text-anchor="middle" class="small">online m / l</text>
+
+  <path d="M245 163 H290" class="arrow"/><path d="M475 163 H540" class="arrow"/>
+  <path d="M870 163 H930" class="arrow"/><path d="M1115 163 H1175" class="arrow"/>
+
+  <rect x="540" y="280" width="330" height="110" class="stage1"/>
+  <text x="705" y="312" text-anchor="middle" class="label">Pong：SMEM Stage 1</text>
+  <text x="705" y="342" text-anchor="middle" class="small">K/V tile n+1 · async copy in flight</text>
+  <text x="705" y="366" text-anchor="middle" class="small">producer/consumer overlap</text>
+
+  <rect x="930" y="292" width="185" height="86" class="box mma"/>
+  <text x="1022" y="325" text-anchor="middle" class="label">PV MMA</text>
+  <text x="1022" y="352" text-anchor="middle" class="small">accumulate O</text>
+  <rect x="1175" y="292" width="165" height="86" class="box out"/>
+  <text x="1257" y="325" text-anchor="middle" class="label">Write O</text>
+  <text x="1257" y="352" text-anchor="middle" class="small">LSE / output</text>
+  <path d="M870 335 H930" class="arrow"/><path d="M1115 335 H1175" class="arrow"/>
+  <path d="M705 218 V280" class="arrow dash"/><path d="M705 390 V455" class="arrow dash"/>
+
+  <text x="60" y="468" class="label">时间交错</text>
+  <line x1="190" y1="500" x2="1330" y2="500" stroke="#526071" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="190" y="530" class="small">t0</text><text x="390" y="530" class="small">t1</text><text x="590" y="530" class="small">t2</text><text x="790" y="530" class="small">t3</text><text x="990" y="530" class="small">t4</text><text x="1190" y="530" class="small">t5</text>
+  <rect x="190" y="550" width="180" height="48" class="stage0"/><text x="280" y="580" text-anchor="middle" class="small">Ping load n</text>
+  <rect x="390" y="550" width="180" height="48" class="stage1"/><text x="480" y="580" text-anchor="middle" class="small">Pong load n+1</text>
+  <rect x="590" y="550" width="180" height="48" class="stage0"/><text x="680" y="580" text-anchor="middle" class="small">Ping compute n</text>
+  <rect x="790" y="550" width="180" height="48" class="stage1"/><text x="880" y="580" text-anchor="middle" class="small">Pong compute n+1</text>
+  <rect x="990" y="550" width="180" height="48" class="stage0"/><text x="1080" y="580" text-anchor="middle" class="small">Ping load n+2</text>
+  <rect x="1190" y="550" width="140" height="48" class="stage1"/><text x="1260" y="580" text-anchor="middle" class="small">Pong...</text>
+
+  <text x="60" y="655" class="label">映射到当前优化</text>
+  <text x="60" y="685" class="small">Prefill：tile M/N、stage 数、Q/K/V TMA 重叠；Decode：paged gather、L2 group、SplitKV 与 combine 尾部。</text>
+  <text x="60" y="712" class="small">V412 的 dynamic SplitKV 只在 d256、global、decode、batch≥32 时启用；FP8 scale/quantize 需另行计时。</text>
+</svg>

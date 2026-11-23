@@ -5,6 +5,8 @@
 
 [启动新项目并使用 OptimizationRSI](OptimizationRSI/README.md) · [查看整体框架](framework.md)
 
+[FA4 PR3109 与 PR3132 测试归档](projects/FA4/archive/2026-11-23/README.md) · [FA4 测量知识](knowledge/confirmed/fa4-sm120-operator-measurement-and-archiving.md)
+
 # 说明
 
 **这个RSI主要是用于做什么的？**

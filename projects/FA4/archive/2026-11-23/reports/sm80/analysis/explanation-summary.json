@@ -1,0 +1,108 @@
+{
+  "SM_retained_fraction": 0.425531914893617,
+  "SM_reduction_fraction": 0.574468085106383,
+  "same_clock_linear_slowdown": 2.35,
+  "forward_NCU_sampled_clock_MHz": [
+    2219.6038066833084,
+    2336.895463870545
+  ],
+  "forward_NCU_clock_corrected_predicted_slowdown": 2.2320506100287956,
+  "forward_NCU_measured_slowdown": 2.236905520915506,
+  "forward_NCU_prediction_relative_error": -0.0021703692182418743,
+  "representative_cases": 6,
+  "main_records": 18,
+  "kernel_records": 35,
+  "invalid_L2_rate_records": [
+    {
+      "case_id": "bf16-d64-h32-hk8-b32-paged256-uniform32768",
+      "arm": "full188_auto",
+      "raw": 1548.9104116222761
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b32-paged256-uniform32768",
+      "arm": "full188_auto",
+      "raw": 843.9873417721518
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b32-paged256-uniform32768",
+      "arm": "green80_fixed188",
+      "raw": 1504.1463414634145
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b32-paged256-uniform32768",
+      "arm": "green80_fixed188",
+      "raw": 909.3541202672606
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b32-paged256-uniform32768",
+      "arm": "green80_auto",
+      "raw": 1519.9507389162563
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b32-paged256-uniform32768",
+      "arm": "green80_auto",
+      "raw": 880.7215332581736
+    },
+    {
+      "case_id": "bf16-d256-h8-hk2-b32-paged256-one_long_short128",
+      "arm": "full188_auto",
+      "raw": 127.81251311317192
+    },
+    {
+      "case_id": "bf16-d256-h8-hk2-b32-paged256-one_long_short128",
+      "arm": "green80_fixed188",
+      "raw": 128.32712495767015
+    },
+    {
+      "case_id": "bf16-d128-h16-hk4-b8-dense-uniform4096",
+      "arm": "full188_auto",
+      "raw": 1489.0776699029127
+    },
+    {
+      "case_id": "bf16-d128-h16-hk4-b8-dense-uniform4096",
+      "arm": "green80_fixed188",
+      "raw": 1539.2682926829268
+    },
+    {
+      "case_id": "bf16-d128-h16-hk4-b8-dense-uniform4096",
+      "arm": "green80_auto",
+      "raw": 1531.3131313131314
+    },
+    {
+      "case_id": "bf16-d128-h16-hk4-b8-dense-uniform4096",
+      "arm": "green80_auto",
+      "raw": 143.72811206622094
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b1-dense-uniform512",
+      "arm": "full188_auto",
+      "raw": 142.40841736982918
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b1-dense-uniform512",
+      "arm": "full188_auto",
+      "raw": 371.84249628528977
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b1-dense-uniform512",
+      "arm": "green80_fixed188",
+      "raw": 142.78722908412956
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b1-dense-uniform512",
+      "arm": "green80_fixed188",
+      "raw": 371.99702491632576
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b1-dense-uniform512",
+      "arm": "green80_auto",
+      "raw": 142.72480970197395
+    },
+    {
+      "case_id": "bf16-d64-h32-hk8-b1-dense-uniform512",
+      "arm": "green80_auto",
+      "raw": 380.8249721293199
+    }
+  ],
+  "report_sha256": "2a0edf988244b8cb2c4b7b88a53295143c059112a85073348f89941ed0d48cd5"
+}

@@ -1,0 +1,23 @@
+{
+  "recipe_id": "fa4-sm120-1.0.0",
+  "candidate_family": "FA4 only",
+  "image_id": "sha256:99adb5ffbb5bead2dd590e108bac7f3ffd727aa0f45b9a1375d587a56f37adbf",
+  "base_image": "nvcr.io/nvidia/pytorch@sha256:3c90e38f5ec51e51d1c73bd7eb3d83674a254f451147c5cadc4344314258a112",
+  "source_manifest_sha256": "1d8dd3fa2bdc8cb595be1e6785960d3e1795468a51e634d1f3430d996a8c03b6",
+  "offline_archive": {
+    "path": "releases/fa4-sm120-1.0.0-offline.tar.gz",
+    "sha256": "8249f2dd67c5466cc33f930b10dd6988d2ecc56f8f40f165caedd2004ff77b0a",
+    "bytes": 192943554
+  },
+  "profiles": {
+    "prefill": "official b38 + frozen direct launcher",
+    "decode": "pinned PR2634 + return-ABI patch + direct GEMV/combine, separate process"
+  },
+  "quality_status": "fresh-container qualification tracked separately in reports/rebuild.json",
+  "nonproduct_controls": [
+    "FA2",
+    "cuDNN",
+    "FlashInfer"
+  ],
+  "software_requirements": "configs/requirements-product.txt"
+}

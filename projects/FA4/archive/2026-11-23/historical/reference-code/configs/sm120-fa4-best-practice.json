@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "name": "sm120-fa4-best-practice",
+  "status": "host-planner-family-policy; static-tile-experiments-rejected",
+  "baseline": "pr3109",
+  "hardware": {
+    "architectures": ["sm120", "sm121", "sm121a"],
+    "primary_validation_gpu": "RTX PRO 6000 Blackwell Server Edition",
+    "shared_memory_bytes": 101376
+  },
+  "scope": {
+    "forward_cases": 165,
+    "decode_cases": 120,
+    "backward": false,
+    "source_method": "Dao-AILab/flash-attention PR3109 CUDA-graph ABAB forward+decode protocol"
+  },
+  "principles": [
+    "Use the SM120-owned host planner; do not encode one tile per benchmark case.",
+    "Keep one policy per shape family and let scheduler metadata follow runtime batch and sequence lengths.",
+    "Reject a configuration on the 99 KiB SMEM gate before compilation and fall back to the supported FA4/FA2 path.",
+    "Rebuild scheduler metadata when batch, Q rows, head dimensions, or KV lengths change.",
+    "Do not enable FP8 FA4 unless the caller supplies FP8 inputs and descales; FP8 is a separate candidate from BF16/FP16."
+  ],
+  "promotion_decision": {
+    "selected": "sm120_host_planner",
+    "static_family_tile_candidate": "rejected",
+    "reason": "The 165-row forward attempt regressed repeatedly and the 120-row decode run had 14 regressions with a 0.4716x worst row.",
+    "runtime_override": "none",
+    "allowed_family_controls": ["route", "SMEM/resource gate", "paged-KV eligibility", "scheduler metadata lifetime", "fallback"],
+    "forbidden_controls": ["per-case tile table", "per-case num_splits table", "unverified model-specific tile override"]
+  },
+  "families": [
+    {
+      "id": "forward-d64-128-dense-varlen",
+      "phase": "forward",
+      "match": {"head_dim_min": 64, "head_dim_max": 128},
+      "route": "sm120_owned_forward",
+      "policy": {"tile": "host_planner", "num_splits": "auto", "pack_gqa": "auto", "scheduler_metadata": "required"}
+    },
+    {
+      "id": "forward-d192-256",
+      "phase": "forward",
+      "match": {"head_dim_min": 192, "head_dim_max": 256},
+      "route": "sm120_owned_forward",
+      "policy": {"tile": "host_planner", "num_splits": "auto", "pack_gqa": "auto", "smem_gate": "required", "fallback": "fa2_or_native_fa4"}
+    },
+    {
+      "id": "forward-local-or-modifier",
+      "phase": "forward",
+      "match": {"local_or_modifier": true},
+      "route": "sm120_owned_forward",
+      "policy": {"tile": "host_planner", "scheduler_metadata": "required", "fallback": "native_fa4"}
+    },
+    {
+      "id": "decode-d64-128-dense",
+      "phase": "decode",
+      "match": {"head_dim_min": 64, "head_dim_max": 128, "layout": "dense"},
+      "route": "sm120_owned_decode",
+      "policy": {"decode_kernel": "transposed_paged_decode", "num_splits": "auto", "l2_group": "host_planner"}
+    },
+    {
+      "id": "decode-d256",
+      "phase": "decode",
+      "match": {"head_dim": 256},
+      "route": "sm120_owned_decode",
+      "policy": {"decode_kernel": "transposed_paged_decode", "num_splits": "auto", "smem_gate": "required", "fallback": "fa2_or_native_fa4"}
+    },
+    {
+      "id": "decode-paged",
+      "phase": "decode",
+      "match": {"layout": "paged256"},
+      "route": "sm120_owned_decode",
+      "policy": {"page_size": 128, "num_splits": "auto", "scheduler_metadata": "required", "fallback": "native_fa4"}
+    }
+  ],
+  "fp8_extension": {
+    "source": "Dao-AILab/flash-attention PR3132",
+    "status": "separate_candidate",
+    "requires": ["fp8_qkv_or_kv_cache", "q_descale", "k_descale", "v_descale"],
+    "backward": false,
+    "never_substitute_for_bf16": true
+  },
+  "acceptance_gates": {
+    "numerical": "abs_error <= .02 + .02 * abs(reference)",
+    "forward": {"cases": 165, "statistic": "mean", "replays": 30, "calls_per_replay": 10},
+    "decode": {"cases": 120, "statistic": "mean", "replays": 30, "calls_per_replay": 1, "l2_flush_bytes": 268435456},
+    "comparison": "two paired ABAB ratios, geometric mean, retain every sample",
+    "promotion": "family policy must pass all covered rows; no per-case overrides"
+  }
+}

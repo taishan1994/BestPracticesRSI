@@ -1,0 +1,219 @@
+{
+  "source": "PR3109 exact-case five-seed confirmation",
+  "evidence": "runs/kad-pr-shape-confirm-512-causal.json",
+  "cases": {
+    "bfloat16-d64-mha-s512-causal": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "num_splits": 1,
+      "pack_gqa": false
+    },
+    "bfloat16-d96-gqa-s512-causal": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "num_splits": 1,
+      "pack_gqa": null
+    },
+    "bfloat16-d128-mqa-s512-causal": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d256-mha-s512-causal": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d256-gqa-s512-causal": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "float16-d128-mha-s512-causal": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "float16-d128-gqa-s512-causal": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "float16-d128-mqa-s512-causal": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "num_splits": 1,
+      "pack_gqa": true
+    },
+    "bfloat16-d64-mha-s2048-causal": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d64-mqa-s2048-causal": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d96-mha-s2048-causal": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d96-gqa-s2048-causal": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d96-mqa-s2048-causal": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "float16-d128-mqa-s2048-causal": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d96-gqa-s512-global": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d96-mqa-s512-global": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d256-mha-s512-global": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d256-gqa-s512-global": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "float16-d128-mha-s512-global": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "float16-d128-gqa-s512-global": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d64-mha-s2048-global": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d96-gqa-s2048-global": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d256-gqa-s2048-global": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d256-mqa-s2048-global": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d64-mqa-s512-local1024": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d96-mha-s512-local1024": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d128-mha-s512-local1024": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d128-mqa-s512-local1024": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d192-mha-s512-local1024": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d192-gqa-s512-local1024": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d192-mqa-s512-local1024": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d256-mqa-s512-local1024": {
+      "tile_m": 64,
+      "tile_n": 64,
+      "num_threads": 64,
+      "pack_gqa": null
+    },
+    "bfloat16-d64-gqa-s2048-local1024": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d96-mha-s2048-local1024": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    },
+    "bfloat16-d96-mqa-s2048-local1024": {
+      "tile_m": 128,
+      "tile_n": 64,
+      "num_threads": 128,
+      "pack_gqa": null
+    }
+  }
+}

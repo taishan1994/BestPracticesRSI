@@ -1,0 +1,19 @@
+{
+  "checked_UTC": "2026-11-23T08:42:36.044299+00:00",
+  "new_GPU_benchmark_launched": false,
+  "CLI_help_entry_points": 5,
+  "SM120_green_context_library_compilation": true,
+  "source_fetches": {
+    "pr3109": {
+      "commit": "064643897f27c3d7b2058743d9e4dbdbf0d66325",
+      "url": "https://codeload.github.com/Dao-AILab/flash-attention/tar.gz/064643897f27c3d7b2058743d9e4dbdbf0d66325",
+      "download_sha256": "4d9d18e1a72c3d8b574be6fe4e6f0a18cd4555486b472d2b88e9f0b7ef5bd669"
+    },
+    "pr3132": {
+      "commit": "e1f207e9e8453a7343a1a72f741225de93673763",
+      "url": "https://codeload.github.com/Dao-AILab/flash-attention/tar.gz/e1f207e9e8453a7343a1a72f741225de93673763",
+      "download_sha256": "70da4db6fcf63c9a32e77e04d791b32267819b1078ffe3902c2be356ce9501e3"
+    }
+  },
+  "pr3109_original_files_SHA256_verified": 74
+}

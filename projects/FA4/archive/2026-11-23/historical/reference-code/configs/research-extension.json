@@ -1,0 +1,12 @@
+{
+ "schema_version": 1,
+ "reason": "User requested broader research; matched qu0b external recipe discovered before confirmation",
+ "parent_task": "fa4-sm120-v1",
+ "matrix": "benchmarks.extended.matrix: original eight shapes plus four exact qu0b table shapes",
+ "screen_seeds": [61,67,71],
+ "confirmation_seeds": [101,202,303,404,505],
+ "candidates": "stock; best 128-thread tile from original screen; published 256-thread 128x128; 256-thread 128x64 ablation",
+ "competitors": ["PyTorch forced Flash SDPA", "PyTorch forced cuDNN SDPA", "FlashInfer FA2 single request b=1", "FlexAttention forced Triton"],
+ "unchanged_gates": "task.json numerical thresholds and >=3% lower CI gain; no service SLA for microbenchmark",
+ "scope_notes": "Backward validation only, no backward tuning claim; SageAttention changes quantization protocol and is excluded from exact BF16 comparison; xFormers coverage investigated, not automatically distinct from the same underlying FA implementation"
+}

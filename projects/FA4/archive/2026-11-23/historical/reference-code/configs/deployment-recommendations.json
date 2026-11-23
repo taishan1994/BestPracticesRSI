@@ -1,0 +1,432 @@
+{
+  "note": "Post-confirmation deployment guidance only; tested selection and launcher source unchanged. Select timing boundary appropriate to application. No competitive backend substituted.",
+  "cases": {
+    "mha-s1k-d64": {
+      "graph_ms": {
+        "route": "native-fa4",
+        "reason": "No Confirmed Improvement",
+        "ci95_gain_pct": [
+          2.9721301131037103,
+          4.708769048122963
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          259.6370069649437,
+          390.8011179042687
+        ]
+      }
+    },
+    "mha-s2k-d128-causal": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          30.324791471885916,
+          40.771765128039725
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          33.054477820757455,
+          41.87936352505186
+        ]
+      }
+    },
+    "gqa-s2k-d128-causal": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          24.24757002069018,
+          30.816436124921175
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          29.517836264764675,
+          30.024043132010213
+        ]
+      }
+    },
+    "gqa-b4-s1k-d64": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          6.893281838114884,
+          7.589417258711273
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          95.4285733926283,
+          101.91257233815114
+        ]
+      }
+    },
+    "mha-s4k-d128-causal": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          22.107321533041446,
+          24.342561677637487
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          22.785879131184615,
+          23.674602015396374
+        ]
+      }
+    },
+    "mha-s513-d64-fp16": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          82.5593879742335,
+          84.50420578805944
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          543.235799232962,
+          569.4654123216949
+        ]
+      }
+    },
+    "mha-s512-d256": {
+      "graph_ms": {
+        "route": "qualified-fa4-safe-tile",
+        "reason": "Not Comparable",
+        "ci95_gain_pct": null
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-safe-tile",
+        "reason": "Not Comparable",
+        "ci95_gain_pct": null
+      }
+    },
+    "gqa-decode-k8k-d128": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          94.0921036100982,
+          94.40404020713827
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          94.78341317037862,
+          95.20047276456252
+        ]
+      }
+    },
+    "qu0b-b1-s8192-d128": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          4.156831301187713,
+          6.258588515985042
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          4.523094086249957,
+          5.5743505700005525
+        ]
+      }
+    },
+    "qu0b-b2-s4096-d128": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          3.914462252904416,
+          6.309092799145932
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          4.696711290891775,
+          5.433011014431632
+        ]
+      }
+    },
+    "qu0b-b2-s4096-d96": {
+      "graph_ms": {
+        "route": "native-fa4",
+        "reason": "No Confirmed Improvement",
+        "ci95_gain_pct": [
+          -0.4757346841452459,
+          0.6327320495551181
+        ]
+      },
+      "wall_ms": {
+        "route": "native-fa4",
+        "reason": "No Confirmed Improvement",
+        "ci95_gain_pct": [
+          -0.18023558880830848,
+          0.48024117302678526
+        ]
+      }
+    },
+    "qu0b-b4-s2048-d64": {
+      "graph_ms": {
+        "route": "native-fa4",
+        "reason": "No Confirmed Improvement",
+        "ci95_gain_pct": [
+          -1.8696372668531303,
+          0.857129362993847
+        ]
+      },
+      "wall_ms": {
+        "route": "native-fa4",
+        "reason": "No Confirmed Improvement",
+        "ci95_gain_pct": [
+          0.10594129313157286,
+          0.897446315596806
+        ]
+      }
+    },
+    "sdxl-q1024-k77": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          5.0791803270534785,
+          7.253682153768248
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          534.9658248429822,
+          566.5602049015254
+        ]
+      }
+    },
+    "sdxl-q1024-k1024": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          3.6320324189018205,
+          4.358782160020591
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          111.21359030933684,
+          170.43794827391636
+        ]
+      }
+    },
+    "sdxl-q1536-k77": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          16.362290355687815,
+          17.356705728441547
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          521.931995116029,
+          541.008678818445
+        ]
+      }
+    },
+    "sdxl-q1536-k1536": {
+      "graph_ms": {
+        "route": "native-fa4",
+        "reason": "No Confirmed Improvement",
+        "ci95_gain_pct": [
+          2.8275304355696917,
+          3.875165238671152
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          3.430742590621172,
+          4.055298103908944
+        ]
+      }
+    },
+    "sdxl-q4096-k77": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          15.927057019157642,
+          19.76334242737461
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          459.2309605781396,
+          585.6076616381589
+        ]
+      }
+    },
+    "sdxl-q4096-k4096": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          3.3519898530117276,
+          11.159800157183586
+        ]
+      },
+      "wall_ms": {
+        "route": "native-fa4",
+        "reason": "No Confirmed Improvement",
+        "ci95_gain_pct": [
+          2.557848352139813,
+          5.277870146804653
+        ]
+      }
+    },
+    "sdxl-q6144-k77": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          12.57728968109153,
+          15.619516630201957
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          531.9368546734489,
+          553.6014728334595
+        ]
+      }
+    },
+    "sdxl-q6144-k6144": {
+      "graph_ms": {
+        "route": "native-fa4",
+        "reason": "No Confirmed Improvement",
+        "ci95_gain_pct": [
+          -0.33987124806430513,
+          0.6985549175308359
+        ]
+      },
+      "wall_ms": {
+        "route": "native-fa4",
+        "reason": "No Confirmed Improvement",
+        "ci95_gain_pct": [
+          0.41616591352697796,
+          0.8444269704198426
+        ]
+      }
+    },
+    "transformer-s1024-kv4": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          22.702548136277677,
+          23.913496011067625
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          63.55841175660555,
+          112.65541125405237
+        ]
+      }
+    },
+    "transformer-s1024-kv16": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          29.575733678468374,
+          31.999464671450895
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          122.18520338293,
+          128.13695497819276
+        ]
+      }
+    },
+    "transformer-s4096-kv4": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          15.052455812685306,
+          16.096094991058287
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          15.50606240639949,
+          15.800521381439413
+        ]
+      }
+    },
+    "transformer-s4096-kv16": {
+      "graph_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          19.616106408035506,
+          20.12711064293684
+        ]
+      },
+      "wall_ms": {
+        "route": "qualified-fa4-direct",
+        "reason": "Confirmed Improvement",
+        "ci95_gain_pct": [
+          19.796428037489356,
+          20.019847927959212
+        ]
+      }
+    }
+  },
+  "decode": "separate pinned FA4 GEMV profile, fixed scope only"
+}

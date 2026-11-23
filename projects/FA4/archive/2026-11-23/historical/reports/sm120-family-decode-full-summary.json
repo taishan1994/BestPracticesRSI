@@ -1,0 +1,12 @@
+{
+  "status": "rejected-static-family-candidate",
+  "candidate": "all decode families tile_m=64,tile_n=64,num_splits=0",
+  "scope": "PR3109 decode 120-case domain",
+  "completed": 120,
+  "correct": "all rows passed numerical gate",
+  "geomean_speedup": 1.0238530073489527,
+  "regressions_below_1x": 14,
+  "worst_speedup": 0.4715985825583689,
+  "interpretation": "The static family candidate is not promoted. Keep PR3109 SM120 decode host planner and auto/per-batch SplitKV; do not force one tile/split policy.",
+  "raw": "sm120-family-decode-full.json"
+}

@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "bundle": "research/fa4-pro6000",
+  "study_complete": true,
+  "required_projects": [
+    "upstream",
+    "qu0b",
+    "blake-tma",
+    "snc",
+    "lingye",
+    "sisgrad",
+    "thad0ctor",
+    "johnny",
+    "nebius",
+    "pytorch",
+    "nvidia-te",
+    "flashinfer",
+    "xformers",
+    "sage",
+    "emmy"
+  ],
+  "projects": [
+    {
+      "id": "upstream",
+      "name": "Dao-AILab 官方 FA4",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "released",
+      "sm120_status": "SM120专用类继承SM80；前向、反向和varlen已具备基本路径。",
+      "version": "4.0.0b38；源码主分支7c53542e",
+      "source_ids": [
+        "src-install",
+        "src-sm120",
+        "src-splits",
+        "src-fp8",
+        "src-dispatch"
+      ],
+      "claim_ids": [
+        "c-install",
+        "c-sm120",
+        "c-splits",
+        "c-fp8",
+        "c-dispatch"
+      ],
+      "local_status": "partially_validated",
+      "limitations": "本地测试发现D256默认配置超出共享内存；官方SM120不支持SplitKV及SM100 FP8。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "正式发行版是安装和回滚基线，不把B200的主性能路径等同于SM120。实际模块、设备UUID与源码哈希必须读回。BF16与FP16、因果和非因果、MHA/GQA以及非等长输入需要分别验证。 严格参考重验的18项原生dense前向/反向与varlen通过；限定24场景直接启动器另有38项质量及调用契约验证。"
+    },
+    {
+      "id": "qu0b",
+      "name": "qu0b/fa4-sm120-research",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "research prototype",
+      "sm120_status": "在SM120 Max-Q工作站上探索线程、tile和流水级。",
+      "version": "b4133047880b2ffbb164f7deec58426bd033176d",
+      "source_ids": [
+        "src-qu0b",
+        "src-qu0b-code"
+      ],
+      "claim_ids": [
+        "c-qu0b",
+        "c-qu0b-code"
+      ],
+      "local_status": "adapted_measured",
+      "limitations": "旧脚本向内部接口注入num_threads，最新发行版不再接受该参数；GQA曾被作者排除。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "其公开表格覆盖四个BF16大序列shape，作者报告256线程的收益。我们保留这些shape并采用独立构造器适配，同时隔离128/256线程编译缓存。公开数字来自Max-Q，计时也不同，不能直接用于SE性能晋升。 256线程只是开发消融，不把qu0b公开百分比当作本机复现；最终发行配置由独立确认决定。"
+    },
+    {
+      "id": "blake-tma",
+      "name": "blake-snc 原始 TMA PR2349",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "superseded proposal",
+      "sm120_status": "TMA搬运与warp专门化的早期SM120实现。",
+      "version": "PR2349；2026-11-07网页快照",
+      "source_ids": [
+        "src-pr2349",
+        "src-bledden"
+      ],
+      "claim_ids": [
+        "c-pr2349",
+        "c-bledden"
+      ],
+      "local_status": "not_run_superseded",
+      "limitations": "PR已关闭并指向2599；关闭原因是整合更快方案，不是硬件不支持TMA。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "此路线说明SM120缺少的是tcgen05/TMEM而非所有TMA能力。旧提案中的DMA与MMA分工是后续实现的基础，因此研究必须继续追踪作者给出的替代PR，不能以Closed状态直接淘汰其技术。"
+    },
+    {
+      "id": "snc",
+      "name": "SecondNatureComputing HF SM120 bundle",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "downstream distribution",
+      "sm120_status": "将多个未合并PR打包，提供TMA、paged、block-sparse和dropout等功能入口。",
+      "version": "60117041e10fcc6f19882afd274318c755a5ef6e",
+      "source_ids": [
+        "src-snc",
+        "src-snc-performance"
+      ],
+      "claim_ids": [
+        "c-snc",
+        "c-snc-performance"
+      ],
+      "local_status": "dependency_blocked",
+      "limitations": "README列出SplitKV，实际分派仍限制SM12x单split；D大于128被列为不支持；新CUTLASS接口不兼容。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "它是完整可下载的下游分发，不等于上游当前支持矩阵。作者在SM121a上的表格显示纯吞吐不一定优于FA2，更适合按特定功能需求选用。本文把作者功能表、代码分派和本地环境失败分别记录，避免将安装成功或包装层签名当作kernel资格。 本次已尝试当前依赖及隔离旧依赖容器，仍在CUTLASS/Quack内部API导入处失败；保存失败日志，未形成可比性能结果，不能据此判为硬件不支持。"
+    },
+    {
+      "id": "lingye",
+      "name": "LingYeAI TMA 八 MMA warp PR2599",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "open proposal",
+      "sm120_status": "在原始TMA方案上增加MMA warp，试图缓解寄存器压力和spill。",
+      "version": "44779ed18e6c92c79d8abbb04f27c450a66bf3cf",
+      "source_ids": [
+        "src-pr2599",
+        "src-pr2349"
+      ],
+      "claim_ids": [
+        "c-pr2599",
+        "c-pr2349"
+      ],
+      "local_status": "dependency_blocked",
+      "limitations": "公开实测硬件为RTX5090和PRO5000；旧内部接口与当前CUTLASS不兼容，性能因因果模式变化。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "八个MMA warp与额外DMA warp不能简单等同于非TMA kernel的256线程。复现需要保留真实TMA类及其同步结构，单改num_threads只是消融或独立候选。作者的非因果结果并非所有点均提升，说明更大warp数不是普遍最优。 本次已尝试当前依赖及隔离旧依赖容器，仍在CUTLASS/Quack内部API导入处失败；保存失败日志，未形成可比性能结果，不能据此判为硬件不支持。",
+      "supersedes": [
+        "blake-tma"
+      ]
+    },
+    {
+      "id": "sisgrad",
+      "name": "sisgrad TMAOptimized PR2406",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "open proposal",
+      "sm120_status": "独立TMA优化路线，覆盖SplitKV、paged、varlen、pack-GQA及更多调度策略。",
+      "version": "PR2406；分支dz/sm120_tma_optimized",
+      "source_ids": [
+        "src-pr2406"
+      ],
+      "claim_ids": [
+        "c-pr2406"
+      ],
+      "local_status": "not_run_ranked",
+      "limitations": "作者描述多数收益较小且依batch/head数变化；功能复杂，需单独数值门禁。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "它与blake-snc和LingYeAI不是同一个实现版本，不能把三个PR的收益相加。本文将其作为结构对照：哪些数据走TMA、Q是否直读寄存器、哪些共享内存区域复用、何时切换scheduler，均应由具体配置和运行证据确定。"
+    },
+    {
+      "id": "thad0ctor",
+      "name": "thad0ctor SM120 集成 PR2634",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "open integration proposal",
+      "sm120_status": "整合TMA、分派、paged、decode和较大head维度的完整SM120路径。",
+      "version": "baabf5a1b106c3fb95c365852e2e75c0078af837",
+      "source_ids": [
+        "src-pr2634",
+        "src-bledden",
+        "src-thad-decode-gate"
+      ],
+      "claim_ids": [
+        "c-pr2634",
+        "c-bledden",
+        "c-thad-decode-gate"
+      ],
+      "local_status": "decode_scope_validated",
+      "limitations": "未合并主线；支持与速度取决于shape和实际分支；FP8 KV路径改变缓存精度，须单列。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "初筛的FP32参考精度后来发现未锁定，初筛不作资格证明。重新检查发现BF16 decode默认门控关闭；开启后还存在内部返回2项与包装层期待4项的ABI不一致。本研究仅修补返回元组，保留明确补丁与源码哈希。独立FP64、并发流、图回放和输出所有权13项检查通过；固定B1/Q1/K8192/Hq16/Hkv4/D128 BF16上完成5轮FA4直接GEMV确认。未验证该分支其他功能或通用decode范围。",
+      "local_run_refs": [
+        "runs/decode-validation.json",
+        "runs/fa4-direct-decode-confirm.json"
+      ],
+      "supersedes": [
+        "blake-tma"
+      ]
+    },
+    {
+      "id": "johnny",
+      "name": "johnnynunez SM120 下游集成",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "open downstream proposal",
+      "sm120_status": "汇集TMA八warp、score_mod反向及CUTLASS适配修复。",
+      "version": "johnnynunez/flash-attention PR1网页快照",
+      "source_ids": [
+        "src-johnny"
+      ],
+      "claim_ids": [
+        "c-johnny"
+      ],
+      "local_status": "not_run_ranked",
+      "limitations": "属于下游PR，不可按官方发行支持宣传；与其他TMA路线有较大谱系重叠。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "本项目的价值在于兼容性和功能补全线索，而不是新增一份可直接迁移的SE吞吐结果。后续复现应锁定分支头和依赖集合，并按score_mod实际触发路径检查反向，不能以普通dense前向通过代替。"
+    },
+    {
+      "id": "nebius",
+      "name": "Nebius Physical AI Workbench",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "qualified source recipe",
+      "sm120_status": "在PRO6000 Server Edition上锁定FA4/CUTLASS/Quack并发布数值、算子和SDXL记录。",
+      "version": "FA4 eed1971f；helper源b002a53e；当前仓库72845438",
+      "source_ids": [
+        "src-nebius",
+        "src-nebius-opt",
+        "src-nebius-training"
+      ],
+      "claim_ids": [
+        "c-nebius",
+        "c-nebius-opt",
+        "c-nebius-training"
+      ],
+      "local_status": "approximate_reproduced",
+      "limitations": "优化helper仅推理；接受精确源码版本与特定shape；公开计时包含Python开销，不与图内GPU时间混比。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "这是与目标SKU最贴近的公开配方。它把原生调用、显式tile和缓存编译kernel的直接launcher分开，保持输出重新分配与新指针绑定，并检验多流和图回放。其结果同时展示算子收益与很小的端到端变化，因而比单一峰值TFLOPS更适合建立部署边界。 锁定helper和FA4源码后，12个公开目标中10项在10%延迟容限内达到近似复现，2项未复现；Torch/CUDA/驱动不同，不能标为严格复现。全部240行重新通过显式严格FP32数值门禁。"
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch SDPA 与 FlexAttention",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "framework integration",
+      "sm120_status": "SDPA提供Flash/cuDNN等后端；FlexAttention可用FA4或Triton生成注意力。",
+      "version": "本机Torch2.11开发构建；文档2026-11-07快照",
+      "source_ids": [
+        "src-flex",
+        "src-sdpa-code"
+      ],
+      "claim_ids": [
+        "c-flex",
+        "c-sdpa-code"
+      ],
+      "local_status": "partially_validated",
+      "limitations": "Flex的GB200图表不能外推SM120；自动分派可能变化；本地只测到的路径才可参与排名。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "它既是FA4的集成入口，也是竞争基线。本文分别强制Flash SDPA、cuDNN SDPA和Flex Triton，而不是把同一个auto接口当成稳定算法名称。包含GQA和非方形因果时，需对齐底部右对齐掩码语义，不能只检查张量维度。"
+    },
+    {
+      "id": "nvidia-te",
+      "name": "NVIDIA Transformer Engine / cuDNN",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "framework/backend integration",
+      "sm120_status": "将FlashAttention、cuDNN fused与原生unfused作为不同后端管理。",
+      "version": "TE2.19文档；本地cuDNN由Torch运行时读取",
+      "source_ids": [
+        "src-te"
+      ],
+      "claim_ids": [
+        "c-te"
+      ],
+      "local_status": "documentation_and_cudnn_measurements",
+      "limitations": "文档功能不自动证明当前镜像TE实际选择FA4；本地cuDNN SDPA测试只覆盖该调用路径。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "最佳方案须对比同精度、同资源与同语义的后端。TE的路由规则、安装的Flash版本和cuDNN支持shape共同决定实际执行；因此必须保留独立profiler证据。仅设置环境变量或导入DotProductAttention不能证明SM120 FA4运行。"
+    },
+    {
+      "id": "flashinfer",
+      "name": "FlashInfer",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "serving kernel library",
+      "sm120_status": "提供MHA/GQA prefill和多种decode后端；本地可强制FA2作为竞争方案。",
+      "version": "0.7.3；单请求与ragged接口分别对齐",
+      "source_ids": [
+        "src-fi-release",
+        "src-fi-code"
+      ],
+      "claim_ids": [
+        "c-fi-release",
+        "c-fi-code"
+      ],
+      "local_status": "partially_validated",
+      "limitations": "SM120的MLA、GEMM发布说明不能泛化为所有dense路径；单请求接口不能用Python循环伪装批量公平对照。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "该项目不是FA4名称的别称，却是判断FA4算子是否值得部署的重要基线。初筛表明长KV的单token decode需要特别比较服务内核。计划阶段的workspace和预处理应与执行计时边界分开披露，batch大于1时采用真正的批量wrapper。"
+    },
+    {
+      "id": "xformers",
+      "name": "Meta xFormers",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "attention framework",
+      "sm120_status": "提供memory-efficient attention和后端封装，作为生态覆盖与兼容性线索。",
+      "version": "2026-11-07来源快照",
+      "source_ids": [
+        "src-xformers"
+      ],
+      "claim_ids": [
+        "c-xformers"
+      ],
+      "local_status": "documentation_only",
+      "limitations": "本次快照未构成独立SM120 FA4性能配方；其底层实现可能与已测Flash路径重合。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "记录项目而不虚构它的独立算法或性能。选用前需查询安装包包含的实际算子、架构和dtype支持，并与已纳入的后端去重。缺少本地可调用路径时，不把框架存在本身当作更强基线，也不宣称其不支持所有SM120注意力。"
+    },
+    {
+      "id": "sage",
+      "name": "SageAttention",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "quantized attention family",
+      "sm120_status": "采用INT8/INT4或FP8/FP4等量化注意力，属于相关替代路线。",
+      "version": "2026-11-07项目快照",
+      "source_ids": [
+        "src-sage"
+      ],
+      "claim_ids": [
+        "c-sage"
+      ],
+      "local_status": "excluded_from_exact_bf16_ranking",
+      "limitations": "量化、平滑和转换开销及精度协议与BF16精确注意力不同；不能混排kernel-only TOPS。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "本文保留其覆盖位置，但不以放宽原任务数值语义换取更大加速。若业务允许量化，应另建精度协议，同时计入量化与平滑，并在真实模型上校验质量，不能将其结果标成精确BF16 FA4优化。"
+    },
+    {
+      "id": "emmy",
+      "name": "CloudRift Emmy",
+      "disposition": "investigated",
+      "reason": "覆盖直接SM120实现、下游集成或必要竞争方案",
+      "implementation_state": "compiler/tuning/deployment system",
+      "sm120_status": "提供模型编译、内核调优与部署工具，相关RTX注意力研究是优化方法线索。",
+      "version": "2026-11-07README快照",
+      "source_ids": [
+        "src-emmy"
+      ],
+      "claim_ids": [
+        "c-emmy"
+      ],
+      "local_status": "documentation_only",
+      "limitations": "本次README不提供可直接复现的SM120 FA4配方；不把编译器能力等同于FA4 kernel支持。",
+      "evidence_scope": "维护者/作者一手资料；本地实测另行限定",
+      "detail": "将其作为自动搜索、固定测量预算和消融方法的参考，而非伪造一个FA4后端。当前任务的直接可部署比较仍以已锁定源码和真实GPU执行为准。对未取得的网页正文，失败会保留为检索记录，不回填成已验证事实。"
+    }
+  ],
+  "not_exhaustive": "按已发现实现、替代链与相关竞争后端收敛；不声称穷尽互联网上全部仓库"
+}

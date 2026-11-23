@@ -1,0 +1,1269 @@
+{
+  "policy": "serving-policy-kda-nopack",
+  "runtime_adapted_policy": "e2e-test-serving-policy-kda-nopack.json",
+  "status": "completed",
+  "pass": false,
+  "ours_rows": [
+    {
+      "mode": "ours",
+      "model": "qwen",
+      "test": "paged-varlen",
+      "case": 0,
+      "correctness": {
+        "pass_": true,
+        "max_abs": 0.004051089286804199
+      },
+      "pass_": true,
+      "fp32_vs_fp64_max_abs": 6.737143015689284e-07,
+      "distinct_outputs": true,
+      "multistream": true,
+      "changed_input_graph": {
+        "pass_": true,
+        "max_abs": 0.002163231372833252
+      },
+      "changed_lengths_graph": {
+        "pass_": true,
+        "max_abs": 0.0023589134216308594
+      }
+    },
+    {
+      "mode": "ours",
+      "model": "qwen",
+      "test": "paged-varlen",
+      "case": 1,
+      "correctness": {
+        "pass_": true,
+        "max_abs": 0.008406400680541992
+      },
+      "pass_": true,
+      "distinct_outputs": true,
+      "multistream": true,
+      "changed_input_graph": {
+        "pass_": true,
+        "max_abs": 0.00817251205444336
+      },
+      "changed_lengths_graph": {
+        "pass_": true,
+        "max_abs": 0.00817251205444336
+      }
+    },
+    {
+      "mode": "ours",
+      "model": "qwen",
+      "test": "paged-varlen",
+      "case": 2,
+      "pass_": false,
+      "error": "Traceback (most recent call last):\n  File \"/workspace/comparisons/v3/e2e/validate_service.py\", line 44, in <module>\n    ref=reference(q,k,v,table,qlens,klens,window,scale);o=adapter.paged(q,k,v,**kw);e=error(o,ref)\n                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/comparisons/v3/e2e/fa4_service_backend.py\", line 209, in paged\n    return self.varlen(q,kk,vv,cu_seqlens_q,cuk,max_seqlen_q=max_seqlen_q,max_seqlen_k=maxk,softmax_scale=softmax_scale,causal=causal,window_size=window_size,out=out,**kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/comparisons/v3/e2e/fa4_service_backend.py\", line 152, in varlen\n    result=interface._flash_attn_fwd(q,k,v,**kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/flash_attn/cute/interface.py\", line 1510, in _flash_attn_fwd\n    _flash_attn_fwd.compile_cache[compile_key](*call_args)\n  File \"/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/cutlass_dsl/tvm_ffi_provider.py\", line 1084, in __call__\n    return self._kwargs_wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 3, in wrapper\n  File \"python/tvm_ffi/cython/function.pxi\", line 1038, in tvm_ffi.core.Function.__call__\n  File \"<unknown>\", line 0, in CuteDSLRT_TVMFFISetRaisedCudaError\ncutlass.cutlass_dsl.tvm_ffi_provider.CUDADialectError: \n\u001b[91m\u001b[1merror[CUDA_LAUNCH_INVALID_CONFIG]:\u001b[0m CUDA launch failed: cudaErrorInvalidValue (1)\n\nCUDA rejected the launch configuration before running the kernel.\n  \u001b[92msuggestion:\u001b[0m Check `.launch(...)`: grid, block, dynamic shared memory, stream, and attributes. Keep\n              block.x * block.y * block.z <= maxThreadsPerBlock. If only threadIdx.x is used, launch\n              with block=(threads, 1, 1).\n\n"
+    },
+    {
+      "mode": "ours",
+      "model": "muse",
+      "test": "paged-varlen",
+      "case": 0,
+      "correctness": {
+        "pass_": true,
+        "max_abs": 0.0021938681602478027
+      },
+      "pass_": true,
+      "fp32_vs_fp64_max_abs": 1.9457682759460582e-07,
+      "distinct_outputs": true,
+      "multistream": true,
+      "changed_input_graph": {
+        "pass_": true,
+        "max_abs": 0.0017192959785461426
+      },
+      "changed_lengths_graph": {
+        "pass_": true,
+        "max_abs": 0.0021971464157104492
+      }
+    },
+    {
+      "mode": "ours",
+      "model": "muse",
+      "test": "paged-varlen",
+      "case": 1,
+      "correctness": {
+        "pass_": true,
+        "max_abs": 0.009322166442871094
+      },
+      "pass_": true,
+      "distinct_outputs": true,
+      "multistream": true,
+      "changed_input_graph": {
+        "pass_": true,
+        "max_abs": 0.010490894317626953
+      },
+      "changed_lengths_graph": {
+        "pass_": true,
+        "max_abs": 0.010490894317626953
+      }
+    },
+    {
+      "mode": "ours",
+      "model": "muse",
+      "test": "paged-varlen",
+      "case": 2,
+      "correctness": {
+        "pass_": true,
+        "max_abs": 0.00027523934841156006
+      },
+      "pass_": true,
+      "distinct_outputs": true,
+      "multistream": true,
+      "changed_input_graph": {
+        "pass_": true,
+        "max_abs": 0.0003051459789276123
+      },
+      "changed_lengths_graph": {
+        "pass_": true,
+        "max_abs": 0.0002724304795265198
+      }
+    },
+    {
+      "mode": "ours",
+      "model": "muse",
+      "test": "paged-varlen",
+      "case": 3,
+      "correctness": {
+        "pass_": true,
+        "max_abs": 0.0003134235739707947
+      },
+      "pass_": true,
+      "distinct_outputs": true,
+      "multistream": true,
+      "changed_input_graph": {
+        "pass_": true,
+        "max_abs": 0.00030828267335891724
+      },
+      "changed_lengths_graph": {
+        "pass_": true,
+        "max_abs": 0.01629578322172165
+      }
+    }
+  ],
+  "readbacks": [
+    {
+      "q": [
+        50,
+        24,
+        256
+      ],
+      "k": [
+        226,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        50,
+        24,
+        256
+      ],
+      "k": [
+        226,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        50,
+        24,
+        256
+      ],
+      "k": [
+        226,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        50,
+        24,
+        256
+      ],
+      "k": [
+        226,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        50,
+        24,
+        256
+      ],
+      "k": [
+        226,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        24,
+        256
+      ],
+      "k": [
+        81,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        24,
+        256
+      ],
+      "k": [
+        81,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        24,
+        256
+      ],
+      "k": [
+        81,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        24,
+        256
+      ],
+      "k": [
+        81,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        24,
+        256
+      ],
+      "k": [
+        81,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 128,
+        "tile_n": 32,
+        "num_threads": 256,
+        "Q_in_regs": true,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        128,
+        32
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        3,
+        24,
+        256
+      ],
+      "k": [
+        24624,
+        4,
+        256
+      ],
+      "heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": false,
+      "num_splits": 0,
+      "tile_mn": null,
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        50,
+        32,
+        128
+      ],
+      "k": [
+        226,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        50,
+        32,
+        128
+      ],
+      "k": [
+        226,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        50,
+        32,
+        128
+      ],
+      "k": [
+        226,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        50,
+        32,
+        128
+      ],
+      "k": [
+        226,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        50,
+        32,
+        128
+      ],
+      "k": [
+        226,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": true,
+      "window": [
+        null,
+        null
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        32,
+        128
+      ],
+      "k": [
+        81,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        16,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        32,
+        128
+      ],
+      "k": [
+        81,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        16,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        32,
+        128
+      ],
+      "k": [
+        81,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        16,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        32,
+        128
+      ],
+      "k": [
+        81,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        16,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        65,
+        32,
+        128
+      ],
+      "k": [
+        81,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        16,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        3,
+        32,
+        128
+      ],
+      "k": [
+        24624,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 160,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": false
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": false,
+      "num_splits": 0,
+      "tile_mn": null,
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        3,
+        32,
+        128
+      ],
+      "k": [
+        24624,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 160,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": false
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": false,
+      "num_splits": 0,
+      "tile_mn": null,
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        3,
+        32,
+        128
+      ],
+      "k": [
+        24624,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 160,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": false
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": false,
+      "num_splits": 0,
+      "tile_mn": null,
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        3,
+        32,
+        128
+      ],
+      "k": [
+        24624,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 160,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": false
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": false,
+      "num_splits": 0,
+      "tile_mn": null,
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        3,
+        32,
+        128
+      ],
+      "k": [
+        24624,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 160,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": false
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": false,
+      "num_splits": 0,
+      "tile_mn": null,
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        17,
+        32,
+        128
+      ],
+      "k": [
+        4113,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        17,
+        32,
+        128
+      ],
+      "k": [
+        4113,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        17,
+        32,
+        128
+      ],
+      "k": [
+        4113,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        17,
+        32,
+        128
+      ],
+      "k": [
+        4113,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    },
+    {
+      "q": [
+        17,
+        32,
+        128
+      ],
+      "k": [
+        4113,
+        2,
+        128
+      ],
+      "heads": 32,
+      "kv_heads": 2,
+      "head_dim": 128,
+      "causal": true,
+      "effective_causal": false,
+      "window": [
+        2048,
+        0
+      ],
+      "config": {
+        "tile_m": 64,
+        "tile_n": 64,
+        "num_threads": 128,
+        "Q_in_regs": false,
+        "pack_gqa": true,
+        "num_stages": 1
+      },
+      "path": "FA4_SM120_serving_policy",
+      "prefill": true,
+      "num_splits": 1,
+      "tile_mn": [
+        64,
+        64
+      ],
+      "policy": "/workspace/comparisons/v3/configs/e2e-test-serving-policy-kda-nopack.json"
+    }
+  ]
+}
