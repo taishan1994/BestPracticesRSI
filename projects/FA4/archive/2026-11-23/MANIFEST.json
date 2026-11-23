@@ -563,6 +563,11 @@
       "sha256": "2259f5e12a94a00a50c5c06d207ade655cd5c98427dc6baafb2f87f883baf924"
     },
     {
+      "path": "provenance/cleanup-result.json",
+      "bytes": 946,
+      "sha256": "bb5c8b511884e3fda73ade51b1093457a1c09151de7d76e6d15ec881fadb8fa9"
+    },
+    {
       "path": "provenance/container-package-versions.json",
       "bytes": 183,
       "sha256": "0421df5127ac98ebc91d2075dfcc5f779d4cd78e87d52ee7b9097e047598746b"

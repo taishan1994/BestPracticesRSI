@@ -1,0 +1,36 @@
+{
+  "completed_UTC": "2026-11-23T08:45:37.672150+00:00",
+  "scope": "/home/gob001915/compare/github/BestPracticesRSI/projects/FA4",
+  "published_archive_commit": "dd634ed1a6ccfd7cf53599c9555ea93bfb36304f",
+  "removed": [
+    ".cache",
+    "DEPLOYMENT.md",
+    "benchmarks",
+    "comparisons",
+    "configs",
+    "hardware",
+    "kernels",
+    "optimization",
+    "paper",
+    "profile",
+    "releases",
+    "reports",
+    "research",
+    "runs",
+    "task.json",
+    "vendor"
+  ],
+  "retained": [
+    ".gitignore",
+    "AGENTS.md",
+    "README.md",
+    "archive",
+    "references-local"
+  ],
+  "private_originals_preserved": 2,
+  "filesystem_available_bytes_before": 19573493760,
+  "filesystem_available_bytes_after": 42998521856,
+  "filesystem_available_increase_bytes": 23425028096,
+  "measure_note": "Filesystem available-byte change during cleanup; other filesystem activity can slightly affect this value.",
+  "outside_FA4_modified": false
+}
