@@ -1,6 +1,7 @@
+import os
 import ctypes,json,torch
 from pathlib import Path
-lib=ctypes.CDLL('/out/green.so');torch.cuda.init();st=ctypes.c_ulonglong();info=(ctypes.c_int*4)();assert lib.make_green(80,ctypes.byref(st),info)==0
+lib=ctypes.CDLL(os.environ.get('FA4_GREEN_LIBRARY','/out/green.so'));torch.cuda.init();st=ctypes.c_ulonglong();info=(ctypes.c_int*4)();assert lib.make_green(80,ctypes.byref(st),info)==0
 lib.stream_sms.argtypes=[ctypes.c_ulonglong];lib.probe_sms.argtypes=[ctypes.c_ulonglong,ctypes.c_void_p]
 rows=[]
 for label,s in [('full188',torch.cuda.Stream()),('green80',torch.cuda.ExternalStream(st.value))]:

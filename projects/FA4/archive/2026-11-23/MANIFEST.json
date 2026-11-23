@@ -914,8 +914,8 @@
     },
     {
       "path": "reproduce/README.md",
-      "bytes": 3521,
-      "sha256": "2cd905e94a57a12d63f5b1bb8dff7c5f118e498b06c0112bf97ac4827ba78596"
+      "bytes": 3630,
+      "sha256": "95376dc73e44fa0939f90b11a2a53e7fd2151ccb49a9edbf950255d2fea1ca57"
     },
     {
       "path": "reproduce/compare_bf16_source_decode.py",
@@ -949,8 +949,8 @@
     },
     {
       "path": "reproduce/run_sm80.sh",
-      "bytes": 1594,
-      "sha256": "17304c182e408d0ad39f2f02a29b6d61df89d91c645bbd9358e30e3b32ad98d0"
+      "bytes": 1646,
+      "sha256": "47798cba11447c69455047eb56198c0ea7cd6d5868c113124a17b4df050e8dc0"
     },
     {
       "path": "reproduce/sm80/analyze.py",
@@ -964,13 +964,13 @@
     },
     {
       "path": "reproduce/sm80/experiment.py",
-      "bytes": 4315,
-      "sha256": "d5f86d79f0ebc44e26d77ff773015fc3f0b6b02fdcb5d92385f8c4d6be54bb7b"
+      "bytes": 4351,
+      "sha256": "ff904973af80a16ee8a6b5acde9d270f96169614945b01b67b11fbe1e5345bd6"
     },
     {
       "path": "reproduce/sm80/graph_proof.py",
-      "bytes": 978,
-      "sha256": "986e4e0f38cc86bce658a870ef6a8c011e6bf630283b96b3f8f02a18e16da37a"
+      "bytes": 1024,
+      "sha256": "9c9f48a7823f39df785f92fa902bb68e80fba953381992cac354247d88d89ca5"
     },
     {
       "path": "reproduce/sm80/green.cu",

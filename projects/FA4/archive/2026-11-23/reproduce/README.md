@@ -48,4 +48,4 @@ bash reproduce/run_sm80.sh profile GPU_UUID ./_work/sm80
 bash reproduce/run_sm80.sh analyze GPU_UUID ./_work/sm80
 ```
 
-也可顺序在同一张卡运行计时和 NCU；或两张同型号卡分别运行，输出阶段文件可共用目录。新输出会包含 NCU 原文件，供进一步检查；需要另行归档时才按策略清理。本归档的旧 HTML 是原测量的报告，不会被新测量覆盖。
+也可顺序在同一张卡运行计时和 NCU；或两张同型号卡分别运行，输出阶段文件可共用目录；timing/profile 分别编译 green-timing.so 与 green-profile.so，避免并行覆盖已加载的动态库。新输出会包含 NCU 原文件，供进一步检查；需要另行归档时才按策略清理。本归档的旧 HTML 是原测量的报告，不会被新测量覆盖。

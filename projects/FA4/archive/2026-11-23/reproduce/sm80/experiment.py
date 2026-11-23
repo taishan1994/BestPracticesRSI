@@ -3,7 +3,7 @@ from pathlib import Path
 from common import torch,make_call
 from flash_attn.cute.cute_dsl_utils import get_num_sms_for_selection
 ap=argparse.ArgumentParser();ap.add_argument('--profile',action='store_true');ap.add_argument('--limit',type=int,default=0);ap.add_argument('--case-id');ap.add_argument('--tag',default='');ap.add_argument('--kind',choices=['forward','decode']);ap.add_argument('--resume',action='store_true');args=ap.parse_args()
-lib=ctypes.CDLL('/out/green.so');torch.cuda.init();st=ctypes.c_ulonglong();info=(ctypes.c_int*4)();assert lib.make_green(80,ctypes.byref(st),info)==0 and info[3]==80
+lib=ctypes.CDLL(os.environ.get('FA4_GREEN_LIBRARY','/out/green.so'));torch.cuda.init();st=ctypes.c_ulonglong();info=(ctypes.c_int*4)();assert lib.make_green(80,ctypes.byref(st),info)==0 and info[3]==80
 lib.stream_sms.argtypes=[ctypes.c_ulonglong];lib.probe_sms.argtypes=[ctypes.c_ulonglong,ctypes.c_void_p]
 full=torch.cuda.Stream();green=torch.cuda.ExternalStream(st.value)
 probes=[]
